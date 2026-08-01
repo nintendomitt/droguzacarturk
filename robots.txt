@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Takip parametreli URL'lerin ayri sayfa olarak taranmasini onle
+Disallow: /*?utm_
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+
+# Yapay zeka arama motorlarina acik erisim (AI SEO / atif alma amaciyla)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.droguzacarturk.com/sitemap.xml

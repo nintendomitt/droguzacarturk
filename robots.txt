@@ -1,12 +1,12 @@
 User-agent: *
 Allow: /
 
-# Takip parametreli URL'lerin ayri sayfa olarak taranmasini onle
+# Takip parametreli URL'lerin ayrı sayfa olarak taranmasını önle
 Disallow: /*?utm_
 Disallow: /*?fbclid=
 Disallow: /*?gclid=
 
-# Yapay zeka arama motorlarina acik erisim (AI SEO / atif alma amaciyla)
+# Yapay zekâ arama motorlarına açık erişim (AI SEO / atıf alma amacıyla)
 User-agent: GPTBot
 Allow: /
 

@@ -8,7 +8,7 @@ en:{
 "hero.t1":"Turkish Ministry of Health — health tourism authorised","hero.t2":"Associate Professor, University of Pittsburgh","hero.t3":"60+ international scientific publications","hero.t4":"Oral & Maxillofacial Surgery subspecialty",
 "hero.badge.b":"Pittsburgh & Izmir","hero.badge.s":"Active academic surgical appointment in the US for part of each year",
 "cr.f.eyebrow":"Official Authorisation",
-"cr.b1t":"International Health Tourism Authorisation Certificate","cr.b1s":"The official licence issued by the Turkish Ministry of Health certifying authorisation to provide healthcare to patients from abroad. It is granted only to providers and physicians meeting the Ministry's quality and inspection requirements.",
+"cr.b1t":"International Health Tourism Authorisation Certificate","cr.b1s":"The official licence issued by the Directorate General of Health Services, Turkish Ministry of Health, certifying authorisation to provide healthcare to patients from abroad. It is granted only to providers meeting the Ministry's quality and inspection requirements.",
 "cr.b2t":"European Board of Plastic Surgery","cr.b2s":"European certification in Plastic, Reconstructive and Aesthetic Surgery",
 "cr.b3t":"Oral & Maxillofacial Surgery","cr.b3s":"Subspecialty credential from the Turkish Ministry of Health — held by only a few plastic surgeons in Türkiye",
 "cr.b4t":"Young Plastic Surgeon Award","cr.b4s":"Awarded by the European Association of Plastic Surgeons (EURAPS)",
@@ -109,7 +109,9 @@ en:{
 "ft.p3":"Izmir · Pittsburgh · Hanoi",
 "ct.f.ph":"Would you like to send photographs?",
 "ct.f.phs":"Photographs help a great deal with assessment. When you submit the form WhatsApp opens; tap the paperclip there to attach your photographs.",
-"ct.f.phc":"I will attach photographs"
+"ct.f.phc":"I will attach photographs",
+"cr.lic.zoom":"View certificate",
+"cr.lic.no":"Certificate No: ST-6183 · Issued: 21.07.2025"
 },
 de:{
 "skip":"Zum Inhalt springen","tb.loc":"Izmir · Bayrakli","brand.sub":"Plastische, Rekonstruktive & Ästhetische Chirurgie",
@@ -120,7 +122,7 @@ de:{
 "hero.t1":"Vom türkischen Gesundheitsministerium für Gesundheitstourismus zugelassen","hero.t2":"Associate Professor, University of Pittsburgh","hero.t3":"60+ internationale Publikationen","hero.t4":"Zusatzqualifikation Mund-, Kiefer- und Gesichtschirurgie",
 "hero.badge.b":"Pittsburgh & Izmir","hero.badge.s":"Einen Teil des Jahres aktive akademische Tätigkeit in den USA",
 "cr.f.eyebrow":"Amtliche Zulassung",
-"cr.b1t":"Zulassung für internationalen Gesundheitstourismus","cr.b1s":"Die vom türkischen Gesundheitsministerium ausgestellte amtliche Lizenz, die zur Behandlung von Patienten aus dem Ausland berechtigt. Sie wird nur an Einrichtungen und Ärzte vergeben, die die Qualitäts- und Prüfanforderungen des Ministeriums erfüllen.",
+"cr.b1t":"Zulassung für internationalen Gesundheitstourismus","cr.b1s":"Die von der Generaldirektion für Gesundheitsdienste des türkischen Gesundheitsministeriums ausgestellte amtliche Lizenz, die zur Behandlung von Patienten aus dem Ausland berechtigt. Sie wird nur an Einrichtungen vergeben, die die Qualitäts- und Prüfanforderungen des Ministeriums erfüllen.",
 "cr.b2t":"European Board of Plastic Surgery","cr.b2s":"Europäisches Zertifikat für Plastische, Rekonstruktive und Ästhetische Chirurgie",
 "cr.b3t":"Mund-, Kiefer- und Gesichtschirurgie","cr.b3s":"Zusatzqualifikation des türkischen Gesundheitsministeriums — nur wenige plastische Chirurgen in der Türkei besitzen sie",
 "cr.b4t":"Young Plastic Surgeon Award","cr.b4s":"Verliehen von der European Association of Plastic Surgeons (EURAPS)",
@@ -221,7 +223,9 @@ de:{
 "ft.p3":"Izmir · Pittsburgh · Hanoi",
 "ct.f.ph":"Möchten Sie Fotos senden?",
 "ct.f.phs":"Fotos helfen bei der Beurteilung sehr. Nach dem Absenden des Formulars öffnet sich WhatsApp; dort können Sie über die Büroklammer Ihre Fotos anhängen.",
-"ct.f.phc":"Ich werde Fotos anhängen"
+"ct.f.phc":"Ich werde Fotos anhängen",
+"cr.lic.zoom":"Urkunde ansehen",
+"cr.lic.no":"Urkunde Nr.: ST-6183 · Ausgestellt: 21.07.2025"
 },
 ru:{
 "skip":"Перейти к содержанию","tb.loc":"Измир · Байраклы","brand.sub":"Пластическая, реконструктивная и эстетическая хирургия",
@@ -232,7 +236,7 @@ ru:{
 "hero.t1":"Разрешение Минздрава Турции на медицинский туризм","hero.t2":"Доцент Университета Питтсбурга","hero.t3":"60+ международных научных публикаций","hero.t4":"Субспециализация: челюстно-лицевая хирургия",
 "hero.badge.b":"Питтсбург и Измир","hero.badge.s":"Часть года — активная академическая хирургическая работа в США",
 "cr.f.eyebrow":"Официальное разрешение",
-"cr.b1t":"Разрешение на международный медицинский туризм","cr.b1s":"Официальная лицензия Министерства здравоохранения Турции, подтверждающая право оказывать медицинскую помощь пациентам из-за рубежа. Выдаётся только тем учреждениям и врачам, которые соответствуют требованиям Министерства по качеству и проходят проверки.",
+"cr.b1t":"Разрешение на международный медицинский туризм","cr.b1s":"Официальная лицензия, выданная Главным управлением медицинских услуг Министерства здравоохранения Турции, подтверждающая право оказывать медицинскую помощь пациентам из-за рубежа. Выдаётся только учреждениям, соответствующим требованиям Министерства по качеству и проверкам.",
 "cr.b2t":"European Board of Plastic Surgery","cr.b2s":"Европейский сертификат по пластической, реконструктивной и эстетической хирургии",
 "cr.b3t":"Челюстно-лицевая хирургия","cr.b3s":"Субспециализация Министерства здравоохранения Турции — ею владеют лишь немногие пластические хирурги страны",
 "cr.b4t":"Премия «Молодой пластический хирург»","cr.b4s":"Присуждена Европейской ассоциацией пластических хирургов (EURAPS)",
@@ -333,7 +337,9 @@ ru:{
 "ft.p3":"Измир · Питтсбург · Ханой",
 "ct.f.ph":"Хотите отправить фотографии?",
 "ct.f.phs":"Фотографии очень помогают в оценке. После отправки формы откроется WhatsApp; там нажмите на скрепку и прикрепите снимки.",
-"ct.f.phc":"Я приложу фотографии"
+"ct.f.phc":"Я приложу фотографии",
+"cr.lic.zoom":"Посмотреть документ",
+"cr.lic.no":"Документ №: ST-6183 · Выдан: 21.07.2025"
 },
 ar:{
 "skip":"انتقل إلى المحتوى",
@@ -360,7 +366,7 @@ ar:{
 "hero.badge.s":"مهمة جراحية أكاديمية نشطة في الولايات المتحدة لجزء من كل عام",
 "cr.f.eyebrow":"ترخيص رسمي",
 "cr.b1t":"شهادة ترخيص السياحة العلاجية الدولية",
-"cr.b1s":"الرخصة الرسمية الصادرة عن وزارة الصحة التركية التي توثّق صلاحية تقديم الخدمات الصحية للمرضى القادمين من الخارج. لا تُمنح إلا للمؤسسات والأطباء المستوفين لشروط الجودة والرقابة التي تحددها الوزارة.",
+"cr.b1s":"الرخصة الرسمية الصادرة عن المديرية العامة للخدمات الصحية بوزارة الصحة التركية، والتي توثّق صلاحية تقديم الخدمات الصحية للمرضى القادمين من الخارج. لا تُمنح إلا للمؤسسات المستوفية لشروط الجودة والرقابة التي تحددها الوزارة.",
 "cr.b2t":"البورد الأوروبي للجراحة التجميلية",
 "cr.b2s":"اعتماد أوروبي في الجراحة التجميلية والترميمية والتقويمية",
 "cr.b3t":"جراحة الفم والوجه والفكين",
@@ -562,6 +568,8 @@ ar:{
 "ft.p3":"إزمير · بيتسبرغ · هانوي",
 "ct.f.ph":"هل ترغب في إرسال صور؟",
 "ct.f.phs":"الصور تساعد كثيرًا في التقييم. عند إرسال النموذج يُفتح واتساب؛ اضغط هناك على مشبك الورق لإرفاق صورك.",
-"ct.f.phc":"سأرفق صورًا"
+"ct.f.phc":"سأرفق صورًا",
+"cr.lic.zoom":"عرض الشهادة",
+"cr.lic.no":"رقم الشهادة: ST-6183 · تاريخ الإصدار: 21.07.2025"
 }
 };

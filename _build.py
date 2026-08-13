@@ -102,8 +102,20 @@ def body_html(p):
     return "\n".join(out)
 
 
-def render(p, index):
+LANGS=[("tr","TR"),("en","EN"),("de","DE"),("ru","RU"),("ar","AR")]
+DEFAULT_CREDS=[]
+
+
+def render(p, index, lang="tr"):
     url = f"{BASE}/{p['slug']}"
+    home = "index.html"
+    cur = " aria-current='true'"
+    langbtns = "".join(
+        '<button data-lang="%s"%s>%s</button>' % (c, cur if c == lang else "", n)
+        for c, n in LANGS)
+    dropitems = "".join(
+        f'<a href="{index[k]["slug"]}">{index[k]["card"]}</a>'
+        for k in ("lenfodem", "mikrotia", "rinoplasti", "meme-estetigi") if k in index)
     kf = ""
     if p.get("keyfacts"):
         kf = '<div class="keyfacts">' + "".join(
@@ -126,6 +138,17 @@ def render(p, index):
         rel = ('<section class="alt"><div class="wrap"><div class="narrow prose">'
                '<span class="tag">İlgili</span><h2>İlgili uzmanlık alanları</h2>'
                f'<div class="rel">{cards}</div></div></div></section>')
+    surgeon = f'''<section id="cerrah"><div class="wrap"><div class="narrow">
+<span class="tag">Cerrahınız</span>
+<h2 style="margin:0 0 8px">Doç. Dr. Tahsin Oğuz Acartürk</h2>
+<p style="font-size:.86rem;color:var(--muted);margin-bottom:22px">Plastik, Rekonstrüktif ve Estetik Cerrahi · Ağız, Yüz ve Çene Cerrahisi · Pittsburgh Üniversitesi</p>
+<div class="surg">
+<div class="surg-img"><img src="assets/dr-acarturk.webp" width="900" height="1125" loading="lazy" decoding="async" alt="Doç. Dr. Tahsin Oğuz Acartürk, mikrocerrahi laboratuvarında"></div>
+<div class="surg-txt">
+<p><strong>Bu alandaki deneyimi:</strong> {p["authority"]}</p>
+<ul class="surg-cred">{"".join(f"<li>{c}</li>" for c in p.get("creds", DEFAULT_CREDS))}</ul>
+<a class="btn btn-o" href="index.html#hakkinda">Tam özgeçmiş</a>
+</div></div></div></div></section>'''
     return f"""<!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -152,12 +175,20 @@ def render(p, index):
 </head>
 <body>
 <div class="topbar"><div class="wrap">
-<span>İzmir · Bayraklı Tower</span>
-<a href="{WA}" target="_blank" rel="noopener">WhatsApp ile yazın</a>
+<div class="tb-left"><span>İzmir · Bayraklı Tower</span>
+<a href="{WA}" target="_blank" rel="noopener">WhatsApp ile yazın</a></div>
+<div class="langs" role="group" aria-label="Language">{langbtns}</div>
 </div></div>
 <header><div class="wrap">
-<a class="brand" href="index.html"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>Plastik, Rekonstrüktif ve Estetik Cerrahi</small></a>
+<a class="brand" href="{home}"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>Plastik, Rekonstrüktif ve Estetik Cerrahi</small></a>
+<nav class="main" id="nav">
+<div class="navdrop"><a href="{home}#uzmanlik">Uzmanlık Alanları</a>
+<div class="dropm">{dropitems}</div></div>
+<a href="{home}#hakkinda">Cerrahınız</a>
+<a href="#sss">S.S.S.</a>
 <a class="btn btn-p" href="#randevu">Randevu Al</a>
+</nav>
+<button class="menu-tgl" id="tgl" aria-label="Menu" aria-expanded="false"><span></span></button>
 </div></header>
 <div class="wrap"><nav class="crumb" aria-label="breadcrumb"><a href="index.html">Anasayfa</a> &rsaquo; <span>{p['crumb']}</span></nav></div>
 <main>
@@ -175,6 +206,7 @@ def render(p, index):
 </div></div>
 {body_html(p)}
 {faq}
+{surgeon}
 {rel}
 <section class="cta" id="randevu"><div class="wrap">
 <h2>{p['ctah']}</h2>
@@ -197,7 +229,21 @@ def render(p, index):
 <a class="btn btn-w" href="{wa_link(p['watopic'])}" target="_blank" rel="noopener">WhatsApp</a>
 <a class="btn btn-p" href="index.html#iletisim">Randevu Formu</a>
 </div>
-<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var t=document.getElementById('tgl'),n=document.getElementById('nav');
+if(t&&n){{
+t.addEventListener('click',function(){{var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)}});
+n.addEventListener('click',function(e){{if(e.target.tagName==='A'){{n.classList.remove('open');t.setAttribute('aria-expanded','false')}}}});
+}}
+document.querySelectorAll('.langs button').forEach(function(b){{
+b.addEventListener('click',function(){{
+var l=b.dataset.lang;
+try{{localStorage.setItem('lang',l)}}catch(e){{}}
+location.href='index.html';
+}});
+}});
+</script>
 </body>
 </html>
 """

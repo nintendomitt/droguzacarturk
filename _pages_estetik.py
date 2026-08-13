@@ -12,7 +12,9 @@ def std_steps(op, gun, is_donus):
 
 ESTETIK = [
 {
- "key":"rinoplasti", "slug":"burun-estetigi-rinoplasti.html", "prio":"0.85",
+ "key":"rinoplasti",
+ "authority":"Rinoplasti alanında Türk cerrahlarının uluslararası kabul gören bir birikimi vardır. Doç. Dr. Acartürk bu birikimi Pittsburgh Üniversitesi'nde sürdürmüş; oradaki meslektaşları zamanla kendilerine başvuran rinoplasti hastalarının hemen tamamını kendisine yönlendirmeye başlamıştır. Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı, burun ile yüz iskeletini birlikte değerlendirmesini sağlar.",
+ "creds":["Pittsburgh Üniversitesi'nde meslektaş yönlendirmeleriyle yoğun rinoplasti pratiği","Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı","Yüz kırıkları ve yüz iskeleti cerrahisinde deneyim"], "slug":"burun-estetigi-rinoplasti.html", "prio":"0.85",
  "crumb":"Burun Estetiği (Rinoplasti)",
  "title":"Burun Estetiği (Rinoplasti) — Doğal Sonuç ve Nefes Alma | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Burun Estetiği (Rinoplasti): İşlevsel ve Estetik Cerrahi",
@@ -75,7 +77,9 @@ ESTETIK = [
  "ctap":"Beklentinizi, nefes alma ile ilgili şikâyetiniz olup olmadığını ve varsa önden–yandan fotoğraflarınızı gönderin. Planlama görüşmesi için size dönüş yapılır."},
 
 {
- "key":"meme-estetigi", "slug":"meme-estetigi.html", "prio":"0.85",
+ "key":"meme-estetigi",
+ "authority":"Meme estetiğinde Doç. Dr. Acartürk, Amerika'daki meslektaşlarından farklı olarak <strong>daha az iz bırakan ve memeyi daha çok kaldıran</strong> bir küçültme tekniği kullanmaktadır. Bu yaklaşım nedeniyle Pittsburgh'da özellikle estetiğin ön planda olduğu genç hastalar diğer cerrahlar tarafından kendisine yönlendirilmiştir.",
+ "creds":["Daha az iz bırakan meme küçültme tekniği","Amerika'da meslektaş yönlendirmeleriyle yoğun meme cerrahisi pratiği","Meme rekonstrüksiyonu deneyimiyle bütünleşik yaklaşım"], "slug":"meme-estetigi.html", "prio":"0.85",
  "crumb":"Meme Estetiği",
  "title":"Meme Estetiği: Büyütme, Küçültme ve Dikleştirme | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Meme Estetiği: Büyütme, Küçültme ve Dikleştirme",
@@ -132,7 +136,9 @@ ESTETIK = [
  "ctap":"Beklentinizi, gebelik ve emzirme planınızı, varsa geçirdiğiniz meme ameliyatlarını ve boy–kilo bilginizi paylaşın."},
 
 {
- "key":"yuz-germe", "slug":"yuz-germe.html", "prio":"0.8",
+ "key":"yuz-germe",
+ "authority":"Yüz germede sonucu belirleyen, cildin değil derin dokuların doğru ele alınmasıdır. Doç. Dr. Acartürk'ün baş–boyun rekonstrüksiyonu ve yüz iskeleti cerrahisindeki birikimi, yüz anatomisinin tüm katmanlarına hâkimiyet sağlar. Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı bu alanda az sayıda plastik cerrahın taşıdığı bir yeterliliktir.",
+ "creds":["Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı","Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü","Yağ dokusu ve kök hücre destekli hacimlendirme deneyimi"], "slug":"yuz-germe.html", "prio":"0.8",
  "crumb":"Yüz Germe",
  "title":"Yüz Germe ve Boyun Gençleştirme — SMAS Teknikleri | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Yüz Germe ve Boyun Gençleştirme",
@@ -189,7 +195,9 @@ ESTETIK = [
  "ctap":"Sizi en çok rahatsız eden bölgeyi, varsa geçmiş estetik işlemlerinizi ve önden–yandan fotoğraflarınızı gönderin."},
 
 {
- "key":"goz-kapagi", "slug":"goz-kapagi-estetigi.html", "prio":"0.8",
+ "key":"goz-kapagi",
+ "authority":"Göz çevresi, yüz anatomisinin en ince ayrıntı gerektiren bölgesidir. Doç. Dr. Acartürk, yüz iskeleti cerrahisi ve baş–boyun rekonstrüksiyonundaki birikimiyle göz kapağını çevre yapılarla birlikte değerlendirir; yüz felcine bağlı kapak sorunlarında da cerrahi çözüm üretmektedir.",
+ "creds":["Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı","Yüz felcinde göz kapağı onarımı deneyimi","Yüz iskeleti ve orbita cerrahisinde pratik"], "slug":"goz-kapagi-estetigi.html", "prio":"0.8",
  "crumb":"Göz Kapağı Estetiği",
  "title":"Göz Kapağı Estetiği (Blefaroplasti) — Üst ve Alt Kapak | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Göz Kapağı Estetiği (Blefaroplasti)",
@@ -237,7 +245,9 @@ ESTETIK = [
  "ctap":"Sizi rahatsız eden görünümü, görme ile ilgili bir şikâyetiniz olup olmadığını ve varsa yakın plan fotoğraflarınızı gönderin."},
 
 {
- "key":"karin-germe", "slug":"karin-germe.html", "prio":"0.8",
+ "key":"karin-germe",
+ "authority":"Karın germe, estetik bir işlem olduğu kadar karın duvarının işlevsel onarımıdır. Doç. Dr. Acartürk'ün 3 yıllık genel cerrahi eğitimi ve karın duvarı rekonstrüksiyonu deneyimi, kas onarımı ve eşlik eden fıtıkların aynı seansta güvenle ele alınmasını sağlar.",
+ "creds":["3 yıl genel cerrahi eğitimi — karın duvarı ve fıtık cerrahisi","Gövde ve karın rekonstrüksiyonu deneyimi","DIEP flebi cerrahisiyle karın anatomisine hâkimiyet"], "slug":"karin-germe.html", "prio":"0.8",
  "crumb":"Karın Germe",
  "title":"Karın Germe (Abdominoplasti) — Kas Onarımı ve İyileşme | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Karın Germe (Abdominoplasti)",
@@ -298,7 +308,9 @@ ESTETIK = [
  "ctap":"Gebelik öykünüzü, kilo değişiminizi, mevcut kilonuzun ne kadar süredir sabit olduğunu ve varsa fotoğraflarınızı paylaşın."},
 
 {
- "key":"liposuction", "slug":"liposuction-vucut-sekillendirme.html", "prio":"0.8",
+ "key":"liposuction",
+ "authority":"Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde yağ dokusu ve yağ kökenli kök hücre teknolojileri üzerine çalışmış ilk Türk plastik cerrahlardan biridir. Bu birikim, liposuction'ı yalnızca yağ alma işlemi olarak değil, alınan dokunun yeniden kullanılabildiği bir şekillendirme aracı olarak ele almasını sağlar.",
+ "creds":["Pittsburgh Üniversitesi'nde yağ dokusu ve kök hücre araştırmaları","Lenfatik koruyucu liposuction tekniklerinde deneyim","Yağ transferiyle bütünleşik vücut şekillendirme"], "slug":"liposuction-vucut-sekillendirme.html", "prio":"0.8",
  "crumb":"Liposuction ve Vücut Şekillendirme",
  "title":"Liposuction (Yağ Aldırma) ve Vücut Şekillendirme | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Liposuction ve Vücut Şekillendirme",
@@ -351,7 +363,9 @@ ESTETIK = [
  "ctap":"Hangi bölgelerden rahatsız olduğunuzu, boy–kilo bilginizi ve kilonuzun ne kadar süredir sabit olduğunu paylaşın; varsa fotoğraflarınızı ekleyin."},
 
 {
- "key":"yag-enjeksiyonu", "slug":"yag-enjeksiyonu.html", "prio":"0.75",
+ "key":"yag-enjeksiyonu",
+ "authority":"Yağ dokusu ve kök hücre teknolojileri, Doç. Dr. Acartürk'ün akademik çalışma alanlarının başında gelir. Pittsburgh Üniversitesi bu alanda uluslararası bir merkezdir; kendisi bu teknolojilerle çalışmış ilk Türk plastik cerrahlardan biri olup Amerika'daki kök hücre firmalarına danışmanlık da yapmaktadır.",
+ "creds":["Pittsburgh Üniversitesi'nde yağ kökenli kök hücre araştırmaları","Carnegie Mellon'da doku mühendisliği ve biyomateryaller üzerine postdoktora","ABD'de kök hücre teknolojileri alanında danışmanlık"], "slug":"yag-enjeksiyonu.html", "prio":"0.75",
  "crumb":"Yağ Enjeksiyonu",
  "title":"Yağ Enjeksiyonu (Lipofilling) ve Kök Hücre Destekli Hacimlendirme | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Yağ Enjeksiyonu ve Kök Hücre Destekli Hacimlendirme",
@@ -405,7 +419,9 @@ ESTETIK = [
  "ctap":"Hangi bölgede hacim istediğinizi, daha önce dolgu yaptırıp yaptırmadığınızı ve varsa fotoğraflarınızı gönderin."},
 
 {
- "key":"kol-uyluk-germe", "slug":"kol-uyluk-germe.html", "prio":"0.7",
+ "key":"kol-uyluk-germe",
+ "authority":"Büyük kilo kaybı sonrası vücut kontur cerrahisi, geniş yara alanları ve yüksek komplikasyon riski nedeniyle rekonstrüktif cerrahi disiplini gerektirir. Doç. Dr. Acartürk'ün gövde ve ekstremite rekonstrüksiyonundaki birikimi, bu ameliyatların güvenli biçimde aşamalandırılmasını sağlar.",
+ "creds":["Gövde ve ekstremite rekonstrüksiyonu deneyimi","3 yıl genel cerrahi eğitimi","Karmaşık yara ve doku kaybı yönetiminde pratik"], "slug":"kol-uyluk-germe.html", "prio":"0.7",
  "crumb":"Kol, Uyluk ve Gövde Germe",
  "title":"Kol Germe (Brakioplasti), Uyluk ve Gövde Germe | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Kol, Uyluk ve Gövde Germe",
@@ -458,7 +474,9 @@ ESTETIK = [
  "ctap":"Ne kadar kilo verdiğinizi, kilonuzun ne kadar süredir sabit olduğunu, bariatrik cerrahi geçirip geçirmediğinizi ve varsa fotoğraflarınızı paylaşın."},
 
 {
- "key":"jinekomasti", "slug":"jinekomasti.html", "prio":"0.75",
+ "key":"jinekomasti",
+ "authority":"Jinekomasti cerrahisinde sonucu belirleyen, bez dokusunun tam olarak çıkarılması ile göğüs duvarında doğal bir kontur bırakılması arasındaki dengedir. Doç. Dr. Acartürk'ün meme cerrahisi ve vücut şekillendirmedeki birikimi, bu iki hedefin birlikte gözetilmesini sağlar.",
+ "creds":["Meme cerrahisinde uzun yıllara dayanan pratik","Liposuction ve kontur cerrahisinde deneyim","Amerika ve Türkiye'de aktif cerrahi pratik"], "slug":"jinekomasti.html", "prio":"0.75",
  "crumb":"Jinekomasti",
  "title":"Jinekomasti (Erkekte Meme Büyümesi) Ameliyatı | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Jinekomasti: Erkekte Meme Büyümesi ve Cerrahi Tedavisi",
@@ -513,7 +531,9 @@ ESTETIK = [
  "ctap":"Ne zamandır devam ettiğini, kullandığınız ilaç veya takviyeleri ve varsa önden–yandan fotoğraflarınızı gönderin."},
 
 {
- "key":"lip-lift", "slug":"lip-lift-bisektomi-kulak-estetigi.html", "prio":"0.7",
+ "key":"lip-lift",
+ "authority":"Bu işlemler küçük ölçekli olsalar da yüz oranlarına hâkimiyet gerektirir. Doç. Dr. Acartürk'ün Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı ve yüz iskeleti cerrahisindeki birikimi, dudak, yanak ve kulak işlemlerinin yüzün bütünü içinde planlanmasını sağlar.",
+ "creds":["Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı","Helsinki Üniversitesi'nde kulak onarımı fellowship'i","Yüz iskeleti ve yumuşak doku cerrahisinde deneyim"], "slug":"lip-lift-bisektomi-kulak-estetigi.html", "prio":"0.7",
  "crumb":"Lip Lift, Bişektomi ve Kulak Estetiği",
  "title":"Lip Lift, Bişektomi ve Kulak Estetiği (Otoplasti) | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Lip Lift, Bişektomi ve Kulak Estetiği",

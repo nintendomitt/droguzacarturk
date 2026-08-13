@@ -3,7 +3,9 @@
 
 MICRO = [
 {
- "key":"lipodem", "slug":"lipodem-cerrahisi.html", "prio":"0.9",
+ "key":"lipodem",
+ "authority":"Lipödem cerrahisi, lenfatik sistemi koruyan liposuction tekniklerine hâkimiyet gerektirir. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde yağ dokusu ve kök hücre teknolojileri üzerine çalışmış ilk Türk plastik cerrahlardan biridir; aynı zamanda lenfödem mikrocerrahisi yapan bir cerrah olarak lenfatik anatomiye günlük pratikte hâkimdir. Bu iki alanın birleşimi, lipödem cerrahisinde dokunun korunarak çalışılmasını mümkün kılar.",
+ "creds":["Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım","Pittsburgh Üniversitesi'nde yağ dokusu ve kök hücre araştırmaları","Dünya Lenfödem Kongresi'nde bildiri sunumu"], "slug":"lipodem-cerrahisi.html", "prio":"0.9",
  "crumb":"Lipödem Cerrahisi",
  "title":"Lipödem Nedir? Belirtileri, Evreleri ve Cerrahi Tedavisi | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Lipödem: Belirtileri, Evreleri ve Cerrahi Tedavisi",
@@ -72,7 +74,9 @@ MICRO = [
  "ctap":"Ne kadar süredir devam ettiğini, ağrının günlük yaşamınızı nasıl etkilediğini ve varsa bacak fotoğraflarınızı gönderin. İlk yönlendirme için size dönüş yapılır."},
 
 {
- "key":"mikrotia", "slug":"mikrotia-kulak-onarimi.html", "prio":"0.85",
+ "key":"mikrotia",
+ "authority":"Mikrotia onarımı, kıkırdak oymacılığında el becerisi ve çok sayıda vaka deneyimi gerektiren bir alandır. Doç. Dr. Acartürk, Helsinki Üniversitesi'ndeki fellowship döneminde kulak onarımları üzerine çalışmış; her yıl Vietnam'da yürüttüğü gönüllü cerrahi misyonlarda mikrotia onarımını düzenli olarak uygulamaktadır.",
+ "creds":["Helsinki Üniversitesi — mikrocerrahi ve kulak onarımı fellowship'i","Vietnam gönüllü cerrahi misyonlarında düzenli mikrotia cerrahisi","Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı"], "slug":"mikrotia-kulak-onarimi.html", "prio":"0.85",
  "crumb":"Mikrotia — Kulak Onarımı",
  "title":"Mikrotia (Doğuştan Kulak Yokluğu) Ameliyatı ve Kulak Onarımı | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Mikrotia: Doğuştan Kulak Yokluğu ve Cerrahi Onarımı",
@@ -132,7 +136,9 @@ MICRO = [
  "ctap":"Çocuğunuzun yaşını, mikrotianın hangi kulakta olduğunu, varsa işitme testi sonuçlarını ve fotoğrafları gönderin. Planlama görüşmesi için size dönüş yapılır."},
 
 {
- "key":"bas-boyun", "slug":"bas-boyun-cene-rekonstruksiyonu.html", "prio":"0.8",
+ "key":"bas-boyun",
+ "authority":"Baş–boyun rekonstrüksiyonu, Doç. Dr. Acartürk'ün akademik kariyerinin merkezindeki alandır. 2011 yılında Pittsburgh Üniversitesi Plastik Cerrahi Bölümü'ne <strong>Baş–Boyun Onarımları Direktörü</strong> olarak atanmış, bu görevi sırasında 300'ün üzerinde baş–boyun mikrocerrahi ameliyatı gerçekleştirmiş ve bu vakalarda o bölümde daha önce ulaşılmamış bir oranda doku yaşayabilirliği sağlamıştır.",
+ "creds":["Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü","300+ baş–boyun mikrocerrahi vakası","Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı — T.C. Sağlık Bakanlığı"], "slug":"bas-boyun-cene-rekonstruksiyonu.html", "prio":"0.8",
  "crumb":"Baş, Boyun ve Çene Rekonstrüksiyonu",
  "title":"Baş, Boyun ve Çene Rekonstrüksiyonu — Mikrocerrahi Onarım | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Baş, Boyun ve Çene Rekonstrüksiyonu",
@@ -186,7 +192,9 @@ MICRO = [
  "ctap":"Mevcut tanınızı, planlanan ya da geçirilmiş cerrahiyi, radyoterapi öykünüzü ve varsa görüntülerinizi gönderin. Onkolojik ekibinizle koordinasyon için size dönüş yapılır."},
 
 {
- "key":"yuz-felci", "slug":"yuz-felci-tedavisi.html", "prio":"0.8",
+ "key":"yuz-felci",
+ "authority":"Yüz felcinde dinamik onarım, mikrocerrahi ile sinir cerrahisinin kesiştiği noktadadır. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'ndeki görevi sırasında yüz felci ekibinin içinde yer almış; mikrocerrahi ve serbest kas aktarımıyla dinamik onarım konusunda geniş bir deneyim edinmiştir.",
+ "creds":["Pittsburgh Üniversitesi yüz felci ekibinde görev","Serbest kas transferi ve sinir aktarımı deneyimi","Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı"], "slug":"yuz-felci-tedavisi.html", "prio":"0.8",
  "crumb":"Yüz Felci Cerrahisi",
  "title":"Yüz Felci Ameliyatı — Dinamik Kas Aktarımı ve Gülümseme Onarımı | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Yüz Felci: Cerrahi Tedavi ve Gülümseme Onarımı",
@@ -240,7 +248,9 @@ MICRO = [
  "ctap":"Felcin ne zaman başladığını, nedenini, uygulanan tedavileri ve varsa video ya da fotoğraflarınızı gönderin. Hangi seçeneklerin uygun olduğunu birlikte değerlendirelim."},
 
 {
- "key":"meme-rek", "slug":"meme-rekonstruksiyonu.html", "prio":"0.85",
+ "key":"meme-rek",
+ "authority":"Meme rekonstrüksiyonu, mikrocerrahi ile estetik cerrahinin birlikte düşünülmesini gerektirir. Doç. Dr. Acartürk hem serbest doku aktarımında hem meme estetiğinde uzun yıllara dayanan pratiğe sahiptir; ayrıca lenfödem mikrocerrahisi yaptığı için meme rekonstrüksiyonunu kol lenfödemi tedavisiyle <strong>aynı seansta</strong> planlayabilmektedir.",
+ "creds":["300+ serbest doku aktarımı deneyimi","Lenfödem mikrocerrahisiyle eş zamanlı planlama imkânı","Amerika'da meme cerrahisi pratiği ve meslektaş yönlendirmeleri"], "slug":"meme-rekonstruksiyonu.html", "prio":"0.85",
  "crumb":"Meme Rekonstrüksiyonu",
  "title":"Meme Kanseri Sonrası Meme Rekonstrüksiyonu — DIEP ve İmplant | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Meme Kanseri Sonrası Meme Rekonstrüksiyonu",
@@ -297,7 +307,9 @@ MICRO = [
  "ctap":"Tanınızı, planlanan ya da geçirilmiş cerrahiyi, radyoterapi durumunuzu ve varsa görüntülerinizi gönderin. Onkolojik ekibinizle koordinasyon için size dönüş yapılır."},
 
 {
- "key":"el-cerrahisi", "slug":"el-cerrahisi-replantasyon.html", "prio":"0.75",
+ "key":"el-cerrahisi",
+ "authority":"El cerrahisi ve replantasyon, Doç. Dr. Acartürk'ün ihtisas döneminden itibaren yoğun çalıştığı alanlardandır. Pittsburgh Üniversitesi'nde el cerrahisi, uzuv kopmaları ve karmaşık yaralanmalar üzerine kapsamlı bir pratik edinmiş; Vietnam'daki gönüllü misyonlarda ayaktan ele parmak aktarımı ve brakiyal pleksus cerrahisi uygulamaktadır.",
+ "creds":["Pittsburgh Üniversitesi'nde el cerrahisi ve replantasyon pratiği","Vietnam misyonlarında ayaktan ele parmak aktarımı","3 yıl genel cerrahi ve damar cerrahisi eğitimi"], "slug":"el-cerrahisi-replantasyon.html", "prio":"0.75",
  "crumb":"El Cerrahisi ve Replantasyon",
  "title":"El Cerrahisi ve Uzuv Replantasyonu — Kopan Parmak Dikimi | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"El Cerrahisi ve Uzuv Replantasyonu",
@@ -352,7 +364,9 @@ MICRO = [
  "ctap":"Geçirdiğiniz yaralanmayı, uygulanan tedavileri ve kalan kısıtlılıkları anlatın; varsa fotoğraf ve film raporlarınızı gönderin. İkincil onarım seçeneklerini birlikte değerlendirelim."},
 
 {
- "key":"yanik", "slug":"yanik-travma-onarimi.html", "prio":"0.75",
+ "key":"yanik",
+ "authority":"Yanık ve travma onarımı, Doç. Dr. Acartürk'ün hem askerlik hem akademik döneminde çalıştığı alandır. Gülhane Askeri Tıp Akademisi'ndeki görevi sırasında yanık tedavisi ve savaş yaralanmaları konusunda deneyim kazanmış; Pittsburgh Üniversitesi'nde ışın görmüş dokuların yağ ve kök hücre destekli tedavisi üzerine araştırmalara katkı sağlamıştır.",
+ "creds":["GATA'da yanık tedavisi ve savaş yaralanmaları deneyimi","Pittsburgh Üniversitesi'nde kök hücre ve doku mühendisliği araştırmaları","3 yıl travma ve damar cerrahisi eğitimi"], "slug":"yanik-travma-onarimi.html", "prio":"0.75",
  "crumb":"Yanık, Travma ve Işın Sonrası Onarım",
  "title":"Yanık, Travma ve Radyoterapi Sonrası Doku Onarımı | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Yanık, Travma ve Işın Tedavisi Sonrası Onarım",

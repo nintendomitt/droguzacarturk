@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+"""Ingilizce ceviriler — parti 3: lenfodem (amiral sayfa)."""
+
+T = {
+"lenfodem": {
+ "crumb":"Lymphedema & Lipedema Surgery",
+ "title":"Lymphedema: Causes, Stages and Surgical Treatment | Assoc. Prof. Dr. T. Oguz Acarturk",
+ "ogtitle":"Lymphedema: Causes, Stages and Surgical Treatment",
+ "desc":"What is lymphedema, why does it occur, what are its stages and how is it treated? LVA, vascularised lymph node transfer and debulking surgery — a comprehensive guide by Assoc. Prof. Dr. T. Oguz Acarturk, University of Pittsburgh.",
+ "eyebrow":"Microsurgery Programme",
+ "h1":"What is lymphedema and how is it treated?",
+ "lead":"Lymphedema is not a condition that must be managed for life with bandaging and massage alone. It is a disease that can be treated microsurgically from its early stages. This page is written to answer your questions on staging, diagnosis, surgical options and recovery.",
+ "watopic":"lymphedema treatment",
+ "about":"Lymphedema",
+ "card":"Lymphedema surgery","cardsub":"LVA, lymph node transfer and debulking surgery",
+ "procedure":{"name":"Lymphaticovenous Anastomosis (LVA)",
+   "how":"Blocked lymphatic channels are connected under the microscope to adjacent veins 0.3–0.8 mm in diameter, redirecting lymphatic fluid into the venous circulation.",
+   "prep":"Examination, staging and lymphatic mapping with ICG lymphography or lymphoscintigraphy.",
+   "follow":"Compression garments, scheduled reviews and lymphedema physiotherapy where required.",
+   "body":"Lymphatic system of the arms and legs"},
+ "keyfacts":[("Early stage","LVA — the least invasive option"),("Advanced stage","Lymph node transfer + debulking"),
+             ("Diagnosis","ICG lymphography, lymphoscintigraphy"),("Decisive factor","Stage and time elapsed")],
+ "authority":"Lymphedema microsurgery is the most technically demanding field in plastic surgery: connecting lymphatic channels 0.3–0.8 mm in diameter to veins under the microscope. Assoc. Prof. Dr. Acarturk performed more than 300 microsurgical operations as Director of Head & Neck Reconstruction at the University of Pittsburgh; he takes part in the work of the European lymphatic microsurgery group and has presented at the World Congress of Lymphology.",
+ "creds":["Former Director of Head & Neck Reconstruction, University of Pittsburgh — 300+ microsurgical cases",
+          "Participation in the European lymphatic microsurgery group",
+          "Reduced microsurgical flap loss to 3% — against a global average of 5%"],
+ "sections":[
+  {"id":"nedir","tag":"The Basics","h2":"What is lymphedema and why does it occur?","body":[
+   "The lymphatic system is a fine network of channels that collects protein-rich fluid from the tissues and returns it to the circulation. When this network becomes blocked or damaged, fluid accumulates in the tissue; the resulting persistent swelling is called <strong>lymphedema</strong>.",
+   ("h3","Main causes"),
+   ("ul",["<strong>Secondary lymphedema:</strong> develops after removal of lymph nodes during cancer surgery, radiotherapy, recurrent infection or trauma. This is the most common form; arm lymphedema after breast cancer is the typical example.",
+          "<strong>Primary lymphedema:</strong> caused by congenital underdevelopment of the lymphatic system. It may appear at birth, during adolescence or in adulthood."]),
+   "Over time the swelling ceases to be merely a matter of appearance: fat deposition and fibrosis develop in the tissue, the skin thickens, recurrent episodes of cellulitis begin and movement becomes restricted. <strong>Timing therefore directly determines the treatment options available.</strong>",
+   ("note","The response to microsurgery performed in the early stage, while lymphatic channels still function, is markedly better than that achieved once tissue hardening has set in. Waiting narrows the options.")]},
+  {"id":"fark","tag":"Differential Diagnosis","h2":"Lymphedema or lipedema?","body":[
+   "The two conditions are often confused, yet their treatments differ. The table below offers a guiding framework, but a definitive distinction can only be made through examination.",
+   ("table",["Finding","Lymphedema","Lipedema"],[
+     ["Symmetry","Usually asymmetric; one side markedly more swollen","Typically symmetric; both sides similar"],
+     ["Foot involvement","Swelling extends to the top of the foot and toes","Swelling stops at the ankle — the cuff sign; feet are spared"],
+     ["Skin and tissue","Skin feels tight; may pit under pressure","Tissue is soft and nodular; often painful to touch"],
+     ["Pain","Heaviness and tightness predominate","Pain on pressure and easy bruising are prominent"],
+     ["Relation to weight","Diet and weight loss do not resolve the swelling","Fat deposits resistant to weight loss"],
+     ["Stemmer sign","Usually positive","Usually negative"],
+     ["Onset","After surgery, radiotherapy or infection","Often at puberty, pregnancy or menopause"]]),
+   "The two can also coexist. Untreated lipedema increases the lymphatic load over time and can lead to a combined picture known as <strong>lipo-lymphedema</strong>. Details are on our <a href=\"lipodem-cerrahisi.html\">lipedema surgery page</a>."]},
+  {"id":"evre","tag":"Staging","h2":"Stages of lymphedema","body":[
+   "The International Society of Lymphology (ISL) staging system is the framework that determines which surgical option is appropriate.",
+   ("table",["Stage","Findings","Surgical approach"],[
+     ["Stage 0","Lymphatic transport capacity is reduced but there is no visible swelling. Detected on imaging.","LVA — preventive and most effective period"],
+     ["Stage 1","Swelling increases during the day and partially subsides when the limb is elevated. Pitting is present.","LVA"],
+     ["Stage 2","Swelling does not resolve with elevation. Tissue begins to harden and infection risk rises.","LVA and/or lymph node transfer"],
+     ["Stage 3","Marked volume increase, thickened skin, recurrent cellulitis. Elephantiasis may be seen.","Lymph node transfer + debulking surgery"]]),
+   ("note","<strong>The general pattern:</strong> in stages 0–2, LVA comes to the fore to the extent that lymphatic channels are preserved. In stages 2–3, vascularised lymph node transfer and debulking surgery are planned alone or in combination. The final decision is made together with the imaging findings.")]},
+  {"id":"tani","tag":"Diagnosis","h2":"Diagnosis and lymphatic mapping","body":[
+   "Surgical planning cannot be done without seeing the actual state of the lymphatic system. The principal methods used are:",
+   ("ul",["<strong>ICG lymphography:</strong> indocyanine green dye injected under the skin is tracked with an infrared camera. It produces a real-time map of functioning lymphatic channels and is used to determine where LVA incisions are placed.",
+          "<strong>Lymphoscintigraphy:</strong> assessment of lymphatic flow and nodal involvement using a radiolabelled tracer. One of the reference methods in staging.",
+          "<strong>MR lymphangiography:</strong> a detailed anatomical map of lymphatic channels and fluid distribution. Preferred in advanced stages and complex cases.",
+          "<strong>Clinical assessment:</strong> circumference measurements, the Stemmer sign, skin quality, history of infection and response to previous treatment."])]},
+  {"id":"yontem","tag":"Surgical Options","h2":"Surgical methods","body":[
+   "Lymphedema surgery divides into two philosophies: <strong>physiological</strong> methods that re-establish lymphatic flow, and <strong>debulking</strong> methods that remove accumulated tissue. In many patients the two are used together in stages.",
+   ("h3","Lymphaticovenous anastomosis (LVA)"),
+   "Blocked lymphatic channels are connected under the microscope to adjacent veins roughly 0.3–0.8 mm in diameter, redirecting lymphatic fluid into the venous circulation. It is usually performed through incisions a few centimetres long, is the least invasive physiological option in early-stage disease, and requires only a short hospital stay in most patients.",
+   ("h3","Vascularised lymph node transfer (VLNT)"),
+   "A package of lymph nodes is taken with its blood supply from a healthy donor site, transferred to the affected region and connected microsurgically. It is preferred in advanced stages and where lymphatic channel damage is widespread; it can be planned at the same time as <a href=\"meme-rekonstruksiyonu.html\">breast reconstruction</a>.",
+   ("h3","Debulking surgery"),
+   "Removal of accumulated fat and fibrotic tissue using liposuction techniques that spare lymphatic structures. It markedly reduces volume and weight in advanced stages; compression garments are required continuously afterwards.",
+   ("h3","Preventive approach (LYMPHA)"),
+   "Lymphaticovenous connections created at the same time as lymph node dissection during cancer surgery. The aim is to reduce risk before lymphedema appears. It is planned together with the oncological surgical team.",
+   ("note","No single method is right for every patient. Even in two patients at the same stage, lymphatic mapping may call for a different plan. The choice of method follows a combined assessment of stage, imaging, previous treatments, skin quality and expectations.")]},
+  {"id":"surec","tag":"Process","h2":"Surgery and recovery","body":[
+   ("steps",[
+    ("STEP 1 — FIRST CONTACT","Initial contact via WhatsApp or the form. Initial guidance based on duration, previous surgery, radiotherapy history and any images you share."),
+    ("STEP 2 — EXAMINATION AND IMAGING","Circumference measurements, clinical assessment and, where indicated, lymphatic mapping with ICG lymphography or lymphoscintigraphy."),
+    ("STEP 3 — PLANNING CONSULTATION","Applicable methods, expected benefit, risks and the number of sessions are discussed openly. The decision is never rushed."),
+    ("STEP 4 — SURGERY","In a fully equipped hospital setting. LVA usually requires only a short stay; lymph node transfer and debulking surgery involve longer admission."),
+    ("STEP 5 — FIRST 6 WEEKS","Compression garments, wound care and gradual mobilisation. The first changes in swelling begin to be noticed in this period."),
+    ("STEP 6 — 3–12 MONTHS","Response is monitored through scheduled reviews and circumference measurements. The intensity of lymphedema physiotherapy is adjusted gradually.")]),
+   ("note","<strong>For patients from outside the city or abroad:</strong> Pre-assessment is carried out through an online consultation and the images you send. Surgery and review appointments are scheduled into a single travel plan, with subsequent follow-up conducted online.")]}],
+ "faqs":[
+  ("Who is suitable for lymphedema surgery?","Candidacy is determined by stage, the state of the lymphatic system on imaging, how long the swelling has been present, skin quality and general health. In early stages (ISL 0–2) LVA comes to the fore, while in advanced stages lymph node transfer and debulking methods are considered. Active cancer treatment, uncontrolled infection and advanced vascular disease may alter the timing."),
+  ("Will I still need to wear compression garments after surgery?","Most patients continue to use compression in the early period. The duration and pressure level can be reduced over time; whether they can be discontinued entirely depends on the stage, the method and the response achieved. Reduced dependence is reported after LVA performed in early-stage disease."),
+  ("How long does recovery take?","After LVA most patients return to daily life within a few days. Recovery is longer after lymph node transfer and debulking surgery. The reduction in swelling is gradual rather than sudden, occurring over weeks and months; this is why follow-up measurements matter."),
+  ("When should I seek help for arm swelling after breast cancer?","You should be assessed without delay when you notice an increase in arm circumference, a feeling of heaviness, or rings and watches becoming tight. Microsurgery performed early is far more effective than treatment after tissue hardening has set in."),
+  ("Can lymphedema resolve without surgery?","Complex decongestive physiotherapy, bandaging and compression garments help keep swelling under control and are an indispensable part of treatment. However, they do not remove the blockage in lymphatic flow. Surgery is a complementary step that targets the underlying drainage problem."),
+  ("Will my episodes of cellulitis become less frequent?","Accumulated lymphatic fluid increases the risk of infection. Improved drainage is reported to reduce the frequency of recurrent cellulitis. However, this outcome varies by individual and stage and cannot be guaranteed."),
+  ("Both my legs are affected — is it done in one session?","This depends on the extent of the affected area and the planned method. Large areas are usually divided into more than one session for safety and healing quality."),
+  ("Are lymphedema and lymphoma the same thing?","No. Lymphedema is a circulatory problem caused by lymphatic fluid accumulating in the tissue. Lymphoma is a cancer of the lymphatic system, treated by haematology and oncology. The similarity of the names often causes confusion.")],
+ "ctah":"The first step towards a lymphedema assessment",
+ "ctap":"Tell us how long it has been present, your previous treatments and radiotherapy history, and send photographs of the affected leg or arm if you have them. We will get back to you with initial guidance and to arrange an appointment."},
+}

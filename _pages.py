@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Sayfa verileri. Icerik duzenlemek icin _pages_micro.py ve _pages_estetik.py."""
 
+from _pages_lenfodem import LENFODEM
 from _pages_micro import MICRO
 from _pages_estetik import ESTETIK
 
@@ -26,7 +27,7 @@ KULAK_REF = {
     "cardsub": "Kepçe kulak (otoplasti) düzeltmesi",
 }
 
-PAGES = MICRO + ESTETIK
+PAGES = LENFODEM + MICRO + ESTETIK
 
 # Ic link cozumlemesinde kullanilan, uretilmeyen kayitlar
-EXTRA_REFS = [LENFODEM_REF, KULAK_REF]
+EXTRA_REFS = [KULAK_REF]

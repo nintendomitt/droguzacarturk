@@ -40,7 +40,7 @@ T = {
      ["Stage 4","Lipo-lymphedema","Lymphatic insufficiency is added to lipedema; the feet may also be involved"]]),
    "As the stage advances, not only appearance but function deteriorates. Inner thighs rubbing together alter the gait, which over time leads to knee and lower back pain. For this reason lipedema surgery is not an aesthetic preference but an intervention to preserve function.",
    ("h3","Lipo-lymphedema: where two conditions meet"),
-   "In untreated lipedema, the increasing tissue volume eventually exceeds the transport capacity of the lymphatic system. At that point lymphedema is added to the picture and the treatment plan must address both components. You will find this distinction in detail on our <a href=\"lenfodem-lipodem-cerrahisi.html\">lymphedema page</a>."]},
+   "In untreated lipedema, the increasing tissue volume eventually exceeds the transport capacity of the lymphatic system. At that point lymphedema is added to the picture and the treatment plan must address both components. You will find this distinction in detail on our <a href=\"../lenfodem-lipodem-cerrahisi.html\">lymphedema page</a>."]},
   {"id":"tedavi","tag":"Treatment","h2":"Surgical treatment: lymphatic-sparing liposuction","body":[
    "Lipedema surgery is a medical treatment. The aim is not to reduce volume but to remove diseased fat tissue <strong>while preserving lymphatic structures</strong>, reduce pain and restore mobility. The technique therefore differs markedly from aesthetic liposuction.",
    ("h3","WAL — water-jet assisted liposuction"),

@@ -30,14 +30,15 @@ def load_trans():
     for lg in LANGS:
         if lg == "tr":
             continue
-        path = os.path.join("_trans", lg + ".py")
-        if not os.path.exists(path):
-            out[lg] = {}
-            continue
-        spec = importlib.util.spec_from_file_location("t_" + lg, path)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        out[lg] = getattr(mod, "T", {})
+        merged_t = {}
+        import glob
+        for path in sorted(glob.glob(os.path.join("_trans", lg + "*.py"))):
+            name = os.path.basename(path)[:-3]
+            spec = importlib.util.spec_from_file_location("t_" + name, path)
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            merged_t.update(getattr(mod, "T", {}))
+        out[lg] = merged_t
     return out
 
 

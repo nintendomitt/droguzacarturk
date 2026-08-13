@@ -1,71 +1,99 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Hizmet sayfasi ureticisi.
+Cok dilli hizmet sayfasi ureticisi.
 
-Sayfa iceriklerini _pages.py icinde tanimlar, buradaki sablonla HTML uretir.
+  Turkce icerik : _pages_micro.py / _pages_estetik.py
+  Ceviriler     : _trans/<dil>.py  ->  T = {"<key>": {...cevrilmis alanlar...}}
+  Arayuz metni  : _ui.py
+
 Kullanim:  python3 _build.py
-Yeni sayfa eklemek icin _pages.py icindeki PAGES listesine bir kayit ekleyin
-ve bu betigi tekrar calistirin. Elle HTML duzenlemeyin.
+
+Turkce sayfalar kok dizine, cevirilenler /en/, /de/, /ru/, /ar/ altina yazilir.
+Cevirisi olmayan sayfa o dilde uretilmez ve hreflang'e eklenmez.
+Elle HTML duzenlemeyin; bu betigi calistirin.
 """
-import json, os, html, re
+import json, os, html, importlib.util
 from _pages import PAGES, SITE, EXTRA_REFS
+from _ui import UI, LANGS, LANGNAME, RTL, LOCALE, DATE_TR
 
 WA = "https://wa.me/905449714801"
 BASE = SITE["base"]
+FIELDS = ("title", "ogtitle", "desc", "crumb", "h1", "lead", "eyebrow", "watopic",
+          "about", "card", "cardsub", "authority", "creds", "keyfacts", "sections",
+          "faqs", "ctah", "ctap", "procedure")
+_AVAIL = {}
 
 
-def wa_link(topic):
+def load_trans():
+    out = {}
+    for lg in LANGS:
+        if lg == "tr":
+            continue
+        path = os.path.join("_trans", lg + ".py")
+        if not os.path.exists(path):
+            out[lg] = {}
+            continue
+        spec = importlib.util.spec_from_file_location("t_" + lg, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        out[lg] = getattr(mod, "T", {})
+    return out
+
+
+def merged(p, trans, lg):
+    if lg == "tr":
+        return p
+    t = trans.get(lg, {}).get(p["key"])
+    if not t:
+        return None
+    m = dict(p)
+    for f in FIELDS:
+        if f in t:
+            m[f] = t[f]
+    return m
+
+
+def url_for(p, lg):
+    return f"{BASE}/{p['slug']}" if lg == "tr" else f"{BASE}/{lg}/{p['slug']}"
+
+
+def wa_link(topic, lg):
     from urllib.parse import quote
-    msg = f"Merhaba, {topic} hakkında bilgi almak istiyorum."
-    return f"{WA}?text={quote(msg)}"
+    return f"{WA}?text={quote(UI[lg]['wamsg'].format(t=topic))}"
 
 
-def jsonld(p):
-    url = f"{BASE}/{p['slug']}"
+def jsonld(p, lg, url):
+    u = UI[lg]
     graph = [{
-        "@type": "MedicalWebPage",
-        "@id": url + "#page",
-        "url": url,
-        "name": p["h1"],
-        "inLanguage": "tr-TR",
-        "datePublished": SITE["published"],
-        "dateModified": SITE["modified"],
+        "@type": "MedicalWebPage", "@id": url + "#page", "url": url, "name": p["h1"],
+        "inLanguage": lg, "datePublished": SITE["published"], "dateModified": SITE["modified"],
         "lastReviewed": SITE["modified"],
-        "reviewedBy": {"@id": BASE + "/#physician"},
-        "author": {"@id": BASE + "/#physician"},
-        "publisher": {"@id": BASE + "/#physician"},
-        "specialty": "PlasticSurgery",
+        "reviewedBy": {"@id": BASE + "/#physician"}, "author": {"@id": BASE + "/#physician"},
+        "publisher": {"@id": BASE + "/#physician"}, "specialty": "PlasticSurgery",
         "about": {"@type": p.get("aboutType", "MedicalCondition"), "name": p["about"]},
         "isPartOf": {"@type": "WebSite", "@id": BASE + "/#website"},
     }, {
-        "@type": "Physician",
-        "@id": BASE + "/#physician",
-        "name": "Doç. Dr. Tahsin Oğuz Acartürk",
-        "url": BASE + "/",
+        "@type": "Physician", "@id": BASE + "/#physician",
+        "name": "Doç. Dr. Tahsin Oğuz Acartürk", "url": BASE + "/",
         "medicalSpecialty": "PlasticSurgery",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Bayraklı Tower, Mansuroğlu Mah. Ankara Cad. No:81 İç Kapı No:23",
-            "addressLocality": "Bayraklı", "addressRegion": "İzmir",
-            "postalCode": "35030", "addressCountry": "TR"},
+        "address": {"@type": "PostalAddress",
+                    "streetAddress": "Bayraklı Tower, Mansuroğlu Mah. Ankara Cad. No:81 İç Kapı No:23",
+                    "addressLocality": "Bayraklı", "addressRegion": "İzmir",
+                    "postalCode": "35030", "addressCountry": "TR"},
     }]
     if p.get("procedure"):
-        graph.append({
-            "@type": "MedicalProcedure",
-            "name": p["procedure"]["name"],
-            "procedureType": "https://schema.org/SurgicalProcedure",
-            "howPerformed": p["procedure"]["how"],
-            "preparation": p["procedure"].get("prep", ""),
-            "followup": p["procedure"].get("follow", ""),
-            "bodyLocation": p["procedure"].get("body", ""),
-        })
+        pr = p["procedure"]
+        graph.append({"@type": "MedicalProcedure", "name": pr["name"],
+                      "procedureType": "https://schema.org/SurgicalProcedure",
+                      "howPerformed": pr["how"], "preparation": pr.get("prep", ""),
+                      "followup": pr.get("follow", ""), "bodyLocation": pr.get("body", "")})
     if p.get("faqs"):
         graph.append({"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q,
              "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faqs"]]})
     graph.append({"@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Anasayfa", "item": BASE + "/"},
+        {"@type": "ListItem", "position": 1, "name": u["home"], "item": BASE + "/"},
         {"@type": "ListItem", "position": 2, "name": p["crumb"], "item": url}]})
     return json.dumps({"@context": "https://schema.org", "@graph": graph},
                       ensure_ascii=False, separators=(",", ":"))
@@ -77,8 +105,7 @@ def body_html(p):
         alt = ' class="alt"' if i % 2 == 0 else ""
         sid = sec.get("id", f"b{i+1}")
         out.append(f'<section id="{sid}"{alt}><div class="wrap"><div class="narrow prose">')
-        out.append(f'<span class="tag">{sec["tag"]}</span>')
-        out.append(f'<h2>{sec["h2"]}</h2>')
+        out.append(f'<span class="tag">{sec["tag"]}</span><h2>{sec["h2"]}</h2>')
         for blk in sec["body"]:
             if isinstance(blk, str):
                 out.append(f"<p>{blk}</p>")
@@ -89,12 +116,10 @@ def body_html(p):
             elif blk[0] == "note":
                 out.append(f'<div class="note"><p>{blk[1]}</p></div>')
             elif blk[0] == "table":
-                head, rows = blk[1], blk[2]
-                t = ["<table><thead><tr>" + "".join(f"<th>{c}</th>" for c in head) + "</tr></thead><tbody>"]
-                for r in rows:
+                t = ["<table><thead><tr>" + "".join(f"<th>{c}</th>" for c in blk[1]) + "</tr></thead><tbody>"]
+                for r in blk[2]:
                     t.append("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>")
-                t.append("</tbody></table>")
-                out.append("".join(t))
+                out.append("".join(t) + "</tbody></table>")
             elif blk[0] == "steps":
                 out.append('<ul class="tlmap">' + "".join(
                     f"<li><b>{a}</b><span>{b}</span></li>" for a, b in blk[1]) + "</ul>")
@@ -102,20 +127,24 @@ def body_html(p):
     return "\n".join(out)
 
 
-LANGS=[("tr","TR"),("en","EN"),("de","DE"),("ru","RU"),("ar","AR")]
-DEFAULT_CREDS=[]
+def render(p, lg, index, avail):
+    u, url = UI[lg], url_for(p, lg)
+    A = "" if lg == "tr" else "../"
+    home = A + "index.html"
+    rtl = ' dir="rtl"' if lg in RTL else ""
+    arfont = ("&family=Noto+Kufi+Arabic:wght@400;500;600;700"
+              "&family=Noto+Sans+Arabic:wght@300;400;500;600") if lg in RTL else ""
 
-
-def render(p, index, lang="tr"):
-    url = f"{BASE}/{p['slug']}"
-    home = "index.html"
-    cur = " aria-current='true'"
+    alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{url_for(p, l)}">' for l in avail)
+    alts += f'<link rel="alternate" hreflang="x-default" href="{url_for(p, "tr")}">'
     langbtns = "".join(
-        '<button data-lang="%s"%s>%s</button>' % (c, cur if c == lang else "", n)
-        for c, n in LANGS)
+        '<button data-lang="%s"%s%s>%s</button>' % (
+            l, " aria-current='true'" if l == lg else "",
+            "" if l in avail else ' data-nopage="1"', LANGNAME[l]) for l in LANGS)
     dropitems = "".join(
-        f'<a href="{index[k]["slug"]}">{index[k]["card"]}</a>'
+        f'<a href="{A}{index[k]["slug"]}">{index[k]["card"]}</a>'
         for k in ("lenfodem", "mikrotia", "rinoplasti", "meme-estetigi") if k in index)
+
     kf = ""
     if p.get("keyfacts"):
         kf = '<div class="keyfacts">' + "".join(
@@ -124,33 +153,38 @@ def render(p, index, lang="tr"):
                   for i, s in enumerate(p["sections"]))
     faq = ""
     if p.get("faqs"):
-        items = "".join(
-            f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>'
-            for i, (q, a) in enumerate(p["faqs"]))
-        faq = ('<section id="sss"><div class="wrap"><div class="narrow">'
-               '<span class="tag">S.S.S.</span><h2 style="margin:0 0 26px">Sık sorulan sorular</h2>'
-               f"{items}</div></div></section>")
+        items = "".join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>'
+                        for i, (q, a) in enumerate(p["faqs"]))
+        faq = (f'<section id="sss"><div class="wrap"><div class="narrow"><span class="tag">{u["faqtag"]}</span>'
+               f'<h2 style="margin:0 0 26px">{u["faqh"]}</h2>{items}</div></div></section>')
     rel = ""
     if p.get("related"):
-        cards = "".join(
-            f'<a href="{index[s]["slug"]}"><b>{index[s]["card"]}</b>'
-            f'<span>{index[s]["cardsub"]}</span></a>' for s in p["related"] if s in index)
-        rel = ('<section class="alt"><div class="wrap"><div class="narrow prose">'
-               '<span class="tag">İlgili</span><h2>İlgili uzmanlık alanları</h2>'
+        cards = ""
+        for k in p["related"]:
+            if k not in index:
+                continue
+            rp = index[k]
+            href = rp["slug"] if k in _AVAIL.get(lg, set()) else A + rp["slug"]
+            cards += f'<a href="{href}"><b>{rp["card"]}</b><span>{rp["cardsub"]}</span></a>'
+        rel = (f'<section class="alt"><div class="wrap"><div class="narrow prose">'
+               f'<span class="tag">{u["reltag"]}</span><h2>{u["relh"]}</h2>'
                f'<div class="rel">{cards}</div></div></div></section>')
+
+    creds = "".join(f"<li>{c}</li>" for c in p.get("creds", []))
     surgeon = f'''<section id="cerrah"><div class="wrap"><div class="narrow">
-<span class="tag">Cerrahınız</span>
+<span class="tag">{u["surgtag"]}</span>
 <h2 style="margin:0 0 8px">Doç. Dr. Tahsin Oğuz Acartürk</h2>
-<p style="font-size:.86rem;color:var(--muted);margin-bottom:22px">Plastik, Rekonstrüktif ve Estetik Cerrahi · Ağız, Yüz ve Çene Cerrahisi · Pittsburgh Üniversitesi</p>
+<p style="font-size:.86rem;color:var(--muted);margin-bottom:22px">{u["surgsub"]}</p>
 <div class="surg">
-<div class="surg-img"><img src="assets/dr-acarturk.webp" width="900" height="1125" loading="lazy" decoding="async" alt="Doç. Dr. Tahsin Oğuz Acartürk, mikrocerrahi laboratuvarında"></div>
+<div class="surg-img"><img src="{A}assets/dr-acarturk.webp" width="900" height="1125" loading="lazy" decoding="async" alt="Doç. Dr. Tahsin Oğuz Acartürk"></div>
 <div class="surg-txt">
-<p><strong>Bu alandaki deneyimi:</strong> {p["authority"]}</p>
-<ul class="surg-cred">{"".join(f"<li>{c}</li>" for c in p.get("creds", DEFAULT_CREDS))}</ul>
-<a class="btn btn-o" href="index.html#hakkinda">Tam özgeçmiş</a>
+<p><strong>{u["surgexp"]}</strong> {p.get("authority","")}</p>
+<ul class="surg-cred">{creds}</ul>
+<a class="btn btn-o" href="{home}#hakkinda">{u["surgcv"]}</a>
 </div></div></div></div></section>'''
+
     return f"""<!DOCTYPE html>
-<html lang="tr">
+<html lang="{lg}"{rtl}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -158,10 +192,9 @@ def render(p, index, lang="tr"):
 <meta name="description" content="{html.escape(p['desc'], quote=True)}">
 <link rel="canonical" href="{url}">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="alternate" hreflang="tr" href="{url}">
-<link rel="alternate" hreflang="x-default" href="{url}">
+{alts}
 <meta property="og:type" content="article">
-<meta property="og:locale" content="tr_TR">
+<meta property="og:locale" content="{LOCALE[lg]}">
 <meta property="og:title" content="{html.escape(p['ogtitle'], quote=True)}">
 <meta property="og:description" content="{html.escape(p['desc'], quote=True)}">
 <meta property="og:url" content="{url}">
@@ -169,40 +202,40 @@ def render(p, index, lang="tr"):
 <meta name="theme-color" content="#0B1A38">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/page.css">
-<script type="application/ld+json">{jsonld(p)}</script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600{arfont}&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{A}assets/page.css">
+<script type="application/ld+json">{jsonld(p, lg, url)}</script>
 </head>
 <body>
 <div class="topbar"><div class="wrap">
-<div class="tb-left"><span>İzmir · Bayraklı Tower</span>
-<a href="{WA}" target="_blank" rel="noopener">WhatsApp ile yazın</a></div>
+<div class="tb-left"><span>{u['loc']}</span>
+<a href="{WA}" target="_blank" rel="noopener">{u['wa']}</a></div>
 <div class="langs" role="group" aria-label="Language">{langbtns}</div>
 </div></div>
 <header><div class="wrap">
-<a class="brand" href="{home}"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>Plastik, Rekonstrüktif ve Estetik Cerrahi</small></a>
+<a class="brand" href="{home}"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>{u['sub']}</small></a>
 <nav class="main" id="nav">
-<div class="navdrop"><a href="{home}#uzmanlik">Uzmanlık Alanları</a>
+<div class="navdrop"><a href="{home}#uzmanlik">{u['nav1']}</a>
 <div class="dropm">{dropitems}</div></div>
-<a href="{home}#hakkinda">Cerrahınız</a>
-<a href="#sss">S.S.S.</a>
-<a class="btn btn-p" href="#randevu">Randevu Al</a>
+<a href="{home}#hakkinda">{u['nav2']}</a>
+<a href="#sss">{u['nav3']}</a>
+<a class="btn btn-p" href="#randevu">{u['cta']}</a>
 </nav>
 <button class="menu-tgl" id="tgl" aria-label="Menu" aria-expanded="false"><span></span></button>
 </div></header>
-<div class="wrap"><nav class="crumb" aria-label="breadcrumb"><a href="index.html">Anasayfa</a> &rsaquo; <span>{p['crumb']}</span></nav></div>
+<div class="wrap"><nav class="crumb" aria-label="breadcrumb"><a href="{home}">{u['home']}</a> &rsaquo; <span>{p['crumb']}</span></nav></div>
 <main>
 <div class="hero2"><div class="wrap">
 <p class="eyebrow">{p['eyebrow']}</p>
 <h1>{p['h1']}</h1>
 <p class="lead">{p['lead']}</p>
 <div class="hcta">
-<a class="btn btn-w btn-lg" href="{wa_link(p['watopic'])}" target="_blank" rel="noopener">WhatsApp'tan bilgi alın</a>
-<a class="btn btn-o btn-lg" href="index.html#iletisim">Ön değerlendirme formu</a>
+<a class="btn btn-w btn-lg" href="{wa_link(p['watopic'], lg)}" target="_blank" rel="noopener">{u['wabtn']}</a>
+<a class="btn btn-o btn-lg" href="{home}#iletisim">{u['formbtn']}</a>
 </div>
-<p style="font-size:.83rem;color:var(--muted);margin-top:22px;padding-top:16px;border-top:1px solid var(--line)">Yazan ve tıbbi olarak inceleyen: <strong style="color:var(--ink)">Doç. Dr. Tahsin Oğuz Acartürk</strong> — Plastik, Rekonstrüktif ve Estetik Cerrahi; Pittsburgh Üniversitesi. <span style="white-space:nowrap">Son güncelleme: <time datetime="{SITE['modified']}">{SITE['modifiedtr']}</time></span></p>
+<p style="font-size:.83rem;color:var(--muted);margin-top:22px;padding-top:16px;border-top:1px solid var(--line)">{u['byline']} <strong style="color:var(--ink)">Doç. Dr. Tahsin Oğuz Acartürk</strong> — {u['bylinesub']} <span style="white-space:nowrap">{u['updated']} <time datetime="{SITE['modified']}">{DATE_TR[lg]}</time></span></p>
 {kf}
-<div class="toc"><b>Bu sayfada</b><ol>{toc}</ol></div>
+<div class="toc"><b>{u['toc']}</b><ol>{toc}</ol></div>
 </div></div>
 {body_html(p)}
 {faq}
@@ -212,22 +245,22 @@ def render(p, index, lang="tr"):
 <h2>{p['ctah']}</h2>
 <p>{p['ctap']}</p>
 <div class="hcta">
-<a class="btn btn-w btn-lg" href="{wa_link(p['watopic'])}" target="_blank" rel="noopener">WhatsApp'tan yazın</a>
-<a class="btn btn-o btn-lg" href="index.html#iletisim">Randevu formu</a>
+<a class="btn btn-w btn-lg" href="{wa_link(p['watopic'], lg)}" target="_blank" rel="noopener">{u['wabtn2']}</a>
+<a class="btn btn-o btn-lg" href="{home}#iletisim">{u['formbtn2']}</a>
 </div>
 </div></section>
 </main>
 <footer><div class="wrap">
 <div class="f-row">
 <div><strong style="color:#fff">Doç. Dr. Tahsin Oğuz Acartürk</strong><br>Bayraklı Tower, Mansuroğlu Mah. Ankara Cad. No:81 İç Kapı No:23 · Bayraklı / İzmir</div>
-<div><a href="mailto:info@droguzacarturk.com">info@droguzacarturk.com</a><br><a href="index.html">Anasayfa</a><br><a href="index.html#uzmanlik">Uzmanlık alanları</a></div>
+<div><a href="mailto:info@droguzacarturk.com">info@droguzacarturk.com</a><br><a href="{home}">{u['home']}</a><br><a href="{home}#uzmanlik">{u['expertise']}</a></div>
 </div>
-<p class="disclaimer">Bu sayfadaki içerikler yalnızca genel bilgilendirme amaçlıdır; tıbbi tanı, tedavi veya reklam niteliği taşımaz ve hekim muayenesinin yerine geçmez. Her hastanın anatomisi, sağlık geçmişi ve iyileşme süreci farklıdır; sonuçlar kişiden kişiye değişir ve hiçbir sonuç garanti edilemez. Cerrahi kararlar yalnızca yüz yüze muayene ve gerekli tetkiklerin ardından verilebilir. Son gözden geçirme: {SITE['modifiedtr']}.</p>
+<p class="disclaimer">{u['disc']} {u['review']} {DATE_TR[lg]}.</p>
 <p style="margin-top:16px;font-size:.76rem;color:#7A88A6">© <span id="yr">2026</span> Doç. Dr. Tahsin Oğuz Acartürk</p>
 </div></footer>
 <div class="sticky">
-<a class="btn btn-w" href="{wa_link(p['watopic'])}" target="_blank" rel="noopener">WhatsApp</a>
-<a class="btn btn-p" href="index.html#iletisim">Randevu Formu</a>
+<a class="btn btn-w" href="{wa_link(p['watopic'], lg)}" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn btn-p" href="{home}#iletisim">{u['formbtn2']}</a>
 </div>
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
@@ -238,9 +271,11 @@ n.addEventListener('click',function(e){{if(e.target.tagName==='A'){{n.classList.
 }}
 document.querySelectorAll('.langs button').forEach(function(b){{
 b.addEventListener('click',function(){{
-var l=b.dataset.lang;
+var l=b.dataset.lang,f=location.pathname.split('/').pop()||'index.html';
 try{{localStorage.setItem('lang',l)}}catch(e){{}}
-location.href='index.html';
+var base='{A}';
+if(b.dataset.nopage){{location.href=(l==='tr'?base:base+l+'/')+'index.html';return}}
+location.href=(l==='tr'?base:base+l+'/')+f;
 }});
 }});
 </script>
@@ -250,37 +285,55 @@ location.href='index.html';
 
 
 def main():
+    trans = load_trans()
     index = {p["key"]: p for p in PAGES}
     for r in EXTRA_REFS:
         index.setdefault(r["key"], r)
-    for p in PAGES:
-        out = render(p, index)
-        with open(p["slug"], "w", encoding="utf-8") as f:
-            f.write(out)
-        words = len(re.sub(r"<[^>]+>", " ", out).split())
-        print(f"  {p['slug']:44} {len(out)//1024:3d} KB  ~{words} kelime")
 
-    # sitemap
-    urls = [("", "1.0", "monthly"), ("lenfodem-lipodem-cerrahisi", "0.9", "monthly")]
-    urls += [(p["slug"].replace(".html", ""), p.get("prio", "0.8"), "monthly") for p in PAGES]
+    for lg in LANGS:
+        _AVAIL[lg] = {p["key"] for p in PAGES if merged(p, trans, lg)}
+
+    total = 0
+    for p in PAGES:
+        avail = [l for l in LANGS if p["key"] in _AVAIL[l]]
+        for lg in avail:
+            m = merged(p, trans, lg)
+            d = "" if lg == "tr" else lg
+            if d:
+                os.makedirs(d, exist_ok=True)
+            path = os.path.join(d, p["slug"]) if d else p["slug"]
+            open(path, "w", encoding="utf-8").write(render(m, lg, index, avail))
+            total += 1
+        if len(avail) > 1:
+            print(f"  {p['slug']:42} {' '.join(avail)}")
+
     x = ['<?xml version="1.0" encoding="UTF-8"?>',
-         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
-    for loc, prio, freq in urls:
-        u = BASE + "/" + loc
-        x.append("  <url>")
-        x.append(f"    <loc>{u}</loc>")
-        x.append(f"    <lastmod>{SITE['modified']}</lastmod>")
-        x.append(f"    <changefreq>{freq}</changefreq>")
-        x.append(f"    <priority>{prio}</priority>")
-        if loc == "":
-            for lg in ("tr", "en", "de", "ru", "ar"):
-                href = BASE + "/" if lg == "tr" else f"{BASE}/{lg}/"
-                x.append(f'    <xhtml:link rel="alternate" hreflang="{lg}" href="{href}"/>')
-            x.append(f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}/"/>')
-        x.append("  </url>")
+         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+         "  <url>", f"    <loc>{BASE}/</loc>", f"    <lastmod>{SITE['modified']}</lastmod>",
+         "    <changefreq>monthly</changefreq>", "    <priority>1.0</priority>"]
+    for lg in LANGS:
+        href = BASE + "/" if lg == "tr" else f"{BASE}/{lg}/"
+        x.append(f'    <xhtml:link rel="alternate" hreflang="{lg}" href="{href}"/>')
+    x += [f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}/"/>', "  </url>",
+          "  <url>", f"    <loc>{BASE}/lenfodem-lipodem-cerrahisi.html</loc>",
+          f"    <lastmod>{SITE['modified']}</lastmod>", "    <changefreq>monthly</changefreq>",
+          "    <priority>0.9</priority>", "  </url>"]
+    n = 2
+    for p in PAGES:
+        avail = [l for l in LANGS if p["key"] in _AVAIL[l]]
+        for lg in avail:
+            x.append("  <url>")
+            x.append(f"    <loc>{url_for(p, lg)}</loc>")
+            x.append(f"    <lastmod>{SITE['modified']}</lastmod>")
+            x.append("    <changefreq>monthly</changefreq>")
+            x.append(f"    <priority>{p.get('prio','0.8')}</priority>")
+            for l2 in avail:
+                x.append(f'    <xhtml:link rel="alternate" hreflang="{l2}" href="{url_for(p, l2)}"/>')
+            x.append("  </url>")
+            n += 1
     x.append("</urlset>")
     open("sitemap.xml", "w", encoding="utf-8").write("\n".join(x) + "\n")
-    print(f"\n  sitemap.xml: {len(urls)} URL")
+    print(f"\n  toplam {total} sayfa · sitemap {n} URL")
 
 
 if __name__ == "__main__":

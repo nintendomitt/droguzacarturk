@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.droguzacarturk.com/</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/"/>
@@ -14,28 +12,112 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.droguzacarturk.com/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.droguzacarturk.com/"/>
   </url>
-
   <url>
     <loc>https://www.droguzacarturk.com/lenfodem-lipodem-cerrahisi</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/lenfodem-lipodem-cerrahisi"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.droguzacarturk.com/lenfodem-lipodem-cerrahisi"/>
   </url>
-
-  <!--
-    Aşağıdaki URL'ler yol haritasındaki sonraki sayfalardır.
-    Sayfayı yayına aldıkça yorum işaretini kaldırın.
-
-  <url><loc>https://www.droguzacarturk.com/meme-estetigi</loc><priority>0.8</priority></url>
-  <url><loc>https://www.droguzacarturk.com/burun-estetigi-rinoplasti</loc><priority>0.8</priority></url>
-  <url><loc>https://www.droguzacarturk.com/yuz-germe</loc><priority>0.8</priority></url>
-  <url><loc>https://www.droguzacarturk.com/goz-kapagi-estetigi</loc><priority>0.8</priority></url>
-  <url><loc>https://www.droguzacarturk.com/liposuction-vucut-sekillendirme</loc><priority>0.8</priority></url>
-  <url><loc>https://www.droguzacarturk.com/mikrotia-kulak-onarimi</loc><priority>0.7</priority></url>
-  <url><loc>https://www.droguzacarturk.com/cerrahiniz-dr-oguz-acarturk</loc><priority>0.7</priority></url>
-  <url><loc>https://www.droguzacarturk.com/iletisim</loc><priority>0.6</priority></url>
-  -->
-
+  <url>
+    <loc>https://www.droguzacarturk.com/lipodem-cerrahisi</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/mikrotia-kulak-onarimi</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/bas-boyun-cene-rekonstruksiyonu</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/yuz-felci-tedavisi</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/meme-rekonstruksiyonu</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/el-cerrahisi-replantasyon</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/yanik-travma-onarimi</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/burun-estetigi-rinoplasti</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/meme-estetigi</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/yuz-germe</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/goz-kapagi-estetigi</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/karin-germe</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/liposuction-vucut-sekillendirme</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/yag-enjeksiyonu</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/kol-uyluk-germe</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/jinekomasti</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/lip-lift-bisektomi-kulak-estetigi</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

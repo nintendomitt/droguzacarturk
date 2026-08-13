@@ -40,3 +40,15 @@ nav.main .dropm a{padding:11px 0;font-size:.93rem;color:var(--muted)}
 .menu-tgl{display:flex}
 header .wrap .btn:not(nav .btn){display:none}
 }
+.tb-wa{color:#4AE07E!important;font-weight:600}
+.tb-wa:hover{color:#6FEE9B!important}
+.f-id{display:flex;flex-direction:column;gap:5px;max-width:40ch;margin-top:10px}
+.f-id span{font-size:.85rem;color:#A6B5D0;line-height:1.45}
+.f-id .f-loc{margin-top:6px;padding-top:9px;border-top:1px solid rgba(255,255,255,.14);color:#D9BE7E;font-weight:600;letter-spacing:.06em}
+nav.main .navdrop::after{content:'';position:absolute;top:100%;left:-20px;right:-20px;height:22px}
+nav.main .dropm a+a{border-top:1px solid var(--line)}
+@media(min-width:961px){
+nav.main .navdrop:nth-of-type(3) .dropm{columns:2;column-gap:6px;min-width:430px;display:block}
+nav.main .navdrop:nth-of-type(3) .dropm a{display:block;break-inside:avoid}
+nav.main .navdrop:nth-of-type(3) .dropm a+a{border-top:0}
+}

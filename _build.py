@@ -142,9 +142,14 @@ def render(p, lg, index, avail):
         '<button data-lang="%s"%s%s>%s</button>' % (
             l, " aria-current='true'" if l == lg else "",
             "" if l in avail else ' data-nopage="1"', LANGNAME[l]) for l in LANGS)
-    dropitems = "".join(
-        f'<a href="{A}{index[k]["slug"]}">{index[k]["card"]}</a>'
-        for k in ("lenfodem", "mikrotia", "rinoplasti", "meme-estetigi") if k in index)
+    def _links(keys):
+        return "".join(
+            f'<a href="{A}{index[k]["slug"]}">{index[k]["card"]}</a>'
+            for k in keys if k in index)
+    drop1 = _links(("lenfodem", "lipodem"))
+    drop2 = _links(("mikrotia", "yanik", "bas-boyun", "yuz-felci", "meme-rek", "el-cerrahisi"))
+    drop3 = _links(("rinoplasti", "meme-estetigi", "yuz-germe", "goz-kapagi", "karin-germe",
+                    "liposuction", "yag-enjeksiyonu", "kol-uyluk-germe", "jinekomasti", "lip-lift"))
 
     kf = ""
     if p.get("keyfacts"):
@@ -210,14 +215,18 @@ def render(p, lg, index, avail):
 <body>
 <div class="topbar"><div class="wrap">
 <div class="tb-left"><span>{u['loc']}</span>
-<a href="{WA}" target="_blank" rel="noopener">{u['wa']}</a></div>
+<a class="tb-wa" href="{WA}" target="_blank" rel="noopener">{u['wa']}</a></div>
 <div class="langs" role="group" aria-label="Language">{langbtns}</div>
 </div></div>
 <header><div class="wrap">
 <a class="brand" href="{home}"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>{u['sub']}</small></a>
 <nav class="main" id="nav">
-<div class="navdrop"><a href="{home}#uzmanlik">{u['nav1']}</a>
-<div class="dropm">{dropitems}</div></div>
+<div class="navdrop"><a href="{A}lenfodem-lipodem-cerrahisi.html">{u['g1']}</a>
+<div class="dropm">{drop1}</div></div>
+<div class="navdrop"><a href="{home}#onarim">{u['g2']}</a>
+<div class="dropm">{drop2}</div></div>
+<div class="navdrop"><a href="{home}#estetik">{u['g3']}</a>
+<div class="dropm">{drop3}</div></div>
 <a href="{home}#hakkinda">{u['nav2']}</a>
 <a href="#sss">{u['nav3']}</a>
 <a class="btn btn-p" href="#randevu">{u['cta']}</a>
@@ -253,7 +262,7 @@ def render(p, lg, index, avail):
 </main>
 <footer><div class="wrap">
 <div class="f-row">
-<div><strong style="color:#fff">Doç. Dr. Tahsin Oğuz Acartürk</strong><br>Bayraklı Tower, Mansuroğlu Mah. Ankara Cad. No:81 İç Kapı No:23 · Bayraklı / İzmir</div>
+<div><strong style="color:#fff">Doç. Dr. Tahsin Oğuz Acartürk</strong><p class="f-id"><span>{u['sub']}</span><span>{u['spec2']}</span><span class="f-loc">{u['loc3']}</span></p></div>
 <div><a href="mailto:info@droguzacarturk.com">info@droguzacarturk.com</a><br><a href="{home}">{u['home']}</a><br><a href="{home}#uzmanlik">{u['expertise']}</a></div>
 </div>
 <p class="disclaimer">{u['disc']} {u['review']} {DATE_TR[lg]}.</p>

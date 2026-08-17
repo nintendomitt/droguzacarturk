@@ -69,7 +69,7 @@ MICRO = [
   ("Ameliyat sonrası kilo alırsam yağ geri gelir mi?","Alınan yağ hücreleri geri gelmez. Ancak lipödem kronik bir hastalıktır ve kalan dokuda sürer; belirgin kilo alımı sonucu olumsuz etkileyebilir."),
   ("Bası giysisini ne kadar kullanmam gerekir?","Genellikle ilk 6 hafta gün boyu, sonrasında azaltılarak. Süre evreye, çalışılan alana ve iyileşme hızına göre kişiselleştirilir."),
   ("Lipödemim var mı, nasıl anlarım?","Bacaklarda simetrik şişlik, dokunmakla ağrı, kolay morarma, ayak bileğinde keskin geçiş ve kilo kaybına rağmen devam eden bölgesel birikim tipik bulgulardır. Kesin tanı için hekim muayenesi gerekir.")],
- "related":["lenfodem","meme-rek","yanik"],
+ "related":["lipodem-nedir","lipodem-belirtileri","lipodem-evreleri","ameliyatsiz-lipodem-tedavisi","lipodem-diyeti","lipodem-hangi-doktor","lenfodem"],
  "ctah":"Lipödem değerlendirmesi için ilk adım",
  "ctap":"Ne kadar süredir devam ettiğini, ağrının günlük yaşamınızı nasıl etkilediğini ve varsa bacak fotoğraflarınızı gönderin. İlk yönlendirme için size dönüş yapılır."},
 

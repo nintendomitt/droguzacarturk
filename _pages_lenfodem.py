@@ -89,7 +89,7 @@ LENFODEM = [{
   ("Selülit (enfeksiyon) ataklarım azalır mı?","Lenf sıvısının dokuda birikmesi enfeksiyon riskini artırır. Drenajın iyileştirilmesiyle birlikte tekrarlayan selülit ataklarının seyrekleştiği bildirilmektedir. Ancak bu, kişiye ve evreye göre değişen bir sonuçtur ve garanti edilemez."),
   ("İki bacağım da etkilenmiş; tek seansta mı yapılır?","Etkilenen alanın genişliğine ve planlanan yönteme göre değişir. Geniş alanlar genellikle güvenlik ve iyileşme kalitesi açısından birden fazla seansa bölünür."),
   ("Lenfödem ile lenfoma aynı şey mi?","Hayır. Lenfödem, lenf sıvısının dokuda birikmesiyle oluşan bir dolaşım sorunudur. Lenfoma ise lenf sisteminin kanseridir ve hematoloji–onkoloji tarafından tedavi edilir. İsim benzerliği sık karışıklığa yol açar.")],
- "related":["lipodem","meme-rek","bas-boyun"],
+ "related":["lenfodem-belirtileri","lenfodem-evreleri","lenfodem-neden-olur","bacakta-lenfodem","kolda-lenfodem","lenfodem-hangi-doktor","lipodem"],
  "ctah":"Lenfödem değerlendirmesi için ilk adım",
  "ctap":"Ne kadar süredir devam ettiğini, önceki tedavilerinizi, radyoterapi öykünüzü ve varsa bacak veya kol fotoğraflarınızı gönderin. İlk yönlendirme ve randevu planlaması için size dönüş yapılır."},
 ]

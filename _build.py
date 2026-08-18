@@ -345,6 +345,29 @@ def main():
     open("sitemap.xml", "w", encoding="utf-8").write("\n".join(x) + "\n")
     print(f"\n  toplam {total} sayfa · sitemap {n} URL")
 
+    # Dil klasorlerine index.html — /en, /de, /ru, /ar bos kalmasin.
+    # Eski Wix sitesinde Ingilizce icerik /en yolundaydi; o adres canli kalmali.
+    LANGNAMES = {"en": "English", "de": "Deutsch", "ru": "Русский", "ar": "العربية"}
+    for lg in [l for l in LANGS if l != "tr"]:
+        os.makedirs(lg, exist_ok=True)
+        rtl = ' dir="rtl"' if lg in RTL else ""
+        html_doc = (
+            '<!doctype html>\n<html lang="%s"%s>\n<head>\n<meta charset="utf-8">\n'
+            '<title>%s — Assoc. Prof. Dr. T. Oguz Acarturk</title>\n'
+            '<link rel="canonical" href="%s/">\n'
+            '<meta name="robots" content="noindex, follow">\n'
+            '<meta http-equiv="refresh" content="0; url=/">\n'
+            '<style>body{font-family:system-ui,-apple-system,\'Segoe UI\',Roboto,sans-serif;'
+            'background:#0B1A38;color:#fff;display:flex;align-items:center;justify-content:center;'
+            'min-height:100vh;margin:0;text-align:center;padding:24px}a{color:#B8934A}</style>\n'
+            '</head>\n<body>\n'
+            '<p>Redirecting… <a href="/">Continue</a></p>\n'
+            '<script>try{localStorage.setItem("lang","%s")}catch(e){}location.replace("/");</script>\n'
+            '</body>\n</html>\n'
+        ) % (lg, rtl, LANGNAMES.get(lg, lg), SITE["base"], lg)
+        open(os.path.join(lg, "index.html"), "w", encoding="utf-8").write(html_doc)
+    print(f"  dil klasoru index.html: {len(LANGS)-1} adet")
+
 
 if __name__ == "__main__":
     main()

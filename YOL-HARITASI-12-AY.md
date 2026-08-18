@@ -10,17 +10,35 @@
 
 Bunları kayda geçiyoruz ki ilerlemeyi ölçebilelim.
 
+### Wix analizlerinden gerçek trafik (son 30 gün · 18 Ağustos 2026)
+
+| Gösterge | Değer | Trend |
+|---|---|---|
+| Site oturumları | **308** | ↓ %12 |
+| Tekil ziyaretçiler | **264** | ↓ %20 |
+| İletişim tıklamaları | **17** | ↑ %13 |
+
+### Arama görünürlüğü
+
 | Gösterge | Ağustos 2026 |
 |---|---|
-| Toplam sayfa | 102 (5 dil) |
+| Toplam sayfa (yeni site) | 102 (5 dil) |
 | İndekslenen sayfa | 0 — domain henüz bağlanmadı |
 | "lenfödem tedavisi" sırası | Yok |
 | "lipödem nedir" sırası | Yok |
 | Organik anahtar kelime | 26 (tamamı marka adı) |
-| Aylık organik trafik | ~900 (tamamı marka) |
-| Backlink | Ölçülmedi |
 
-Mevcut sitenin tıbbi hiçbir terimde sıralaması yok. Yani sıfırdan konu otoritesi kuruyoruz — ama hedef anahtar kelimelerin zorluk skorları düşük (6–21), bu yüzden takvim gerçekçi.
+### Bu rakamlar ne söylüyor
+
+**Sorun dönüşümde değil, görünürlükte.** 264 tekil ziyaretçinin 17'si iletişime tıklamış — yaklaşık %6,4. Bu oran sağlık sektörü için fena değil. Yani siteye gelen insanlar ikna oluyor; sorun siteye yeterince insan gelmemesi.
+
+Bu, planımızın doğru yerde durduğunu gösteriyor. Trafiği artırmaya odaklanıyoruz; dönüşüm zaten çalışıyor.
+
+**İkinci gözlem: trafik düşüyor.** Oturumlar %12, tekil ziyaretçiler %20 gerilemiş. Mevcut site tıbbi hiçbir terimde sıralanmadığı ve içeriği güncellenmediği için bu beklenen bir seyir. Müdahale etmezsek düşüş sürer.
+
+**Kaba hedef:** Aylık 264 tekil ziyaretçiden 12 ay sonra 3.000–5.000 bandına çıkmak. Aynı %6,4 dönüşüm oranı korunursa bu, ayda 17 iletişim tıklamasından 200–320 bandına karşılık gelir.
+
+> **Önemli:** Domain taşındıktan sonra Wix analizleri çalışmayacak. Bu yüzden geçişten **önce** GA4 kurulmalı ve WhatsApp tıklaması dönüşüm hedefi olarak işaretlenmeli — yoksa ölçüm zinciri kopar ve kıyas noktamızı kaybederiz.
 
 ---
 

@@ -62,9 +62,14 @@ Kanonik adresimiz **www.droguzacarturk.com**. Yani www ana adres, çıplak domai
 
 ## 3. GitHub tarafı
 
-Repoya `CNAME` dosyasını zaten ekledim (içeriği: `www.droguzacarturk.com`). Bu dosya GitHub'a hangi domainden yayın yapacağını söylüyor.
+> **Önemli — CNAME dosyası geçiş gününe kadar bekliyor.**
+> Dosyayı önce ekledim, sonra geri aldım. Sebebi: repoda `CNAME` dosyası bulunduğu anda GitHub Pages, `nintendomitt.github.io/droguzacarturk` adresini `www.droguzacarturk.com`'a **301 ile yönlendirmeye başlıyor.** DNS henüz taşınmadığı için bu adres Wix'e düşüyor ve test/önizleme adresi kırılıyor.
+> Dosya şu an repoda `CNAME.gecis-gunu-ekle` adıyla duruyor. **Geçiş günü** adını `CNAME` yapıp push etmeniz yeterli.
 
-DNS yayıldıktan sonra:
+Geçiş günü sırası:
+
+1. `CNAME.gecis-gunu-ekle` → `CNAME` olarak yeniden adlandırın ve push edin
+2. DNS yayıldıktan sonra:
 
 - [ ] GitHub → repo → **Settings → Pages**
 - [ ] Custom domain alanında `www.droguzacarturk.com` görünmeli

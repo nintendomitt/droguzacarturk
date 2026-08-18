@@ -120,7 +120,7 @@ def body_html(p):
                 t = ["<table><thead><tr>" + "".join(f"<th>{c}</th>" for c in blk[1]) + "</tr></thead><tbody>"]
                 for r in blk[2]:
                     t.append("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>")
-                out.append("".join(t) + "</tbody></table>")
+                out.append('<div class="tw">' + "".join(t) + "</tbody></table></div>")
             elif blk[0] == "steps":
                 out.append('<ul class="tlmap">' + "".join(
                     f"<li><b>{a}</b><span>{b}</span></li>" for a, b in blk[1]) + "</ul>")

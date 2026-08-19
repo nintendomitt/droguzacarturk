@@ -211,6 +211,16 @@ def render(p, lg, index, avail):
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600{arfont}&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{A}assets/page.css">
 <script type="application/ld+json">{jsonld(p, lg, url)}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNFV21E4BS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}
+gtag('js',new Date());gtag('config','G-DNFV21E4BS');
+document.addEventListener('click',function(e){{
+var a=e.target&&e.target.closest?e.target.closest('a[href*="wa.me"]'):null;if(!a)return;
+var m=a.classList.contains('tb-wa')?'topbar':a.classList.contains('wa-float')?'float':'cta';
+gtag('event','whatsapp_click',{{method:m,page_location:location.pathname,language:document.documentElement.lang}});
+}});
+</script>
 </head>
 <body>
 <div class="topbar"><div class="wrap">

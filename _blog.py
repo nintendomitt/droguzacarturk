@@ -90,7 +90,7 @@ BLOG = [
   ("Bu noktaya gelmeden önce ne yapılabilirdi?","Erken evrede — şişlik henüz gün içinde artıp sabahları geçerken — mikrocerrahi ile müdahale seçenekleri çok daha geniştir. Bu yüzden ilk aylardaki şişliği ciddiye almak, sonraki yılların tablosunu belirler.")]},
 
 {"slug":"fil-hastaligi-bulasici-mi",
- "date":"2026-08-24",
+ "date":"2026-08-21",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Bulaşıcı mı? Sivrisinek Efsanesi | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Fil Hastalığı Bulaşıcı mı? Gerçek Nedir?",
@@ -139,7 +139,7 @@ BLOG = [
   ("Bu tablo tedavi edilebilir mi?","Evet. İleri evrede bile azaltıcı cerrahi ve lenf nodu transferi ile hacim küçültülebilir, enfeksiyonlar seyrelir. Erken evrede müdahale edilirse seçenekler çok daha geniştir.")]},
 
 {"slug":"fil-hastaligi-hangi-bolum-bakar",
- "date":"2026-08-28",
+ "date":"2026-08-21",
  "cat":"Hasta Rehberi",
  "title":"Fil Hastalığına Hangi Bölüm Bakar? | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Fil Hastalığına Hangi Bölüm Bakar?",
@@ -200,7 +200,7 @@ BLOG = [
   ("İkinci görüş almalı mıyım?","Özellikle \"yapılacak bir şey yok\" cevabı aldıysanız evet. Bu bilgi güncel değil ve ileri evrede bile uygulanabilir yöntemler var.")]},
 
 {"slug":"fil-hastaligi-neden-olur",
- "date":"2026-08-31",
+ "date":"2026-08-21",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Neden Olur? Nedenleri ve İlerleme | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Fil Hastalığı Neden Olur? Gerçek Nedenleri",

@@ -83,38 +83,59 @@ def ga_snippet():
 '})();\n</script>')
 
 def topbar_nav():
+    """Hizmet sayfalariyla birebir ayni baslik — yollar ../ ile."""
     return """<div class="topbar"><div class="wrap">
 <div class="tb-left"><span>İzmir · Bayraklı</span>
 <a class="tb-wa" href="https://wa.me/%s" target="_blank" rel="noopener">WhatsApp ile yazın</a></div>
+<div class="langs" role="group" aria-label="Language"><button data-lang="tr" aria-current='true'>TR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="ru">RU</button><button data-lang="ar">AR</button></div>
 </div></div>
 <header><div class="wrap">
-<a class="brand" href="../"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><span>PLASTİK, REKONSTRÜKTİF VE ESTETİK CERRAHİ</span></a>
-<nav class="main">
-<a href="../lenfodem-lipodem-cerrahisi.html">Lenfödem &amp; Lipödem</a>
-<a href="../lipodem-cerrahisi.html">Lipödem</a>
-<a href="../#hakkinda">Cerrahınız</a>
-<a class="btn-p" href="../#iletisim">Randevu Al</a>
+<a class="brand" href="../index.html"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>Plastik, Rekonstrüktif ve Estetik Cerrahi</small></a>
+<nav class="main" id="nav">
+<div class="navdrop"><a href="../lenfodem-lipodem-cerrahisi.html">Lenfödem &amp; Lipödem</a>
+<div class="dropm"><a href="../lenfodem-lipodem-cerrahisi.html">Lenfödem cerrahisi</a><a href="../lipodem-cerrahisi.html">Lipödem cerrahisi</a></div></div>
+<div class="navdrop"><a href="../index.html#onarim">Onarım</a>
+<div class="dropm"><a href="../mikrotia-kulak-onarimi.html">Mikrotia onarımı</a><a href="../yanik-travma-onarimi.html">Yanık ve travma onarımı</a><a href="../bas-boyun-cene-rekonstruksiyonu.html">Baş–boyun onarımı</a><a href="../yuz-felci-tedavisi.html">Yüz felci cerrahisi</a><a href="../meme-rekonstruksiyonu.html">Meme rekonstrüksiyonu</a><a href="../el-cerrahisi-replantasyon.html">El cerrahisi</a></div></div>
+<div class="navdrop"><a href="../index.html#estetik">Estetik</a>
+<div class="dropm"><a href="../burun-estetigi-rinoplasti.html">Rinoplasti</a><a href="../meme-estetigi.html">Meme estetiği</a><a href="../yuz-germe.html">Yüz germe</a><a href="../goz-kapagi-estetigi.html">Göz kapağı estetiği</a><a href="../karin-germe.html">Karın germe</a><a href="../liposuction-vucut-sekillendirme.html">Liposuction</a><a href="../yag-enjeksiyonu.html">Yağ enjeksiyonu</a><a href="../kol-uyluk-germe.html">Kol ve uyluk germe</a><a href="../jinekomasti.html">Jinekomasti</a><a href="../lip-lift-bisektomi-kulak-estetigi.html">Lip lift · Bişektomi · Otoplasti</a></div></div>
+<a href="../index.html#hakkinda">Cerrahınız</a>
+<a href="./">Yazılar</a>
+<a class="btn btn-p" href="#iletisim">Randevu Al</a>
 </nav>
+<button class="menu-tgl" id="tgl" aria-label="Menu" aria-expanded="false"><span></span></button>
 </div></header>""" % WA
 
 def footer():
     return """<footer><div class="wrap">
-<div class="f-id"><b>Doç. Dr. Tahsin Oğuz Acartürk</b>
-<span>Plastik, Rekonstrüktif ve Estetik Cerrahi</span>
-<span>Ağız, Yüz ve Çene Cerrahisi</span>
-<span>İzmir · Pittsburgh · Hanoi</span></div>
-<nav class="f-nav">
-<a href="../">Anasayfa</a>
-<a href="../lenfodem-lipodem-cerrahisi.html">Lenfödem</a>
-<a href="../lipodem-cerrahisi.html">Lipödem</a>
-<a href="./">Yazılar</a>
-<a href="../#iletisim">İletişim</a>
-</nav>
-<p class="disc">Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır ve hekim muayenesinin yerine geçmez.
-Tanı ve tedavi ancak muayene sonrası planlanabilir.</p>
+<div class="f-row">
+<div><strong style="color:#fff">Doç. Dr. Tahsin Oğuz Acartürk</strong><p class="f-id"><span>Plastik, Rekonstrüktif ve Estetik Cerrahi</span><span>Ağız, Yüz ve Çene Cerrahisi</span><span class="f-loc">İzmir · Pittsburgh · Hanoi</span></p></div>
+<div><a href="mailto:info@droguzacarturk.com">info@droguzacarturk.com</a><br><a href="../index.html">Anasayfa</a><br><a href="../lenfodem-lipodem-cerrahisi.html">Lenfödem cerrahisi</a><br><a href="./">Yazılar</a></div>
+</div>
+<p class="disclaimer">Bu sayfadaki içerikler yalnızca genel bilgilendirme amaçlıdır; tıbbi tanı,
+tedavi veya reklam niteliği taşımaz ve hekim muayenesinin yerine geçmez. Her hastanın anatomisi,
+sağlık geçmişi ve iyileşme süreci farklıdır; sonuçlar kişiden kişiye değişir ve hiçbir sonuç
+garanti edilemez. Cerrahi kararlar yalnızca yüz yüze muayene ve gerekli tetkiklerin ardından verilebilir.</p>
+<p style="margin-top:16px;font-size:.76rem;color:#7A88A6">© <span id="yr">2026</span> Doç. Dr. Tahsin Oğuz Acartürk</p>
 </div></footer>
 <a class="wa-float" href="https://wa.me/%s" target="_blank" rel="noopener" aria-label="WhatsApp">
 <svg viewBox="0 0 24 24" width="27" height="27" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.3c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-2.9-1.3-4.5 0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.7 8.4-8.3 8.4z"/></svg></a>
+<script>
+var y=document.getElementById('yr'); if(y){y.textContent=new Date().getFullYear()}
+var t=document.getElementById('tgl'),n=document.getElementById('nav');
+if(t&&n){
+t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');t.setAttribute('aria-expanded','false')}});
+}
+/* Blog yazilari yalnizca Turkce. Dil secimi cevirisi olmayan sayfaya degil,
+   o dilin anasayfasina goturur — aksi halde 404 olurdu. */
+document.querySelectorAll('.langs button').forEach(function(b){
+b.addEventListener('click',function(){
+var l=b.dataset.lang;
+try{localStorage.setItem('lang',l)}catch(e){}
+location.href='../'+(l==='tr'?'':l+'/')+'index.html';
+});
+});
+</script>
 </body></html>""" % WA
 
 def cta_block(post):

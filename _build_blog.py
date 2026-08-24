@@ -265,8 +265,12 @@ def main():
     open("blog/index.html","w",encoding="utf-8").write(render_hub(live))
 
     # sitemap'e ekle
+    # Hub'in lastmod'u BUGUN degil, en yeni yazinin tarihi olmali. Bugunu yazarsak
+    # icerik degismese de sitemap her gun degisir; zamanlanmis yayin is akisi da
+    # her calistiginda bos commit atar.
+    hub_mod = max((p["date"] for p in live), default=TODAY)
     sm = open("sitemap.xml",encoding="utf-8").read()
-    add = [f'  <url>\n    <loc>{BASE}/blog/</loc>\n    <lastmod>{TODAY}</lastmod>\n'
+    add = [f'  <url>\n    <loc>{BASE}/blog/</loc>\n    <lastmod>{hub_mod}</lastmod>\n'
            f'    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>']
     for p in live:
         add.append(f'  <url>\n    <loc>{BASE}/blog/{p["slug"]}.html</loc>\n'

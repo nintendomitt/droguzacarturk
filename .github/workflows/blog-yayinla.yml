@@ -1,0 +1,94 @@
+name: Blog yayınla
+
+# Yazılar _blog.py icinde ileri tarihli durur. _build_blog.py yalnizca
+# tarihi gelmis yazilari uretir. Bu is akisi her yayin gunu sabahi
+# derlemeyi calistirir; tarihi gelen yazi kendiliginden yayina girer.
+#
+# Neden Actions: Cowork'te bagli klasor oturuma ozel oldugu icin
+# zamanlanmis gorev depoyu her calistirmada bulamiyordu. Actions
+# depoyu zaten icinde barindirdigi icin bu sorun ortadan kalkiyor.
+
+on:
+  schedule:
+    # 06:00 UTC = 09:00 Turkiye. Pazartesi, Sali, Persembe, Cuma.
+    - cron: "0 6 * * 1,2,4,5"
+  workflow_dispatch:        # panelden elle de calistirilabilir
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog-yayinla
+  cancel-in-progress: false
+
+jobs:
+  yayinla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Yayin oncesi durum
+        run: |
+          python3 - <<'EOF'
+          import datetime
+          from _blog import BLOG
+          t = datetime.date.today().isoformat()
+          acik = [p for p in BLOG if p["date"] <= t]
+          bekle = [p for p in BLOG if p["date"] > t]
+          print(f"Bugun: {t}")
+          print(f"Yayinda olmasi gereken: {len(acik)}")
+          print(f"Beklemede: {len(bekle)}")
+          for p in bekle[:5]:
+              print(f"  - {p['date']}  {p['slug']}")
+          if not bekle:
+              print("::warning::Kuyrukta bekleyen yazi kalmadi. Yeni parti yazilmali.")
+          EOF
+
+      - name: Derle
+        run: |
+          python3 _build.py
+          python3 _build_blog.py
+
+      - name: Dogrula
+        run: |
+          python3 - <<'EOF'
+          import os, re, json, glob, sys
+          err = []
+          for f in glob.glob("blog/*.html"):
+              s = open(f, encoding="utf-8").read()
+              for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
+                  try: json.loads(m)
+                  except Exception: err.append(f + ": JSON-LD bozuk")
+              for h in re.findall(r'href="((?!https?:|mailto:|tel:|#)[^"#]+)"', s):
+                  if not os.path.exists(os.path.normpath(os.path.join("blog", h))):
+                      err.append(f + ": kirik link -> " + h)
+              for k in ['whatsapp_click', 'id="ckb"', 'rel="canonical"',
+                        'class="btn btn-p"', 'id="tgl"', 'class="langs"', '<small>']:
+                  if k not in s: err.append(f + ": eksik -> " + k)
+              if f != "blog/index.html" and 'class="spot"' not in s:
+                  err.append(f + ": WhatsApp donusum blogu yok")
+          if err:
+              print("DOGRULAMA BASARISIZ:")
+              for e in err[:20]: print("  ", e)
+              sys.exit(1)
+          print("Dogrulama temiz.")
+          EOF
+
+      - name: Degisiklik varsa yayinla
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "Yayina girecek yeni yazi yok; commit atilmadi."
+            exit 0
+          fi
+          git add -A
+          git commit -m "Blog: zamanlanmis yayin ($(date -u +%Y-%m-%d))"
+          git push
+          echo "Yayinlandi."

@@ -10,8 +10,8 @@ name: Blog yayınla
 
 on:
   schedule:
-    # 06:00 UTC = 09:00 Turkiye. Pazartesi, Sali, Persembe, Cuma.
-    - cron: "0 6 * * 1,2,4,5"
+    # 06:00 UTC = 09:00 Turkiye. Her gun (gunde 2 yazi temposu icin).
+    - cron: "0 6 * * *"
   workflow_dispatch:        # panelden elle de calistirilabilir
 
 permissions:

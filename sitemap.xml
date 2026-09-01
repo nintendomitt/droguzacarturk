@@ -1670,9 +1670,21 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/fil-hastaligi-genetik-mi.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/elefantiyazis-nedir.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/fil-hastaligi-belirtileri.html</loc>

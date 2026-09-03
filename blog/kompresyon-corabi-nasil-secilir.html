@@ -37,7 +37,7 @@ if(c==="1"){loadGA()}else if(c!=="0"){document.addEventListener("DOMContentLoade
 <div class="topbar"><div class="wrap">
 <div class="tb-left"><span>İzmir · Bayraklı</span>
 <a class="tb-wa" href="https://wa.me/905449714801" target="_blank" rel="noopener">WhatsApp ile yazın</a></div>
-<div class="langs" role="group" aria-label="Language"><button data-lang="tr" aria-current='true'>TR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="ru">RU</button><button data-lang="ar">AR</button></div>
+<div class="langs" role="group" aria-label="Language"><a href="../index.html" data-lang="tr" aria-current='true'>TR</a><a href="../en/index.html" data-lang="en">EN</a><a href="../de/index.html" data-lang="de">DE</a><a href="../ru/index.html" data-lang="ru">RU</a><a href="../ar/index.html" data-lang="ar">AR</a></div>
 </div></div>
 <header><div class="wrap">
 <a class="brand" href="../index.html"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>Plastik, Rekonstrüktif ve Estetik Cerrahi</small></a>
@@ -142,11 +142,10 @@ n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.re
 }
 /* Blog yazilari yalnizca Turkce. Dil secimi cevirisi olmayan sayfaya degil,
    o dilin anasayfasina goturur — aksi halde 404 olurdu. */
-document.querySelectorAll('.langs button').forEach(function(b){
+/* Dil secici gercek baglanti; JS yalnizca tercihi hatirliyor. */
+document.querySelectorAll('.langs a').forEach(function(b){
 b.addEventListener('click',function(){
-var l=b.dataset.lang;
-try{localStorage.setItem('lang',l)}catch(e){}
-location.href='../'+(l==='tr'?'':l+'/')+'index.html';
+try{localStorage.setItem('lang',b.dataset.lang)}catch(e){}
 });
 });
 </script>

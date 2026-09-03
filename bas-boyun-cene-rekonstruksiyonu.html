@@ -58,7 +58,7 @@ else if(c!=='0'){
 <div class="topbar"><div class="wrap">
 <div class="tb-left"><span>İzmir · Bayraklı</span>
 <a class="tb-wa" href="https://wa.me/905449714801" target="_blank" rel="noopener">WhatsApp ile yazın</a></div>
-<div class="langs" role="group" aria-label="Language"><button data-lang="tr" aria-current='true'>TR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="ru">RU</button><button data-lang="ar">AR</button></div>
+<div class="langs" role="group" aria-label="Language"><a href="https://www.droguzacarturk.com/bas-boyun-cene-rekonstruksiyonu.html" data-lang="tr" aria-current='true'>TR</a><a href="https://www.droguzacarturk.com/en/bas-boyun-cene-rekonstruksiyonu.html" data-lang="en">EN</a><a href="https://www.droguzacarturk.com/de/bas-boyun-cene-rekonstruksiyonu.html" data-lang="de">DE</a><a href="https://www.droguzacarturk.com/ru/bas-boyun-cene-rekonstruksiyonu.html" data-lang="ru">RU</a><a href="https://www.droguzacarturk.com/ar/bas-boyun-cene-rekonstruksiyonu.html" data-lang="ar">AR</a></div>
 </div></div>
 <header><div class="wrap">
 <a class="brand" href="index.html"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>Plastik, Rekonstrüktif ve Estetik Cerrahi</small></a>
@@ -153,13 +153,11 @@ if(t&&n){
 t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
 n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');t.setAttribute('aria-expanded','false')}});
 }
-document.querySelectorAll('.langs button').forEach(function(b){
+/* Dil secici artik gercek baglanti. JS yalnizca tercihi hatirliyor;
+   gezinmeyi tarayici kendi yapiyor. */
+document.querySelectorAll('.langs a').forEach(function(b){
 b.addEventListener('click',function(){
-var l=b.dataset.lang,f=location.pathname.split('/').pop()||'index.html';
-try{localStorage.setItem('lang',l)}catch(e){}
-var base='';
-if(b.dataset.nopage){location.href=(l==='tr'?base:base+l+'/')+'index.html';return}
-location.href=(l==='tr'?base:base+l+'/')+f;
+try{localStorage.setItem('lang',b.dataset.lang)}catch(e){}
 });
 });
 </script>

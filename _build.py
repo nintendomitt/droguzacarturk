@@ -131,21 +131,44 @@ def body_html(p):
 def render(p, lg, index, avail):
     u, url = UI[lg], url_for(p, lg)
     A = "" if lg == "tr" else "../"
-    home = A + "index.html"
+    # Anasayfa baglantisi da kendi dilinde kalmali. /en/index.html dili
+    # hatirlayip anasayfaya goturur; ../index.html ise ziyaretciyi Turkce'ye dusurur.
+    home = "index.html"
     rtl = ' dir="rtl"' if lg in RTL else ""
     arfont = ("&family=Noto+Kufi+Arabic:wght@400;500;600;700"
               "&family=Noto+Sans+Arabic:wght@300;400;500;600") if lg in RTL else ""
 
     alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{url_for(p, l)}">' for l in avail)
     alts += f'<link rel="alternate" hreflang="x-default" href="{url_for(p, "tr")}">'
+    # Dil secici GERCEK <a href> olmali. Daha once <button>+JS idi; Google
+    # butona tiklamadigi icin 120 ceviri sayfasina tek bir taranabilir
+    # baglanti yoktu ve hepsi "kesfedildi, dizine eklenmedi" durumunda kaldi.
+    def _langhref(l):
+        if l in avail:
+            return url_for(p, l)
+        return SITE["base"] + "/" + ("" if l == "tr" else l + "/") + "index.html"
     langbtns = "".join(
-        '<button data-lang="%s"%s%s>%s</button>' % (
-            l, " aria-current='true'" if l == lg else "",
-            "" if l in avail else ' data-nopage="1"', LANGNAME[l]) for l in LANGS)
+        '<a href="%s" data-lang="%s"%s>%s</a>' % (
+            _langhref(l), l,
+            " aria-current='true'" if l == lg else "",
+            LANGNAME[l]) for l in LANGS)
     def _links(keys):
-        return "".join(
-            f'<a href="{A}{index[k]["slug"]}">{index[k]["card"]}</a>'
-            for k in keys if k in index)
+        # Sayfa bu dilde varsa AYNI dildeki surumune baglan; yoksa Turkce'ye dus.
+        # Onceden kosulsuz A+slug idi: Ingilizce sayfadaki tum menu baglantilari
+        # Turkce sayfalara gidiyordu. Hem ziyaretci yanlis dile dusuyordu hem de
+        # ceviri bolumlerinin kendi ic link zinciri hic olusmuyordu.
+        out = []
+        for k in keys:
+            if k not in index:
+                continue
+            rp = index[k]
+            href = rp["slug"] if k in _AVAIL.get(lg, set()) else A + rp["slug"]
+            out.append(f'<a href="{href}">{rp["card"]}</a>')
+        return "".join(out)
+    # Acilir menunun ust basligi da ayni dilde kalmali (menu ogeleriyle ayni kural).
+    hub_href = ("lenfodem-lipodem-cerrahisi.html"
+                if "lenfodem" in _AVAIL.get(lg, set())
+                else A + "lenfodem-lipodem-cerrahisi.html")
     drop1 = _links(("lenfodem", "lipodem"))
     drop2 = _links(("mikrotia", "yanik", "bas-boyun", "yuz-felci", "meme-rek", "el-cerrahisi"))
     drop3 = _links(("rinoplasti", "meme-estetigi", "yuz-germe", "goz-kapagi", "karin-germe",
@@ -254,7 +277,7 @@ else if(c!=='0'){{
 <header><div class="wrap">
 <a class="brand" href="{home}"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>{u['sub']}</small></a>
 <nav class="main" id="nav">
-<div class="navdrop"><a href="{A}lenfodem-lipodem-cerrahisi.html">{u['g1']}</a>
+<div class="navdrop"><a href="{hub_href}">{u['g1']}</a>
 <div class="dropm">{drop1}</div></div>
 <div class="navdrop"><a href="{home}#onarim">{u['g2']}</a>
 <div class="dropm">{drop2}</div></div>
@@ -312,13 +335,11 @@ if(t&&n){{
 t.addEventListener('click',function(){{var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)}});
 n.addEventListener('click',function(e){{if(e.target.tagName==='A'){{n.classList.remove('open');t.setAttribute('aria-expanded','false')}}}});
 }}
-document.querySelectorAll('.langs button').forEach(function(b){{
+/* Dil secici artik gercek baglanti. JS yalnizca tercihi hatirliyor;
+   gezinmeyi tarayici kendi yapiyor. */
+document.querySelectorAll('.langs a').forEach(function(b){{
 b.addEventListener('click',function(){{
-var l=b.dataset.lang,f=location.pathname.split('/').pop()||'index.html';
-try{{localStorage.setItem('lang',l)}}catch(e){{}}
-var base='{A}';
-if(b.dataset.nopage){{location.href=(l==='tr'?base:base+l+'/')+'index.html';return}}
-location.href=(l==='tr'?base:base+l+'/')+f;
+try{{localStorage.setItem('lang',b.dataset.lang)}}catch(e){{}}
 }});
 }});
 </script>
@@ -357,11 +378,11 @@ def main():
     for lg in LANGS:
         href = BASE + "/" if lg == "tr" else f"{BASE}/{lg}/"
         x.append(f'    <xhtml:link rel="alternate" hreflang="{lg}" href="{href}"/>')
-    x += [f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}/"/>', "  </url>",
-          "  <url>", f"    <loc>{BASE}/lenfodem-lipodem-cerrahisi.html</loc>",
-          f"    <lastmod>{SITE['modified']}</lastmod>", "    <changefreq>monthly</changefreq>",
-          "    <priority>0.9</priority>", "  </url>"]
-    n = 2
+    # lenfodem-lipodem-cerrahisi.html burada elle de eklenmisti; ama ayni sayfa
+    # PAGES dongusunde de uretiliyor ve sitemap'e iki kez giriyordu. Elle eklenen
+    # kayit kaldirildi — PAGES'teki surum zaten priority 1.0 ile cikiyor.
+    x += [f'    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}/"/>', "  </url>"]
+    n = 1
     for p in PAGES:
         avail = [l for l in LANGS if p["key"] in _AVAIL[l]]
         for lg in avail:

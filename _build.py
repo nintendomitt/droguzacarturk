@@ -409,7 +409,12 @@ def main():
             '<!doctype html>\n<html lang="%s"%s>\n<head>\n<meta charset="utf-8">\n'
             '<title>%s — Assoc. Prof. Dr. T. Oguz Acarturk</title>\n'
             '<link rel="canonical" href="%s/">\n'
-            '<meta name="robots" content="noindex, follow">\n'
+            # DIKKAT: burada noindex OLMAMALI. Eski Wix sitesinde /en adresi
+            # vardi ve birikmis otoritesi var (GSC: 473 gosterim, 8.8. sira).
+            # noindex "bu sayfayi sil" der, canonical "sinyalleri hedefe tasi"
+            # der — ikisi celisir ve Google noindex'i uygular, yani birikmis
+            # otorite hedefe aktarilmadan cope gider. Anlik meta refresh +
+            # canonical, 301 veremedigimiz yerde dogru kalip.
             '<meta http-equiv="refresh" content="0; url=/">\n'
             '<style>body{font-family:system-ui,-apple-system,\'Segoe UI\',Roboto,sans-serif;'
             'background:#0B1A38;color:#fff;display:flex;align-items:center;justify-content:center;'

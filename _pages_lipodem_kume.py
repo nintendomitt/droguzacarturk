@@ -16,7 +16,8 @@ LIPODEM_KUME = [
  "slug":"lipodem-nedir.html",
  "prio":0.95,
  "crumb":"Lipödem Nedir",
- "title":"Lipödem Nedir? Nedenleri, Belirtileri ve Tedavisi | Doç. Dr. T. Oğuz Acartürk",
+ # "Belirtileri" cikarildi — lipodem-belirtileri.html o sorgunun adanmis sayfasi.
+ "title":"Lipödem Nedir? Nedenleri ve Kimlerde Görülür | Doç. Dr. T. Oğuz Acartürk",
  "ogtitle":"Lipödem Nedir? Nedenleri ve Tedavisi",
  "desc":"Lipödem nedir, neden olur, obezite ve selülitten farkı nedir? Belirtileri, evreleri, tanısı ve lenfatik koruyucu cerrahi tedavi seçenekleri.",
  "eyebrow":"Mikrocerrahi Programı",

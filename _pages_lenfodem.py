@@ -7,11 +7,14 @@ Turkce cikti: lenfodem-lipodem-cerrahisi.html (mevcut dosyanin uzerine yazilir)
 LENFODEM = [{
  "key":"lenfodem", "slug":"lenfodem-lipodem-cerrahisi.html", "prio":"1.0",
  "crumb":"Lenfödem ve Lipödem Cerrahisi",
- "title":"Lenfödem: Nedir, Evreleri ve Cerrahi Tedavisi | Doç. Dr. T. Oğuz Acartürk",
- "ogtitle":"Lenfödem: Nedir, Evreleri ve Cerrahi Tedavisi",
- "desc":"Lenfödem nedir, neden olur, evreleri nelerdir ve nasıl tedavi edilir? LVA, vaskülarize lenf nodu transferi ve azaltıcı cerrahi. Pittsburgh Üniversitesi doçenti Doç. Dr. T. Oğuz Acartürk tarafından hazırlanmış kapsamlı rehber.",
+ # HUB sayfasi: ticari sorguyu ("lenfodem tedavisi/cerrahisi/ameliyati") sahiplenir.
+ # "nedir", "evreleri", "belirtileri" ifadeleri bilerek cikarildi — bunlarin
+ # adanmis uydu sayfalari var ve hub onlarla ayni sorguda yarisiyordu.
+ "title":"Lenfödem Tedavisi: Cerrahi Yöntemler ve LVA | Doç. Dr. T. Oğuz Acartürk",
+ "ogtitle":"Lenfödem Tedavisi: Cerrahi Yöntemler ve LVA",
+ "desc":"Lenfödem nasıl tedavi edilir? LVA (lenfovenöz anastomoz), vaskülarize lenf nodu transferi ve azaltıcı cerrahi seçenekleri. Pittsburgh Üniversitesi doçenti Doç. Dr. T. Oğuz Acartürk tarafından hazırlanmış cerrahi tedavi rehberi.",
  "eyebrow":"Mikrocerrahi Programı",
- "h1":"Lenfödem nedir ve nasıl tedavi edilir?",
+ "h1":"Lenfödem tedavisi ve cerrahi seçenekler",
  "lead":"Lenfödem, ömür boyu yalnızca bandaj ve masajla idare edilmesi gereken bir durum değildir. Erken evrelerden itibaren mikrocerrahi ile tedavi edilebilen bir hastalıktır. Bu sayfa; evreleme, tanı yöntemleri, cerrahi seçenekler ve iyileşme sürecine dair sorularınızı yanıtlamak için hazırlanmıştır.",
  "watopic":"lenfödem tedavisi",
  "about":"Lenfödem", "aboutType":"MedicalCondition",

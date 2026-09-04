@@ -7,11 +7,14 @@ MICRO = [
  "authority":"Lipödem cerrahisi, lenfatik sistemi koruyan liposuction tekniklerine hâkimiyet gerektirir. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde yağ dokusu ve kök hücre teknolojileri üzerine çalışmış ilk Türk plastik cerrahlardan biridir; aynı zamanda lenfödem mikrocerrahisi yapan bir cerrah olarak lenfatik anatomiye günlük pratikte hâkimdir. Bu iki alanın birleşimi, lipödem cerrahisinde dokunun korunarak çalışılmasını mümkün kılar.",
  "creds":["Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım","Pittsburgh Üniversitesi'nde yağ dokusu ve kök hücre araştırmaları","Dünya Lenfödem Kongresi'nde bildiri sunumu"], "slug":"lipodem-cerrahisi.html", "prio":"0.9",
  "crumb":"Lipödem Cerrahisi",
- "title":"Lipödem Nedir? Belirtileri, Evreleri ve Cerrahi Tedavisi | Doç. Dr. T. Oğuz Acartürk",
- "ogtitle":"Lipödem: Belirtileri, Evreleri ve Cerrahi Tedavisi",
- "desc":"Lipödem nedir, selülit ve obeziteden farkı nedir, evreleri nelerdir? Lenfatik koruyucu WAL ve PAL liposuction ile lipödem cerrahisi, iyileşme süreci ve sık sorulan sorular.",
+ # HUB sayfasi: ticari sorguyu ("lipodem ameliyati/cerrahisi/operasyonu") sahiplenir.
+ # "nedir", "belirtileri", "evreleri" cikarildi — ucunun de adanmis uydu sayfasi var
+ # (lipodem-nedir, lipodem-belirtileri, lipodem-evreleri) ve hub onlarla yarisiyordu.
+ "title":"Lipödem Cerrahisi: WAL ve PAL ile Lipödem Ameliyatı | Doç. Dr. T. Oğuz Acartürk",
+ "ogtitle":"Lipödem Cerrahisi: WAL ve PAL ile Lipödem Ameliyatı",
+ "desc":"Lipödem ameliyatı nasıl yapılır? Lenfatik koruyucu WAL ve PAL liposuction teknikleri, kimlere uygundur, iyileşme süreci ve cerrahi sonrası beklentiler.",
  "eyebrow":"Mikrocerrahi Programı",
- "h1":"Lipödem nedir ve nasıl tedavi edilir?",
+ "h1":"Lipödem cerrahisi ve ameliyat süreci",
  "lead":"Lipödem, neredeyse yalnızca kadınlarda görülen, bacaklarda ve sıklıkla kollarda simetrik yağ birikimiyle seyreden kronik bir hastalıktır. Diyet ve egzersize direnç gösterir, dokunmakla ağrı yapar ve zamanla yürüyüşü bozar. Kilo problemi değildir; tanınması gereken bir hastalıktır.",
  "watopic":"lipödem tedavisi",
  "about":"Lipödem", "aboutType":"MedicalCondition",

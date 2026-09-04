@@ -22,7 +22,7 @@ NOT: Blog anasayfada gorunmez. Kesif yalnizca /blog/ hub, sitemap ve
 
 BLOG = [
 
-{"slug":"fil-hastaligi-nedir",
+{"slug":"fil-hastaligi-nedir", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-21",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Nedir? Türkiye'de Görülen Tablo | Doç. Dr. T. Oğuz Acartürk",
@@ -89,7 +89,7 @@ BLOG = [
   ("Fil hastalığı genetik mi?","İleri evre lenfödemin çoğu sekonderdir — yani cerrahi, radyoterapi veya enfeksiyon sonrası gelişir ve kalıtsal değildir. Primer lenfödemde ise genetik yatkınlık rol oynayabilir ve aile öyküsü bulunabilir."),
   ("Bu noktaya gelmeden önce ne yapılabilirdi?","Erken evrede — şişlik henüz gün içinde artıp sabahları geçerken — mikrocerrahi ile müdahale seçenekleri çok daha geniştir. Bu yüzden ilk aylardaki şişliği ciddiye almak, sonraki yılların tablosunu belirler.")]},
 
-{"slug":"fil-hastaligi-bulasici-mi",
+{"slug":"fil-hastaligi-bulasici-mi", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-21",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Bulaşıcı mı? Sivrisinek Efsanesi | Doç. Dr. T. Oğuz Acartürk",
@@ -138,7 +138,7 @@ BLOG = [
   ("Selülit atakları başkasına bulaşır mı?","Hayır. Selülit, kişinin kendi cildindeki bakterilerin deri çatlaklarından girmesiyle oluşur ve bulaşıcı değildir. Ancak hastanın kendisi için ciddidir ve erken antibiyotik gerektirir."),
   ("Bu tablo tedavi edilebilir mi?","Evet. İleri evrede bile azaltıcı cerrahi ve lenf nodu transferi ile hacim küçültülebilir, enfeksiyonlar seyrelir. Erken evrede müdahale edilirse seçenekler çok daha geniştir.")]},
 
-{"slug":"fil-hastaligi-hangi-bolum-bakar",
+{"slug":"fil-hastaligi-hangi-bolum-bakar", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-21",
  "cat":"Hasta Rehberi",
  "title":"Fil Hastalığına Hangi Bölüm Bakar? | Doç. Dr. T. Oğuz Acartürk",
@@ -199,7 +199,7 @@ BLOG = [
   ("Her plastik cerrah bu ameliyatı yapar mı?","Hayır. Lenfatik cerrahi ayrı deneyim gerektirir. Cerrahın bu alandaki vaka deneyimini ve merkezin görüntüleme imkânlarını sormak makuldür."),
   ("İkinci görüş almalı mıyım?","Özellikle \"yapılacak bir şey yok\" cevabı aldıysanız evet. Bu bilgi güncel değil ve ileri evrede bile uygulanabilir yöntemler var.")]},
 
-{"slug":"fil-hastaligi-neden-olur",
+{"slug":"fil-hastaligi-neden-olur", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-21",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Neden Olur? Nedenleri ve İlerleme | Doç. Dr. T. Oğuz Acartürk",
@@ -285,7 +285,7 @@ BLOG = [
   ("Kilo vermek tabloyu düzeltir mi?","Tek başına düzeltmez, ancak ileri obezite varsa lenfatik yükü azaltarak tedavinin etkisini artırır. Lenfödem kilo alımının sonucu değildir; bu iki durumu karıştırmamak gerekir."),
   ("İlerlemesini durdurmak mümkün mü?","İlerlemeyi tümüyle durdurma garantisi verilemez, ancak hızını yavaşlatmak mümkündür. Enfeksiyon ataklarını azaltmak, düzenli bası giysisi kullanmak ve uzuvu hareketli tutmak bu konuda en çok fark yaratan üç başlıktır.")]},
 
-{"slug":"fil-hastaligi-belirtileri",
+{"slug":"fil-hastaligi-belirtileri", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-31",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Belirtileri Nelerdir? | Doç. Dr. T. Oğuz Acartürk",
@@ -367,7 +367,7 @@ BLOG = [
   ("Deriden sıvı sızması normal mi?","Değildir. Lenfore adı verilen bu bulgu ileri evreyi gösterir ve enfeksiyon riskini artırdığı için gecikmeden değerlendirilmelidir."),
   ("Belirtiler geri döndürülebilir mi?","Erken evrede şişliğin büyük ölçüde kontrol altına alınması mümkündür. İleri evrede deri değişiklikleri tümüyle geri dönmez; ancak hacim azaltılabilir, enfeksiyonlar seyreltilebilir ve hareket kabiliyeti belirgin şekilde artırılabilir.")]},
 
-{"slug":"fil-hastaligi-tedavi-edilebilir-mi",
+{"slug":"fil-hastaligi-tedavi-edilebilir-mi", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-31",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Tedavi Edilebilir mi? | Doç. Dr. T. Oğuz Acartürk",
@@ -436,7 +436,7 @@ BLOG = [
   ("Tedavi ne kadar sürer?","Yoğun dönem haftalarla ölçülür, idame dönemi ömür boyudur. Cerrahi planlanan hastalarda süreç genellikle birkaç aşamaya yayılır."),
   ("İlaçla tedavi mümkün mü?","Lenfödemi geriletmesi kanıtlanmış bir ilaç yoktur. İlaçlar enfeksiyon tedavisinde ve eşlik eden sorunların yönetiminde kullanılır; şişliğin kendisini çözmez. İdrar söktürücüler bu tabloda yarar sağlamaz.")]},
 
-{"slug":"fil-ayagi-nedir",
+{"slug":"fil-ayagi-nedir", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-31",
  "cat":"Lenfödem",
  "title":"Fil Ayağı Nedir? Bacakta Lenfödem | Doç. Dr. T. Oğuz Acartürk",
@@ -513,7 +513,7 @@ BLOG = [
   ("Bu aşamada ameliyat olur mu?","Olur. İleri evrede fizyolojik yöntemler sınırlı kalabilir, ancak azaltıcı cerrahi hacim ve hareket açısından belirgin kazanım sağlar. Karar görüntüleme ve muayene sonrası verilir."),
   ("Şişlik tamamen iner mi?","Bacak karşı tarafla birebir aynı hâle gelmez. Buna karşılık hacimde belirgin azalma, enfeksiyonlarda seyrelme ve yürüme mesafesinde artış ulaşılabilir hedeflerdir.")]},
 
-{"slug":"lenf-drenaji-nedir",
+{"slug":"lenf-drenaji-nedir", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-31",
  "cat":"Lenfödem",
  "title":"Lenf Drenajı Nedir, Nasıl Yapılır? | Doç. Dr. T. Oğuz Acartürk",
@@ -587,7 +587,7 @@ BLOG = [
   ("Lipödemde işe yarar mı?","Yağ dokusunu azaltmaz. Ancak birçok hastada ağrı ve gerginlik hissini hafiflettiği için destekleyici olarak kullanılır."),
   ("Selülit atağı sırasında yapılabilir mi?","Hayır. Aktif enfeksiyon döneminde uygulanmaz; atak tedavi edilip geçtikten sonra devam edilir.")]},
 
-{"slug":"kompresyon-corabi-nasil-secilir",
+{"slug":"kompresyon-corabi-nasil-secilir", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-31",
  "cat":"Hasta Rehberi",
  "title":"Kompresyon Çorabı Nasıl Seçilir? | Doç. Dr. T. Oğuz Acartürk",
@@ -658,7 +658,7 @@ BLOG = [
   ("Lipödemde de kullanılır mı?","Evet. Yağ dokusunu azaltmaz, ancak ağrıyı ve gün sonu ağırlık hissini hafifletir. Lipödemde de düz örgü giysiler tercih edilir."),
   ("Ameliyattan sonra ne kadar süre kullanılır?","Lenfödem cerrahisi sonrasında kullanım uzun sürelidir ve çoğu hastada kalıcıdır. Basınç sınıfı zamanla azaltılabilir; bu karar takip muayeneleriyle verilir.")]},
 
-{"slug":"lipodem-mi-lenfodem-mi",
+{"slug":"lipodem-mi-lenfodem-mi", "sources":[("Lipedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK573066/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-31",
  "cat":"Lipödem",
  "title":"Lipödem mi Lenfödem mi? Ayrım Rehberi | Doç. Dr. T. Oğuz Acartürk",
@@ -733,7 +733,7 @@ BLOG = [
   ("Hangi bölüme başvurmalıyım?","Her iki tabloda da plastik ve rekonstrüktif cerrahi ile fiziksel tıp ve rehabilitasyon birlikte çalışır. Cerrahi seçeneklerin belirlenmesi plastik cerrahi değerlendirmesini gerektirir."),
   ("Yanlış tanı ne kadar yaygın?","Lipödem sıklıkla obezite veya lenfödem olarak değerlendirilir ve tanı yıllar gecikebilir. Ayrımı netleştiren en pratik iki soru şudur: ağrı var mı, ayaklar tutulmuş mu?")]},
 
-{"slug":"lipo-lenfodem-nedir",
+{"slug":"lipo-lenfodem-nedir", "sources":[("Lipedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK573066/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-31",
  "cat":"Lipödem",
  "title":"Lipo-lenfödem Nedir, Nasıl Anlaşılır? | Doç. Dr. T. Oğuz Acartürk",
@@ -811,7 +811,7 @@ BLOG = [
   ("Önce hangisi tedavi edilir?","Önce sıvı bileşeni, yani lenfödem kontrol altına alınır; ardından yağ bileşenine yönelik cerrahi planlanır. Bu sıralama sonucun kalitesini doğrudan etkiler."),
   ("Bası giysisi ömür boyu mu?","Lenfödem bileşeni devam ettiği için çoğu hastada uzun dönem kullanım gerekir. Basınç sınıfı ve günlük kullanım süresi zamanla azaltılabilir; bu karar takip muayeneleriyle verilir.")]},
 
-{"slug":"lipodem-ameliyati-sonrasi-iyilesme",
+{"slug":"lipodem-ameliyati-sonrasi-iyilesme", "sources":[("Lipedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK573066/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-08-31",
  "cat":"Lipödem",
  "title":"Lipödem Ameliyatı Sonrası İyileşme | Doç. Dr. T. Oğuz Acartürk",
@@ -892,7 +892,7 @@ BLOG = [
   ("Ağrım geçer mi?","Hastaların önemli bir kısmında ameliyat öncesindeki dokunma ağrısı belirgin şekilde azalır. Bu, lipödem cerrahisinin en tutarlı kazanımlarından biridir."),
   ("Yağ geri gelir mi?","Çıkarılan hücreler geri gelmez. Ancak kilo alımıyla kalan hücreler büyüyebilir ve lipödem devam eden bir durum olduğu için takip ve bası giysisi kullanımı sürer.")]},
 
-{"slug":"fil-hastaligi-genetik-mi",
+{"slug":"fil-hastaligi-genetik-mi", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-01",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Genetik mi? Kalıtım ve Aile Öyküsü | Doç. Dr. T. Oğuz Acartürk",
@@ -947,7 +947,7 @@ BLOG = [
   ("Genetikse tedavi edilemez mi?","Bu doğru değil. Primer lenfödemde de kompresyon, cilt bakımı ve uygun olgularda mikrocerrahi uygulanır; erken müdahaleden en çok fayda gören grup bu gruptur."),
   ("Çocuğumda ne zaman şüphelenmeliyim?","Bir uzuvda diğerine göre kalıcı kalınlaşma, ayak sırtında yastık gibi kabarma veya ayakkabı numarasının iki taraf arasında farklılaşması dikkat gerektirir.")]},
 
-{"slug":"elefantiyazis-nedir",
+{"slug":"elefantiyazis-nedir", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-01",
  "cat":"Lenfödem",
  "title":"Elefantiyazis Nedir? Tıbbi Tanım ve Evreler | Doç. Dr. T. Oğuz Acartürk",
@@ -1006,7 +1006,7 @@ BLOG = [
   ("Tanı için hangi tetkik gerekir?","Tanı çoğunlukla öykü ve muayene ile konur. Lenfosintigrafi tanıyı doğrular, ICG lenfografi ise mikrocerrahi planlaması için kullanılır."),
   ("Elefantiyazis bulaşır mı?","Türkiye'de görülen tablo bulaşıcı değildir. Tropik bölgelerdeki parazit hastalığı sivrisinek aracılığıyla bulaşır, doğrudan insandan insana geçmez.")]},
 
-{"slug":"lenfodem-nasil-fil-hastaligina-donusur",
+{"slug":"lenfodem-nasil-fil-hastaligina-donusur", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-02",
  "cat":"Lenfödem",
  "title":"Lenfödem Nasıl Fil Hastalığına Dönüşür? | Doç. Dr. T. Oğuz Acartürk",
@@ -1071,7 +1071,7 @@ BLOG = [
   ("Şişliğim sabahları geçiyor, beklesem olur mu?","Beklememek gerekir. Şişliğin sabahları geçtiği dönem, müdahale için en değerli dönemdir ve seçeneklerin en geniş olduğu evredir."),
   ("Risk grubundayım ama şişliğim yok, ne yapmalıyım?","Uzuv çevre ölçümlerinizin kayıt altına alınmasını isteyin ve ilk iki yıl düzenli kontrol yaptırın. Ağırlık hissi gibi erken belirtileri ciddiye alın.")]},
 
-{"slug":"fil-hastaligi-ameliyati",
+{"slug":"fil-hastaligi-ameliyati", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-02",
  "cat":"Lenfödem",
  "title":"Fil Hastalığı Ameliyatı: Yöntemler ve Süreç | Doç. Dr. T. Oğuz Acartürk",
@@ -1147,7 +1147,7 @@ BLOG = [
   ("Ameliyattan sonra çorap kullanmam gerekir mi?","Çoğu hastada evet. Kompresyon, kazanılan hacmi koruyan bileşendir ve bırakıldığında tablo zamanla geri gelebilir."),
   ("Kanser tedavim sürüyor, ameliyat olabilir miyim?","Aktif onkolojik tedavi sürecinde karar, onkoloji ekibiyle birlikte verilir. Genellikle tedavi tamamlandıktan sonra planlanır.")]},
 
-{"slug":"fil-hastaligina-iyi-gelen-bitkiler",
+{"slug":"fil-hastaligina-iyi-gelen-bitkiler", "sources":[("Lymphatic filariasis — Dünya Sağlık Örgütü (WHO)","https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis"),("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-03",
  "cat":"Lenfödem",
  "title":"Fil Hastalığına İyi Gelen Bitkiler: Kanıt Ne Diyor? | Doç. Dr. T. Oğuz Acartürk",
@@ -1204,7 +1204,7 @@ BLOG = [
   ("Hacamat lenfödemde yapılır mı?","Etkilenen uzuvda önerilmez. Cilt bariyerini delen her uygulama selülit için giriş kapısı oluşturur ve her selülit atağı kalıcı lenfatik hasar bırakır."),
   ("Bitkisel destek kullanacaksam ne yapmalıyım?","Kullanmadan önce hekiminize söyleyin. Bazı bitkiler kan sulandırıcılarla ve kanser tedavileriyle etkileşebilir; cerrahi planlanıyorsa kanama riskini artırabilir.")]},
 
-{"slug":"ileri-evre-lenfodemde-yasam-kalitesi",
+{"slug":"ileri-evre-lenfodemde-yasam-kalitesi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-03",
  "cat":"Lenfödem",
  "title":"İleri Evre Lenfödemde Yaşam Kalitesi Rehberi | Doç. Dr. T. Oğuz Acartürk",
@@ -1266,7 +1266,7 @@ BLOG = [
   ("Sıcakta şişliğim artıyor, normal mi?","Evet, sıcak damar genişlemesi yaparak lenfatik yükü artırır. Serin kalmak ve giysiyi kullanmaya devam etmek yardımcı olur."),
   ("Bu durumla hayat boyu mu yaşayacağım?","Lenfödem kronik bir hastalıktır ancak kontrol altına alınabilir. Doğru tedavi ve idame ile hacim küçülür, ataklar seyrelir ve günlük yaşam belirgin şekilde kolaylaşır.")]},
 
-{"slug":"lenfodem-mi-lenfoma-mi",
+{"slug":"lenfodem-mi-lenfoma-mi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Lymphedema and Cancer — National Cancer Institute (NCI)","https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema/lymphedema-pdq")],
  "date":"2026-09-04",
  "cat":"Ayrım",
  "title":"Lenfödem mi Lenfoma mı? İki Farklı Hastalık | Doç. Dr. T. Oğuz Acartürk",
@@ -1339,7 +1339,7 @@ BLOG = [
   ("Hangi bölüme başvurmalıyım?","Uzuvda yaygın şişlik için Plastik ve Rekonstrüktif Cerrahi ya da Fiziksel Tıp ve Rehabilitasyon. Ağrısız büyüyen lenf bezi için hematoloji-onkoloji."),
   ("İkisinin tedavisi benzer mi?","Hayır, tamamen farklıdır. Lenfödemde kompresyon, fizyoterapi ve uygun olgularda mikrocerrahi uygulanır; lenfoma tedavisi ise onkolojik tedavidir.")]},
 
-{"slug":"lenf-bezi-sismesi-mi-lenfodem-mi",
+{"slug":"lenf-bezi-sismesi-mi-lenfodem-mi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Lymphedema and Cancer — National Cancer Institute (NCI)","https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema/lymphedema-pdq")],
  "date":"2026-09-04",
  "cat":"Ayrım",
  "title":"Lenf Bezi Şişmesi mi Lenfödem mi? | Doç. Dr. T. Oğuz Acartürk",
@@ -1399,7 +1399,7 @@ BLOG = [
   ("Hangi bölüme gitmeliyim?","Bez büyümesi için iç hastalıkları, KBB veya hematoloji. Uzuvda yaygın şişlik için Plastik ve Rekonstrüktif Cerrahi ya da Fiziksel Tıp ve Rehabilitasyon."),
   ("Lenfödemim var, bezim de şişti, normal mi?","Lenfödemli uzuvda enfeksiyon geliştiğinde bölgesel bezler büyüyebilir. Yine de yeni ve kalıcı bir bez büyümesi ayrıca değerlendirilmelidir.")]},
 
-{"slug":"lenfoma-sonrasi-lenfodem",
+{"slug":"lenfoma-sonrasi-lenfodem", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Lymphedema and Cancer — National Cancer Institute (NCI)","https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema/lymphedema-pdq")],
  "date":"2026-09-05",
  "cat":"Lenfödem",
  "title":"Lenfoma Tedavisi Sonrası Lenfödem | Doç. Dr. T. Oğuz Acartürk",
@@ -1456,7 +1456,7 @@ BLOG = [
   ("Tedavisi diğer lenfödemlerden farklı mı?","Hayır, temel yaklaşım aynıdır. Fark, planlamanın onkoloji ekibiyle birlikte ve onkolojik izlemle eş zamanlı yürütülmesidir."),
   ("Ameliyat olabilir miyim?","Onkolojik tedavi tamamlandıktan ve hastalık kontrol altına alındıktan sonra, onkoloji ekibinin görüşüyle birlikte değerlendirilir.")]},
 
-{"slug":"lenf-drenaj-masaji-kimlere-uygun",
+{"slug":"lenf-drenaj-masaji-kimlere-uygun", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-05",
  "cat":"Tedavi",
  "title":"Lenf Drenaj Masajı Kimlere Fayda Sağlar? | Doç. Dr. T. Oğuz Acartürk",
@@ -1526,7 +1526,7 @@ BLOG = [
   ("Güzellik merkezlerinde yapılan drenaj aynı mı?","Çoğu zaman değil. Manuel lenf drenajı özel eğitim gerektiren tıbbi bir tekniktir ve bandajlamayla birlikte uygulanmalıdır."),
   ("Hamilelikte yapılabilir mi?","Bazı durumlarda uygulanabilir ancak mutlaka takip eden hekimin onayıyla ve deneyimli bir uygulayıcı tarafından yapılmalıdır.")]},
 
-{"slug":"lenf-drenaj-cihazi-ise-yarar-mi",
+{"slug":"lenf-drenaj-cihazi-ise-yarar-mi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-06",
  "cat":"Tedavi",
  "title":"Lenf Drenaj Cihazı İşe Yarar mı? Kompresyon Pompaları | Doç. Dr. T. Oğuz Acartürk",
@@ -1589,7 +1589,7 @@ BLOG = [
   ("Hangi basınçta kullanmalıyım?","Lenfödemde genellikle düşük basınçlar tercih edilir. Doğru değer hastaya göre değişir ve hekiminiz tarafından belirlenmelidir."),
   ("Cihaz zarar verebilir mi?","Yanlış hastada veya aşırı basınçla kullanıldığında zarar verebilir. Aktif enfeksiyon, tromboz şüphesi ve kontrol altına alınmamış kalp yetmezliğinde kullanılmamalıdır.")]},
 
-{"slug":"lenf-drenaji-zararli-olabilir-mi",
+{"slug":"lenf-drenaji-zararli-olabilir-mi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-06",
  "cat":"Tedavi",
  "title":"Lenf Drenajı Zararlı Olabilir mi? Kimlere Yapılmaz | Doç. Dr. T. Oğuz Acartürk",
@@ -1659,7 +1659,7 @@ BLOG = [
   ("Kalp hastalığım var, yaptırabilir miyim?","Kontrol altında olan hastalarda kardiyoloji görüşüyle uygulanabilir. Kontrol altına alınmamış kalp yetmezliğinde uygulanmamalıdır."),
   ("Kanser tedavisi görüyorum, sakıncalı mı?","Karar onkoloji ekibiyle birlikte verilir. Onkolojik tedavi sonrası gelişen lenfödemde drenaj yaygın olarak ve güvenle kullanılır.")]},
 
-{"slug":"lenfodem-corabi-basi-giysisi",
+{"slug":"lenfodem-corabi-basi-giysisi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-07",
  "cat":"Tedavi",
  "title":"Lenfödem Çorabı ve Bası Giysisi Rehberi | Doç. Dr. T. Oğuz Acartürk",
@@ -1723,7 +1723,7 @@ BLOG = [
   ("Ne sıklıkla yenilenmeli?","Genellikle 4–6 ayda bir. Hacim belirgin şekilde değiştiğinde ölçü daha erken yenilenmelidir."),
   ("Giysi iz bırakıyor ve ağrıtıyor, normal mi?","Normal değildir. Ölçü veya basınç sınıfı yanlış olabilir; kullanımı durdurup hekiminize başvurun.")]},
 
-{"slug":"lenfodem-egzersizleri",
+{"slug":"lenfodem-egzersizleri", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-07",
  "cat":"Tedavi",
  "title":"Lenfödem Egzersizleri: Hangileri, Neden? | Doç. Dr. T. Oğuz Acartürk",
@@ -1788,7 +1788,7 @@ BLOG = [
   ("Egzersiz sırasında çorap giymeli miyim?","Evet. Bası giysisiyle yapılan egzersizde kas pompası etkisi belirgin şekilde artar."),
   ("Enfeksiyon varken egzersiz yapabilir miyim?","Hayır. Aktif selülit atağı sırasında egzersize ara verilir ve hekime başvurulur.")]},
 
-{"slug":"erizipel-selulit-nedir",
+{"slug":"erizipel-selulit-nedir", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-08",
  "cat":"Enfeksiyon",
  "title":"Erizipel (Selülit) Nedir, Neden Tekrarlar? | Doç. Dr. T. Oğuz Acartürk",
@@ -1858,7 +1858,7 @@ BLOG = [
   ("Atak sırasında çorap giymeli miyim?","Bu hekim kararıdır. Akut ve ağrılı dönemde genellikle ara verilir, tablo düzeldikten sonra yeniden başlanır."),
   ("Ne zaman acilen başvurmalıyım?","Ateş, hızla yayılan kızarıklık, genel durum bozukluğu, kabarcık veya morarma varsa gecikmeden başvurulmalıdır.")]},
 
-{"slug":"lenfanjit-belirtileri",
+{"slug":"lenfanjit-belirtileri", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-08",
  "cat":"Enfeksiyon",
  "title":"Lenfanjit: Belirtileri ve Aciliyeti | Doç. Dr. T. Oğuz Acartürk",
@@ -1942,7 +1942,7 @@ BLOG = [
   ("Evde tedavi edilebilir mi?","Hayır. Antibiyotik tedavisi gerektirir ve hekim değerlendirmesi olmadan yönetilmemelidir."),
   ("Bulaşıcı mı?","Lenfanjitin kendisi kişiden kişiye bulaşmaz. Altta yatan enfeksiyon etkeni cilt bütünlüğünün bozulduğu bir noktadan girer.")]},
 
-{"slug":"zerdecal-lenfodeme-iyi-gelir-mi",
+{"slug":"zerdecal-lenfodeme-iyi-gelir-mi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-09",
  "cat":"Lenfödem",
  "title":"Zerdeçal Lenfödeme İyi Gelir mi? Kanıt Ne Diyor | Doç. Dr. T. Oğuz Acartürk",
@@ -2013,7 +2013,7 @@ BLOG = [
   ("Ameliyat öncesi bırakmalı mıyım?","Planlanan bir cerrahi varsa cerrahınıza mutlaka bildirin; kanama riski nedeniyle bir süre önce bırakmanız istenebilir."),
   ("İltihabı azaltması lenfödeme yaramaz mı?","Teorik olarak mantıklı ancak insanda gösterilmiş değil. Lenfödemde iltihabı azaltan asıl müdahaleler kompresyon, enfeksiyon kontrolü ve kilo yönetimidir.")]},
 
-{"slug":"hacamat-lenfodem",
+{"slug":"hacamat-lenfodem", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-09",
  "cat":"Lenfödem",
  "title":"Hacamat Lenfödemde İşe Yarar mı? | Doç. Dr. T. Oğuz Acartürk",
@@ -2081,7 +2081,7 @@ BLOG = [
   ("Neyi güvenle yaptırabilirim?","Manuel lenf drenajı, kompresyon, düzenli egzersiz ve cilt bakımı hem güvenli hem etkisi gösterilmiş yöntemlerdir.")]},
 
 
-{"slug":"lenfodem-cihazi-kompresyon-pompasi",
+{"slug":"lenfodem-cihazi-kompresyon-pompasi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-10",
  "cat":"Tedavi",
  "title":"Lenfödem Cihazı (Kompresyon Pompası) Rehberi | Doç. Dr. T. Oğuz Acartürk",
@@ -2152,7 +2152,7 @@ BLOG = [
   ("Ameliyat olduktan sonra cihaz kullanabilir miyim?","Genellikle evet, ancak zamanlama ve basınç ameliyata göre değişir. LVA veya lenf nodu transferi sonrası erken dönemde kullanım hekim onayı gerektirir."),
   ("Cihaz kullanırken lenf drenajı yaptırmama gerek var mı?","Gerek devam ediyor. Cihaz gövdedeki yolları açamaz; manuel drenaj bunu yapar. En iyi sonuç ikisinin birlikte kullanıldığı hastalarda görülüyor.")]},
 
-{"slug":"lenfatik-sistem-nasil-calisir",
+{"slug":"lenfatik-sistem-nasil-calisir", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-10",
  "cat":"Lenfödem",
  "title":"Lenfatik Sistem Nasıl Çalışır? Anlaşılır Bir Anlatım | Doç. Dr. T. Oğuz Acartürk",
@@ -2219,7 +2219,7 @@ BLOG = [
   ("Masaj lenf akışını artırır mı?","Manuel lenf drenajı, yüzeyel lenfatikleri hedefleyen çok hafif ve yönlü bir tekniktir; artırır. Sert klasik masaj ise yüzeyel kanallara zarar verebilir, lenfödemde önerilmez."),
   ("Lenfatik sistem bozulduğunda kendini onarır mı?","Sınırlı ölçüde. Yeni bağlantılar açılabilir ancak alınan düğümler yerine gelmez. Bu nedenle risk altındaki uzuvda koruyucu önlemler ömür boyu geçerlidir.")]},
 
-{"slug":"ayak-bacak-sismesi-ne-zaman-ciddi",
+{"slug":"ayak-bacak-sismesi-ne-zaman-ciddi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-11",
  "cat":"Hasta Rehberi",
  "title":"Ayak ve Bacak Şişmesi: Ne Zaman Ciddi? | Doç. Dr. T. Oğuz Acartürk",
@@ -2284,7 +2284,7 @@ BLOG = [
   ("Şişlik için idrar söktürücü kullanabilir miyim?","Lenfödemde idrar söktürücülerin kalıcı faydası gösterilmemiştir ve dokuda protein derişimini artırarak durumu kötüleştirebilir. Kalp veya böbrek nedeniyle reçete edilmediyse kullanılmamalıdır."),
   ("Hangi bölüme başvurmalıyım?","Yavaş ilerleyen tek taraflı şişlikte lenfödemle ilgilenen plastik cerrahi ya da fizik tedavi; çift taraflı ve sistemik bulguların eşlik ettiği tabloda dahiliye uygun başlangıçtır.")]},
 
-{"slug":"lenfodemde-beslenme",
+{"slug":"lenfodemde-beslenme", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-11",
  "cat":"Hasta Rehberi",
  "title":"Lenfödemde Beslenme: Neyin Etkisi Var, Neyin Yok | Doç. Dr. T. Oğuz Acartürk",
@@ -2347,7 +2347,7 @@ BLOG = [
   ("Lenfödem için özel bir diyet var mı?","Lenfödeme özgü kanıtlanmış bir diyet yoktur. Sebze ağırlıklı, yeterli proteinli, işlenmiş gıdası az bir model hem kilo kontrolü hem genel sağlık açısından uygundur."),
   ("Detoks çayları veya ödem çayları işe yarar mı?","Lenfödem hacmine etkisi gösterilmemiştir. Geçici idrar artışı sağlayabilirler ancak dokudaki protein birikimini değiştirmezler; bazıları ilaç etkileşimi yaratabilir.")]},
 
-{"slug":"lenfosintigrafi-nedir",
+{"slug":"lenfosintigrafi-nedir", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-12",
  "cat":"Tanı",
  "title":"Lenfosintigrafi Nedir, Neden Yapılır? | Doç. Dr. T. Oğuz Acartürk",
@@ -2407,7 +2407,7 @@ BLOG = [
   ("Sonucum normal çıktı ama şişliğim devam ediyor, ne anlama gelir?","Erken evre lenfödemde tetkik normal görünebilir. Normal sonuç tanıyı dışlamaz; muayene bulguları ve gerekirse ICG lenfografi ile birlikte değerlendirilir."),
   ("Lenfosintigrafi ile ICG lenfografi aynı şey mi?","Değil. Lenfosintigrafi bütün uzvun akışını ve düğüm düzeyini gösterir; ICG lenfografi ise deri altındaki damarları gerçek zamanlı ve ayrıntılı gösterir, cerrahi planlamada kullanılır.")]},
 
-{"slug":"icg-lenfografi",
+{"slug":"icg-lenfografi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-12",
  "cat":"Tanı",
  "title":"ICG Lenfografi: Cerrahi Planlamanın Anahtarı | Doç. Dr. T. Oğuz Acartürk",
@@ -2468,7 +2468,7 @@ BLOG = [
   ("Lenfosintigrafi yaptırdım, ICG de gerekli mi?","Cerrahi planlanıyorsa genellikle evet. İki tetkik farklı bilgi verir: biri sistemin genel işlevini, diğeri kesilerin yapılacağı damarların yerini gösterir."),
   ("ICG sonucu LVA olamayacağımı gösterirse ne yapılır?","Yaygın desenin baskın olduğu tabloda lenf nodu transferi, hacim azaltıcı yöntemler veya yoğun kompresyon tedavisi gündeme gelir. Karar tek bir tetkike değil, bütün tabloya göre verilir.")]},
 
-{"slug":"lva-ameliyati",
+{"slug":"lva-ameliyati", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-13",
  "cat":"Tedavi",
  "title":"LVA Ameliyatı: Lenfovenöz Anastomoz Adım Adım | Doç. Dr. T. Oğuz Acartürk",
@@ -2531,7 +2531,7 @@ BLOG = [
   ("Ameliyat izleri belirgin olur mu?","Kesiler 2–3 santimetredir ve doğal deri çizgilerine yerleştirilir. İzler zamanla soluklaşır; çoğu hastada belirgin bir sorun oluşturmaz."),
   ("LVA ile lenf nodu transferi arasındaki fark nedir?","LVA mevcut lenfatik damara yeni bir çıkış açar; lenf nodu transferi ise başka bir bölgeden damarlarıyla birlikte lenf düğümü taşır. Seçim, tıkanıklığın düzeyine ve damarların işlevine göre yapılır.")]},
 
-{"slug":"lenf-nodu-transferi",
+{"slug":"lenf-nodu-transferi", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-13",
  "cat":"Tedavi",
  "title":"Lenf Nodu Transferi Nasıl Yapılır? | Doç. Dr. T. Oğuz Acartürk",
@@ -2592,7 +2592,7 @@ BLOG = [
   ("Meme ameliyatıyla birlikte yapılabilir mi?","Evet. Karın dokusuyla meme rekonstrüksiyonu planlanan uygun hastalarda transfer aynı ameliyata eklenebilir; bu, tek seansta iki sorunun ele alınması anlamına gelir."),
   ("Ameliyattan sonra kompresyon gerekir mi?","Evet, en az ilk yıl boyunca sürdürülür. Sonrasında azaltma kararı ölçümlere ve görüntülemeye göre verilir; kendi kararınızla bırakılmamalıdır.")]},
 
-{"slug":"lenfodem-ameliyati-oncesi-hazirlik",
+{"slug":"lenfodem-ameliyati-oncesi-hazirlik", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-14",
  "cat":"Hasta Rehberi",
  "title":"Lenfödem Ameliyatı Öncesi Hazırlık Rehberi | Doç. Dr. T. Oğuz Acartürk",
@@ -2658,7 +2658,7 @@ BLOG = [
   ("Kilo vermem şart mı?","İleri kilo düzeylerinde cerrahi sonuçları belirgin şekilde kötüleşir. Vücut kütle indeksi yüksek hastalarda ameliyat öncesi kilo hedefi konması standart yaklaşımdır."),
   ("Ameliyattan önce hangi görüntülemeler gerekiyor?","Genellikle lenfosintigrafi, ICG lenfografi ve venöz Doppler istenir. Bunlara anestezi değerlendirmesi ve güncel kan tetkikleri eklenir.")]},
 
-{"slug":"lenfodem-ameliyati-sonrasi-ilk-6-ay",
+{"slug":"lenfodem-ameliyati-sonrasi-ilk-6-ay", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "date":"2026-09-14",
  "cat":"Hasta Rehberi",
  "title":"Lenfödem Ameliyatı Sonrası İlk 6 Ay | Doç. Dr. T. Oğuz Acartürk",

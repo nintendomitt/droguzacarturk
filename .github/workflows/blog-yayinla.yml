@@ -71,8 +71,12 @@ jobs:
               for k in ['whatsapp_click', 'id="ckb"', 'rel="canonical"',
                         'class="btn btn-p"', 'id="tgl"', 'class="langs"', '<small>']:
                   if k not in s: err.append(f + ": eksik -> " + k)
-              if f != "blog/index.html" and 'class="spot"' not in s:
-                  err.append(f + ": WhatsApp donusum blogu yok")
+              if f != "blog/index.html":
+                  if 'class="spot"' not in s:
+                      err.append(f + ": WhatsApp donusum blogu yok")
+                  # YMYL icerikte dogrulanabilir kaynak zorunlu
+                  if 'id="kaynaklar"' not in s:
+                      err.append(f + ": Kaynaklar bolumu yok (sources alani bos)")
           if err:
               print("DOGRULAMA BASARISIZ:")
               for e in err[:20]: print("  ", e)

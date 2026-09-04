@@ -155,6 +155,30 @@ bunlar yeterli olur.</p>
 tanı ve tedavi planı ancak muayene sonrası oluşturulur.</p>
 </div></div></section>"""
 
+def sources_block(post):
+    """Kaynaklar bolumu.
+
+    Neden var: YMYL (saglik) icerikte iddialarin dogrulanabilir olmasi hem hasta
+    guveni hem Google'in E-E-A-T degerlendirmesi icin belirleyici. Yazilarimizda
+    govde icinde tek bir dis atif yoktu.
+
+    KURAL: buraya yalnizca GERCEKTEN var oldugu dogrulanmis kaynak girilir.
+    Uydurulmus atif, hic atif olmamasindan kotudur. Rakip klinik sitesi verilmez.
+    """
+    srcs = post.get("sources") or []
+    if not srcs:
+        return ""
+    li = "".join(
+        f'<li><a href="{html.escape(u, quote=True)}" target="_blank" '
+        f'rel="noopener nofollow">{html.escape(t)}</a></li>'
+        for t, u in srcs)
+    return f"""<section class="alt"><div class="wrap"><div class="narrow prose">
+<h2 id="kaynaklar">Kaynaklar</h2>
+<p class="disc">Bu sayfadaki tıbbi bilgiler aşağıdaki kaynaklara dayanmaktadır.</p>
+<ul class="srcs">{li}</ul>
+</div></div></section>"""
+
+
 def author_box(post):
     return f"""<section class="alt"><div class="wrap"><div class="narrow prose">
 <div class="note"><p><b>Yazan ve tıbbi olarak inceleyen:</b> Doç. Dr. Tahsin Oğuz Acartürk —
@@ -218,6 +242,7 @@ def render_post(post, index):
 </div></div></section>''',
              body_html(post),
              faq_block(post),
+             sources_block(post),
              author_box(post),
              related_block(post, index),
              cta_block(post),

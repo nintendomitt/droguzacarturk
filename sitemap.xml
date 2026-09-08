@@ -1113,6 +1113,13 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.droguzacarturk.com/ar/yanik-travma-onarimi.html"/>
   </url>
   <url>
+    <loc>https://www.droguzacarturk.com/hidradenit-onarimi.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/hidradenit-onarimi.html"/>
+  </url>
+  <url>
     <loc>https://www.droguzacarturk.com/burun-estetigi-rinoplasti.html</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -1664,9 +1671,45 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/erizipel-selulit-nedir.html</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/lenfanjit-belirtileri.html</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/lenfodem-corabi-basi-giysisi.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/lenfodem-egzersizleri.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/lenf-drenaj-cihazi-ise-yarar-mi.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/lenf-drenaji-zararli-olabilir-mi.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/lenfoma-sonrasi-lenfodem.html</loc>

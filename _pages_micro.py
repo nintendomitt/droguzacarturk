@@ -3,7 +3,7 @@
 
 MICRO = [
 {
- "key":"lipodem",
+ "key":"lipodem", "sources":[("Lipedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK573066/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")],
  "authority":"Lipödem cerrahisi, lenfatik sistemi koruyan liposuction tekniklerine hâkimiyet gerektirir. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde yağ dokusu ve kök hücre teknolojileri üzerine çalışmış ilk Türk plastik cerrahlardan biridir; aynı zamanda lenfödem mikrocerrahisi yapan bir cerrah olarak lenfatik anatomiye günlük pratikte hâkimdir. Bu iki alanın birleşimi, lipödem cerrahisinde dokunun korunarak çalışılmasını mümkün kılar.",
  "creds":["Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım","Pittsburgh Üniversitesi'nde yağ dokusu ve kök hücre araştırmaları","Dünya Lenfödem Kongresi'nde bildiri sunumu"], "slug":"lipodem-cerrahisi.html", "prio":"0.9",
  "crumb":"Lipödem Cerrahisi",
@@ -251,7 +251,7 @@ MICRO = [
  "ctap":"Felcin ne zaman başladığını, nedenini, uygulanan tedavileri ve varsa video ya da fotoğraflarınızı gönderin. Hangi seçeneklerin uygun olduğunu birlikte değerlendirelim."},
 
 {
- "key":"meme-rek",
+ "key":"meme-rek", "sources":[("Lymphedema and Cancer — National Cancer Institute (NCI)","https://www.cancer.gov/about-cancer/treatment/side-effects/lymphedema/lymphedema-pdq")],
  "authority":"Meme rekonstrüksiyonu, mikrocerrahi ile estetik cerrahinin birlikte düşünülmesini gerektirir. Doç. Dr. Acartürk hem serbest doku aktarımında hem meme estetiğinde uzun yıllara dayanan pratiğe sahiptir; ayrıca lenfödem mikrocerrahisi yaptığı için meme rekonstrüksiyonunu kol lenfödemi tedavisiyle <strong>aynı seansta</strong> planlayabilmektedir.",
  "creds":["300+ serbest doku aktarımı deneyimi","Lenfödem mikrocerrahisiyle eş zamanlı planlama imkânı","Amerika'da meme cerrahisi pratiği ve meslektaş yönlendirmeleri"], "slug":"meme-rekonstruksiyonu.html", "prio":"0.85",
  "crumb":"Meme Rekonstrüksiyonu",
@@ -379,7 +379,7 @@ MICRO = [
  "lead":"Yanık, travma ve radyoterapi sonrası oluşan doku hasarı yalnızca iz bırakmaz; hareketi kısıtlar, ağrı yapar ve bazen yaraların kapanmasını engeller. Bu tablolarda amaç izi gizlemek değil, dokunun işlevini ve kalitesini geri kazandırmaktır.",
  "watopic":"yanık ve travma sonrası onarım",
  "about":"Skar ve kontraktür rekonstrüksiyonu", "aboutType":"MedicalProcedure",
- "card":"Yanık ve travma onarımı", "cardsub":"Skar, kontraktür ve ışın hasarında doku rekonstrüksiyonu",
+ "card":"Yanık onarımı", "cardsub":"Skar, kontraktür ve ışın hasarında doku rekonstrüksiyonu",
  "procedure":{"name":"Skar Kontraktürü Rekonstrüksiyonu",
    "how":"Kısıtlayıcı skar dokusu açılır ve oluşan defekt deri grefti, lokal doku flepleri veya serbest doku aktarımıyla kapatılır.",
    "prep":"Skarın olgunlaşmasının beklenmesi, eklem hareket açıklığının ölçülmesi ve fizyoterapi hazırlığı.",

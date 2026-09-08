@@ -5,7 +5,7 @@ Turkce cikti: lenfodem-lipodem-cerrahisi.html (mevcut dosyanin uzerine yazilir)
 """
 
 LENFODEM = [{
- "key":"lenfodem", "slug":"lenfodem-lipodem-cerrahisi.html", "prio":"1.0",
+ "key":"lenfodem", "sources":[("Lymphedema — StatPearls, NCBI Bookshelf","https://www.ncbi.nlm.nih.gov/books/NBK537239/"),("Türkiye Lenfödem ve Lipödem Derneği","https://lenfodemdernegi.org.tr/")], "slug":"lenfodem-lipodem-cerrahisi.html", "prio":"1.0",
  "crumb":"Lenfödem ve Lipödem Cerrahisi",
  # HUB sayfasi: ticari sorguyu ("lenfodem tedavisi/cerrahisi/ameliyati") sahiplenir.
  # "nedir", "evreleri", "belirtileri" ifadeleri bilerek cikarildi — bunlarin

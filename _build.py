@@ -170,7 +170,7 @@ def render(p, lg, index, avail):
                 if "lenfodem" in _AVAIL.get(lg, set())
                 else A + "lenfodem-lipodem-cerrahisi.html")
     drop1 = _links(("lenfodem", "lipodem"))
-    drop2 = _links(("mikrotia", "yanik", "bas-boyun", "yuz-felci", "meme-rek", "el-cerrahisi"))
+    drop2 = _links(("mikrotia", "yanik", "hidradenit", "bas-boyun", "yuz-felci", "meme-rek", "el-cerrahisi"))
     drop3 = _links(("rinoplasti", "meme-estetigi", "yuz-germe", "goz-kapagi", "karin-germe",
                     "liposuction", "yag-enjeksiyonu", "kol-uyluk-germe", "jinekomasti", "lip-lift"))
 
@@ -186,6 +186,19 @@ def render(p, lg, index, avail):
                         for i, (q, a) in enumerate(p["faqs"]))
         faq = (f'<section id="sss"><div class="wrap"><div class="narrow"><span class="tag">{u["faqtag"]}</span>'
                f'<h2 style="margin:0 0 26px">{u["faqh"]}</h2>{items}</div></div></section>')
+
+    # Kaynaklar — YMYL icerikte dogrulanabilir atif. Blogdaki ile ayni kural:
+    # buraya yalnizca varligi ve basligi dogrulanmis kaynak girilir.
+    # 'sources' cevrilmez; URL ve kurum adi tum dillerde ayni kalir.
+    src = ""
+    if p.get("sources"):
+        li = "".join(
+            f'<li><a href="{html.escape(su, quote=True)}" target="_blank" '
+            f'rel="noopener nofollow">{html.escape(st)}</a></li>' for st, su in p["sources"])
+        src = (f'<section class="alt"><div class="wrap"><div class="narrow prose">'
+               f'<h2 id="kaynaklar">{u.get("srch", "Kaynaklar")}</h2>'
+               f'<p class="disc">{u.get("srcp", "Bu sayfadaki tıbbi bilgiler aşağıdaki kaynaklara dayanmaktadır.")}</p>'
+               f'<ul class="srcs">{li}</ul></div></div></section>')
     rel = ""
     if p.get("related"):
         cards = ""
@@ -305,6 +318,7 @@ else if(c!=='0'){{
 </div></div>
 {body_html(p)}
 {faq}
+{src}
 {surgeon}
 {rel}
 <section class="cta" id="randevu"><div class="wrap">

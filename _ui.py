@@ -8,6 +8,7 @@ LOCALE = {"tr": "tr_TR", "en": "en_US", "de": "de_DE", "ru": "ru_RU", "ar": "ar_
 
 UI = {
 "tr": {
+  "srch":"Kaynaklar", "srcp":"Bu sayfadaki tıbbi bilgiler aşağıdaki kaynaklara dayanmaktadır.",
  "loc":"İzmir · Bayraklı","wa":"WhatsApp ile yazın",
  "sub":"Plastik, Rekonstrüktif ve Estetik Cerrahi",
  "nav1":"Uzmanlık Alanları","nav2":"Cerrahınız","nav3":"S.S.S.","cta":"Randevu Al",
@@ -27,6 +28,7 @@ UI = {
  "wamsg":"Merhaba, {t} hakkında bilgi almak istiyorum.",
 },
 "en": {
+  "srch":"Sources", "srcp":"The medical information on this page is based on the following sources.",
  "loc":"Izmir · Bayrakli","wa":"Message us on WhatsApp",
  "sub":"Plastic, Reconstructive & Aesthetic Surgery",
  "nav1":"Expertise","nav2":"Your Surgeon","nav3":"FAQ","cta":"Book a Consultation",
@@ -46,6 +48,7 @@ UI = {
  "wamsg":"Hello, I would like information about {t}.",
 },
 "de": {
+  "srch":"Quellen", "srcp":"Die medizinischen Angaben auf dieser Seite stützen sich auf folgende Quellen.",
  "loc":"Izmir · Bayrakli","wa":"Schreiben Sie uns per WhatsApp",
  "sub":"Plastische, Rekonstruktive & Ästhetische Chirurgie",
  "nav1":"Fachgebiete","nav2":"Ihr Chirurg","nav3":"FAQ","cta":"Termin vereinbaren",
@@ -65,6 +68,7 @@ UI = {
  "wamsg":"Hallo, ich hätte gerne Informationen zu {t}.",
 },
 "ru": {
+  "srch":"Источники", "srcp":"Медицинская информация на этой странице основана на следующих источниках.",
  "loc":"Измир · Байраклы","wa":"Напишите нам в WhatsApp",
  "sub":"Пластическая, реконструктивная и эстетическая хирургия",
  "nav1":"Направления","nav2":"Ваш хирург","nav3":"Вопросы","cta":"Записаться",
@@ -84,6 +88,7 @@ UI = {
  "wamsg":"Здравствуйте, хотел(а) бы получить информацию о {t}.",
 },
 "ar": {
+  "srch":"المصادر", "srcp":"تستند المعلومات الطبية في هذه الصفحة إلى المصادر التالية.",
  "loc":"إزمير · بايراكلي","wa":"راسلنا عبر واتساب",
  "sub":"الجراحة التجميلية والترميمية والتقويمية",
  "nav1":"مجالات الخبرة","nav2":"جراحك","nav3":"أسئلة شائعة","cta":"احجز موعدًا",

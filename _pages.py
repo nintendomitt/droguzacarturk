@@ -3,6 +3,7 @@
 
 from _pages_lenfodem import LENFODEM
 from _pages_micro import MICRO
+from _pages_hidradenit import HIDRADENIT
 from _pages_estetik import ESTETIK
 from _pages_lenfodem_kume import LENFODEM_KUME
 from _pages_lipodem_kume import LIPODEM_KUME
@@ -29,7 +30,7 @@ KULAK_REF = {
     "cardsub": "Kepçe kulak (otoplasti) düzeltmesi",
 }
 
-PAGES = LENFODEM + LENFODEM_KUME + LIPODEM_KUME + MICRO + ESTETIK
+PAGES = LENFODEM + LENFODEM_KUME + LIPODEM_KUME + MICRO + HIDRADENIT + ESTETIK
 
 # Ic link cozumlemesinde kullanilan, uretilmeyen kayitlar
 EXTRA_REFS = [KULAK_REF]

@@ -1719,9 +1719,21 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/ayak-bacak-sismesi-ne-zaman-ciddi.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/lenfodemde-beslenme.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/lenfodem-cihazi-kompresyon-pompasi.html</loc>

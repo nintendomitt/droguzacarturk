@@ -405,6 +405,36 @@ Blog içerik kuyruğunun üç aylık plana göre doldurulması.
 """
 
 
+def yazilari_oku(bitis=None):
+    """_blog.py'dan yayinlanmis yazilari al. Yoksa bos liste."""
+    try:
+        import importlib
+        import sys
+        if KOK not in sys.path:
+            sys.path.insert(0, KOK)
+        m = importlib.import_module("_blog")
+        ham = getattr(m, "BLOG", [])
+    except Exception:
+        return []
+    sinir = (bitis or datetime.date.today()).isoformat()
+    y = [p for p in ham if p.get("date", "9999") <= sinir]
+    y.sort(key=lambda p: (p.get("date", ""), p.get("slug", "")), reverse=True)
+    return y
+
+
+def sayfalari_say():
+    """Kok dizindeki tedavi/hizmet sayfalarini ve dil klasorlerini say."""
+    try:
+        kok_html = [f for f in os.listdir(KOK)
+                    if f.endswith(".html") and not f.startswith("_")
+                    and f not in ("404.html",)]
+        diller = [d for d in ("en", "de", "ru", "ar")
+                  if os.path.isdir(os.path.join(KOK, d))]
+        return len(kok_html), len(diller) + 1
+    except Exception:
+        return 0, 1
+
+
 def notlari_oku():
     if not os.path.exists(NOTLAR):
         os.makedirs(GSC, exist_ok=True)
@@ -760,12 +790,92 @@ def html_uret(d):
   Arapça sürümleriyle yayında olduğu için bu tarafın zamanla büyümesi bekleniyor.</p>
 </section>''')
 
-    # ---------------- 7. CALISMALAR ----------------
+    # ---------------- 7. ICERIK ENVANTERI ----------------
+    # rapor donemi bitmis olsa da bugune kadar yayina girmis her yaziyi listele
+    yazilar = yazilari_oku(datetime.date.today())
+    tedavi_n, dil_n = sayfalari_say()
+
+    # GSC sayfa verisini slug ile eslestir
+    gsc_yol = {}
+    for p in sayfalar:
+        gsc_yol[_yol(p["url"]).strip("/")] = p
+
+    donem_bas = d["bas"].isoformat() if d["bas"] else "0000"
+    donem_son = d["son"].isoformat() if d["son"] else "9999"
+    yeni_n = sum(1 for p in yazilar
+                 if donem_bas <= p.get("date", "") <= donem_son)
+    # vurgulama ancak azinligi isaretliyorsa anlamli
+    vurgula = bool(yazilar) and (yeni_n / len(yazilar)) < 0.6
+
+    # kategori dagilimi
+    kat = {}
+    for p in yazilar:
+        kat[p.get("cat", "Diğer")] = kat.get(p.get("cat", "Diğer"), 0) + 1
+    kat_sirali = sorted(kat.items(), key=lambda x: -x[1])
+    kat_html = " · ".join(f"{_kacis(k)} <b>{v}</b>" for k, v in kat_sirali)
+
+    sy = ""
+    for p in yazilar:
+        slug = p.get("slug", "")
+        g = gsc_yol.get(f"blog/{slug}.html")
+        gos = _no(g["gos"]) if g else "—"
+        tik = _no(g["tik"]) if g else "—"
+        tar = p.get("date", "")
+        try:
+            dt = datetime.date.fromisoformat(tar)
+            tar_g = f"{dt.day} {AYLAR[dt.month-1][:3]}"
+        except ValueError:
+            tar_g = tar
+        yeni = (' class="yeni"' if (vurgula and donem_bas <= tar <= donem_son)
+                else "")
+        sy += (f"<tr{yeni}><td class='tar'>{tar_g}</td>"
+               f"<td>{_kacis(_kis(p.get('h1') or slug, 52))}</td>"
+               f"<td class='kat'>{_kacis(p.get('cat',''))}</td>"
+               f"<td class='s'>{gos}</td><td class='s'>{tik}</td></tr>")
+
+    envanter = ""
+    if yazilar:
+        envanter = f'''<section class="sy">
+  <header class="sb"><span class="sn">07</span><h2>Yayınlanan içerikler</h2>
+    <div class="sb-alt">Bugüne kadar yazılan tüm blog yazıları</div></header>
+
+  <div class="serit">
+    <div class="sr"><div class="sr-e">Toplam blog yazısı</div>
+      <div class="sr-v">{_no(len(yazilar))}</div>
+      <div class="sr-a">yayında</div></div>
+    <div class="sr"><div class="sr-e">Bu dönemde eklenen</div>
+      <div class="sr-v">{_no(yeni_n)}</div>
+      <div class="sr-a">{donem}</div></div>
+    <div class="sr"><div class="sr-e">Tedavi sayfası</div>
+      <div class="sr-v">{_no(tedavi_n)}</div>
+      <div class="sr-a">blog dışı içerik</div></div>
+    <div class="sr"><div class="sr-e">Dil</div>
+      <div class="sr-v">{_no(dil_n)}</div>
+      <div class="sr-a">TR · EN · DE · RU · AR</div></div>
+  </div>
+
+  <p class="dip" style="margin-bottom:5mm">Kategori dağılımı — {kat_html}.
+  Gösterim ve tıklama sütunları yalnızca bu rapor dönemine aittir; "—" işareti,
+  yazının henüz arama sonuçlarında veri üretmediğini gösterir. Yeni yayınlanan
+  yazıların dizine girip veri üretmesi genelde 2–6 hafta sürer.{
+  ' <span class="yeni-not">Turuncu satırlar</span> bu dönemde yayına alınanlardır.'
+  if vurgula else ''}</p>
+
+  <table class="t env">
+    <thead><tr><th>Tarih</th><th>Yazı</th><th>Kategori</th>
+    <th class="s">Gösterim</th><th class="s">Tıklama</th></tr></thead>
+    <tbody>{sy}</tbody>
+  </table>
+</section>
+'''
+    A(envanter)
+
+    # ---------------- 8. CALISMALAR ----------------
     ly = "".join(f'<li>{_kacis(m)}</li>' for m in yap) or "<li>—</li>"
     ls = "".join(f'<li>{_kacis(m)}</li>' for m in son) or "<li>—</li>"
 
     A(f'''<section class="sy">
-  <header class="sb"><span class="sn">07</span><h2>Bu dönem yapılanlar</h2>
+  <header class="sb"><span class="sn">08</span><h2>Bu dönem yapılanlar</h2>
     <div class="sb-alt">Saturday Online çalışma özeti</div></header>
   <ul class="is">{ly}</ul>
 
@@ -775,7 +885,7 @@ def html_uret(d):
 </section>
 
 <section class="sy">
-  <header class="sb"><span class="sn">08</span><h2>Rapordaki terimler</h2>
+  <header class="sb"><span class="sn">09</span><h2>Rapordaki terimler</h2>
     <div class="sb-alt">Metriklerin karşılığı</div></header>
   <table class="t soz">
     <tbody>
@@ -951,6 +1061,17 @@ h3 {{ font-size: 11pt; font-weight: 600; margin: 7mm 0 3mm; color: {KOYU}; }}
 .is li::before {{ content: ""; position: absolute; left: 1.5mm; top: 4.6mm;
   width: 2.4mm; height: 2.4mm; border-radius: 50%; background: {KOYU}; }}
 .is.plan li::before {{ background: none; border: 1px solid {KOYU}; }}
+
+/* ---- icerik envanteri ---- */
+.env {{ font-size: 8.2pt; }}
+.env td {{ padding: 1.8mm 2.5mm; }}
+.env .tar {{ white-space: nowrap; color: {SOLUK}; font-size: 7.8pt; width: 15mm; }}
+.env .kat {{ white-space: nowrap; font-size: 7.6pt; color: {SOLUK}; width: 24mm; }}
+.env tbody tr.yeni {{ background: {KREM2}; }}
+.env tbody tr.yeni td {{ font-weight: 500; }}
+.env tbody tr.yeni .tar {{ color: {KOYU}; font-weight: 600; }}
+.yeni-not {{ background: {KREM2}; color: {KOYU}; font-weight: 600;
+  padding: 0 1mm; border-radius: 1mm; }}
 
 .soz td {{ vertical-align: top; }}
 .soz .sz {{ font-family: Poppins; font-weight: 600; font-size: 8.4pt; color: {KOYU};

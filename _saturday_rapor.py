@@ -32,6 +32,7 @@ NOTLAR = os.path.join(GSC, "rapor-notlari.md")
 MUSTERI = "Doc. Dr. Tahsin Oguz Acarturk"
 MUSTERI_TR = "Doç. Dr. Tahsin Oğuz Acartürk"
 ALAN = "droguzacarturk.com"
+BASE = "https://www.droguzacarturk.com"
 AJANS = "Saturday Online"
 AJANS_WEB = "saturdayonline.co"
 
@@ -664,7 +665,9 @@ def html_uret(d):
     maxg = max((p["gos"] for p in tepe), default=1)
     sp = ""
     for p in tepe:
-        sp += (f"<tr><td class='yol'>{_kacis(_kis(_yol(p['url']), 46))}</td>"
+        sp += (f"<tr><td class='yol'>"
+               f"<a class='bag' href='{_kacis(p['url'])}'>"
+               f"{_kacis(_kis(_yol(p['url']), 46))}</a></td>"
                f"<td class='s'>{_no(p['tik'])}</td>"
                f"<td class='g'>{cubuk(p['gos'], maxg, AMBER)}<b>{_no(p['gos'])}</b></td>"
                f"<td class='s'>%{_yz(p['to'],1)}</td>"
@@ -828,8 +831,9 @@ def html_uret(d):
             tar_g = tar
         yeni = (' class="yeni"' if (vurgula and donem_bas <= tar <= donem_son)
                 else "")
+        baslik = _kacis(_kis(p.get("h1") or slug, 52))
         sy += (f"<tr{yeni}><td class='tar'>{tar_g}</td>"
-               f"<td>{_kacis(_kis(p.get('h1') or slug, 52))}</td>"
+               f"<td><a class='bag' href='{BASE}/blog/{slug}.html'>{baslik}</a></td>"
                f"<td class='kat'>{_kacis(p.get('cat',''))}</td>"
                f"<td class='s'>{gos}</td><td class='s'>{tik}</td></tr>")
 
@@ -857,7 +861,8 @@ def html_uret(d):
   <p class="dip" style="margin-bottom:5mm">Kategori dağılımı — {kat_html}.
   Gösterim ve tıklama sütunları yalnızca bu rapor dönemine aittir; "—" işareti,
   yazının henüz arama sonuçlarında veri üretmediğini gösterir. Yeni yayınlanan
-  yazıların dizine girip veri üretmesi genelde 2–6 hafta sürer.{
+  yazıların dizine girip veri üretmesi genelde 2–6 hafta sürer.
+  <strong>Başlıklar tıklanabilir</strong> — üzerine tıklayarak yazıyı tarayıcıda açabilirsiniz.{
   ' <span class="yeni-not">Turuncu satırlar</span> bu dönemde yayına alınanlardır.'
   if vurgula else ''}</p>
 
@@ -1061,6 +1066,12 @@ h3 {{ font-size: 11pt; font-weight: 600; margin: 7mm 0 3mm; color: {KOYU}; }}
 .is li::before {{ content: ""; position: absolute; left: 1.5mm; top: 4.6mm;
   width: 2.4mm; height: 2.4mm; border-radius: 50%; background: {KOYU}; }}
 .is.plan li::before {{ background: none; border: 1px solid {KOYU}; }}
+
+/* ---- tiklanabilir basliklar ---- */
+a {{ color: inherit; }}
+.bag {{ color: {INK}; text-decoration: none;
+  border-bottom: 0.5pt solid {AMBER}; }}
+.bag:hover {{ color: {KOYU}; }}
 
 /* ---- icerik envanteri ---- */
 .env {{ font-size: 8.2pt; }}

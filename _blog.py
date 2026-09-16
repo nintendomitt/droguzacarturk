@@ -2719,3 +2719,13 @@ BLOG = [
   ("Sonucu ne zaman kesin olarak değerlendirebiliriz?","LVA'da 6–12 ay, lenf nodu transferinde 12–24 ay. Bu ameliyatların etkisi zamanla kurulan bağlantılara dayandığı için erken değerlendirme yanıltıcı olur.")]},
 
 ]
+
+# ---------------------------------------------------------------------------
+# Ek kumeler ayri dosyalarda tutulur; BLOG listesine burada eklenir.
+# Yeni kume eklerken: dosyayi olustur, buraya import et, extend et.
+# ---------------------------------------------------------------------------
+from _blog_hidradenit import BLOG_HIDRADENIT
+from _blog_mikrotia import BLOG_MIKROTIA
+from _blog_lipodem2 import BLOG_LIPODEM2
+
+BLOG += BLOG_HIDRADENIT + BLOG_MIKROTIA + BLOG_LIPODEM2

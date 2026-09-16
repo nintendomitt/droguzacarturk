@@ -10,7 +10,8 @@ name: Blog yayınla
 
 on:
   schedule:
-    # 06:00 UTC = 09:00 Turkiye. Her gun (gunde 2 yazi temposu icin).
+    # 06:00 UTC = 09:00 Turkiye. Her gun calisir; o gune tarihli yazilari yayinlar.
+    # Tempoyu cron degil, _blog*.py icindeki "date" alanlari belirler.
     - cron: "0 6 * * *"
   workflow_dispatch:        # panelden elle de calistirilabilir
 

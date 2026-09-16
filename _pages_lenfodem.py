@@ -26,10 +26,10 @@ LENFODEM = [{
    "body":"Kol ve bacak lenfatik sistemi"},
  "keyfacts":[("Erken evre","LVA — en az invaziv seçenek"),("İleri evre","Lenf nodu transferi + azaltıcı"),
              ("Tanı","ICG lenfografi, lenfosintigrafi"),("Belirleyici","Evre ve geçen süre")],
- "authority":"Lenfödem mikrocerrahisi, plastik cerrahinin en ince teknik gerektiren alanıdır: 0,3–0,8 mm çapındaki lenf kanallarının mikroskop altında damarlara bağlanması. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde Baş–Boyun Onarımları Direktörü olarak 300'ün üzerinde mikrocerrahi ameliyat gerçekleştirmiş; Avrupa Lenfatik Mikrocerrahi Grubu'nun çalışmalarına katılmakta ve Dünya Lenfödem Kongresi'nde bildiri sunmaktadır.",
- "creds":["Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü — 300+ mikrocerrahi vaka",
+ "authority":"Lenfödem mikrocerrahisi, plastik cerrahinin en ince teknik gerektiren alanıdır: 0,3–0,8 mm çapındaki lenf kanallarının mikroskop altında damarlara bağlanması. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde Baş–Boyun Onarımları Direktörü olarak 600'ün üzerinde mikrocerrahi ameliyat gerçekleştirmiş; Avrupa Lenfatik Mikrocerrahi Grubu'nun çalışmalarına katılmakta ve Dünya Lenfödem Kongresi'nde bildiri sunmaktadır.",
+ "creds":["Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü — 600+ mikrocerrahi vaka",
           "Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım",
-          "Mikrocerrahide doku kaybı oranını %3'e düşürdü — dünya ortalaması %5"],
+          "Mikrocerrahide doku kaybı oranı %1"],
  "sections":[
   {"id":"nedir","tag":"Temel Bilgi","h2":"Lenfödem nedir, neden oluşur?","body":[
    "Lenf sistemi, dokular arasında biriken protein yüklü sıvıyı toplayıp dolaşıma geri kazandıran ince bir kanal ağıdır. Bu ağda tıkanıklık ya da hasar oluştuğunda sıvı dokuda birikir; ortaya çıkan kalıcı şişliğe <strong>lenfödem</strong> denir.",

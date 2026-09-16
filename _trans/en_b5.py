@@ -27,10 +27,10 @@ T = {
    "follow":"Intensive care monitoring, observation of tissue perfusion, speech and swallowing therapy.",
    "body":"Jaw, oral cavity, neck, skull base"},
  "keyfacts":[("Experience","Former Director of Head & Neck Reconstruction, Univ. of Pittsburgh"),
-             ("Cases","300+ microsurgical procedures"),("Flap survival","100% (Pittsburgh period)"),
+             ("Cases","600+ microsurgical procedures"),("Flap survival","100% (Pittsburgh period)"),
              ("Duration","10–12 hours on average")],
  "authority":"Head and neck reconstruction lies at the centre of Assoc. Prof. Dr. Acarturk's academic career. In 2011 he was appointed <strong>Director of Head & Neck Reconstruction</strong> at the Department of Plastic Surgery, University of Pittsburgh. During that post he performed more than 300 microsurgical head and neck operations, achieving a rate of flap survival not previously reached in that department.",
- "creds":["Former Director of Head & Neck Reconstruction, University of Pittsburgh","300+ microsurgical head and neck cases","Subspecialty in Oral & Maxillofacial Surgery — Turkish Ministry of Health"],
+ "creds":["Former Director of Head & Neck Reconstruction, University of Pittsburgh","600+ microsurgical head and neck cases","Subspecialty in Oral & Maxillofacial Surgery — Turkish Ministry of Health"],
  "sections":[
   {"id":"neden","tag":"Scope","h2":"Why these reconstructions are different","body":[
    "The head and neck contain many functions within a small volume: speech, chewing, swallowing, breathing and facial expression. Removing cancer with safe margins usually leaves a defect involving bone, muscle, mucosa and skin at the same time.",

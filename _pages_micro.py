@@ -157,7 +157,7 @@ MICRO = [
    "prep":"Onkolojik ekiple ortak planlama, damar haritalaması ve gerektiğinde üç boyutlu modelleme.",
    "follow":"Yoğun bakım takibi, doku dolaşımının izlenmesi, konuşma ve yutma terapisi.",
    "body":"Çene, ağız içi, boyun, kafa kaidesi"},
- "keyfacts":[("Deneyim","Pittsburgh Ü. Baş–Boyun Onarımları Direktörlüğü"),("Vaka","300+ mikrocerrahi vaka"),
+ "keyfacts":[("Deneyim","Pittsburgh Ü. Baş–Boyun Onarımları Direktörlüğü"),("Vaka","600+ mikrocerrahi vaka"),
              ("Doku yaşayabilirliği","%100 (Pittsburgh dönemi)"),("Ameliyat süresi","Ortalama 10–12 saat")],
  "sections":[
   {"id":"neden","tag":"Kapsam","h2":"Bu onarımlar neden özeldir?","body":[

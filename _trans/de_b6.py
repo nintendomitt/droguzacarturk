@@ -23,8 +23,8 @@ T = {
              ("Stemmer","Positiv, wenn die Haut über der Zehe nicht abhebbar ist"),
              ("Frühstadium","LVA — die schonendste Option"),
              ("Entscheidend","Einseitige Schwellung ist immer abzuklären")],
- "authority":"Das Beinlymphödem ist ein schwierigeres Gebiet als das Armlymphödem: Die Schwerkraft erhöht die lymphatische Last, die Wege sind länger und das Infektionsrisiko ist höher. Mit über 300 mikrochirurgischen Fällen an der University of Pittsburgh arbeitet Doz. Dr. Acartürk an Lymphbahnen von 0,3–0,8 mm Durchmesser und nimmt an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teil.",
- "creds":["Ehem. Direktor für Kopf-Hals-Rekonstruktion, University of Pittsburgh — 300+ mikrochirurgische Fälle",
+ "authority":"Das Beinlymphödem ist ein schwierigeres Gebiet als das Armlymphödem: Die Schwerkraft erhöht die lymphatische Last, die Wege sind länger und das Infektionsrisiko ist höher. Mit über 600 mikrochirurgischen Fällen an der University of Pittsburgh arbeitet Doz. Dr. Acartürk an Lymphbahnen von 0,3–0,8 mm Durchmesser und nimmt an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teil.",
+ "creds":["Ehem. Direktor für Kopf-Hals-Rekonstruktion, University of Pittsburgh — 600+ mikrochirurgische Fälle",
           "Teilnahme an der europäischen Gruppe für lymphatische Mikrochirurgie",
           "Vortrag auf dem Weltkongress für Lymphologie"],
  "sections":[
@@ -112,8 +112,8 @@ T = {
              ("Zeitpunkt","Beginnt meist in den ersten 2 Jahren"),
              ("Frühstadium","Volumenkontrolle mit LVA möglich"),
              ("Vorbeugung","LYMPHA — ein schützender Ansatz während der Operation")],
- "authority":"Die Chirurgie des Armlymphödems erfordert Kenntnisse in Brustchirurgie und Mikrochirurgie zugleich. Doz. Dr. Acartürk führt sowohl Brustrekonstruktionen als auch lymphatische Mikrochirurgie durch; mit 300+ mikrochirurgischen Fällen und einer Lappenerfolgsrate von 97% führt er diese beiden Gebiete in einem Plan zusammen.",
- "creds":["300+ mikrochirurgische Eingriffe · 97% Lappenerfolgsrate",
+ "authority":"Die Chirurgie des Armlymphödems erfordert Kenntnisse in Brustchirurgie und Mikrochirurgie zugleich. Doz. Dr. Acartürk führt sowohl Brustrekonstruktionen als auch lymphatische Mikrochirurgie durch; mit 600+ mikrochirurgischen Fällen und einer Gewebeverlustrate von 1% führt er diese beiden Gebiete in einem Plan zusammen.",
+ "creds":["600+ mikrochirurgische Eingriffe · 1% Gewebeverlustrate",
           "Teilnahme an der europäischen Gruppe für lymphatische Mikrochirurgie",
           "Integrierter Ansatz für Brustrekonstruktion und lymphatische Chirurgie"],
  "sections":[
@@ -197,10 +197,10 @@ T = {
              ("Stemmer","Positiv, wenn die Haut nicht abhebbar ist"),
              ("Warnung","Schwellung über 3 Monate sollte abgeklärt werden"),
              ("Entscheidend","Im Stadium 0 sind die Optionen am breitesten")],
- "authority":"Die Früherkennung des Lymphödems bestimmt den Behandlungserfolg unmittelbar. Doz. Dr. Acartürk ist Mikrochirurg, nimmt an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teil und hat auf dem Weltkongress für Lymphologie vorgetragen; mit 300+ mikrochirurgischen Fällen überführt er die Stadieneinteilung in einen Behandlungsplan.",
+ "authority":"Die Früherkennung des Lymphödems bestimmt den Behandlungserfolg unmittelbar. Doz. Dr. Acartürk ist Mikrochirurg, nimmt an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teil und hat auf dem Weltkongress für Lymphologie vorgetragen; mit 600+ mikrochirurgischen Fällen überführt er die Stadieneinteilung in einen Behandlungsplan.",
  "creds":["Teilnahme an der europäischen Gruppe für lymphatische Mikrochirurgie",
           "Vortrag auf dem Weltkongress für Lymphologie",
-          "300+ mikrochirurgische Fälle an der University of Pittsburgh"],
+          "600+ mikrochirurgische Fälle an der University of Pittsburgh"],
  "sections":[
   {"id":"erken","tag":"Frühe Zeichen","h2":"Die frühesten Symptome: gespürt, bevor sie messbar sind","body":[
    "Das erste Symptom eines Lymphödems ist meist keine sichtbare Schwellung. Die meisten Betroffenen beschreiben eine <strong>Veränderung des Gefühls</strong>, bevor ein messbarer Unterschied entstanden ist.",
@@ -276,7 +276,7 @@ T = {
              ("Beeinflussbar","Gewicht, Infektionen, Hautpflege")],
  "authority":"Die Ursache eines Lymphödems richtig zu bestimmen verhindert unnötige Behandlungen und ermöglicht zugleich die richtige Operation. Als Chirurg, der sowohl Rekonstruktionen nach onkologischen Eingriffen als auch lymphatische Mikrochirurgie durchführt, beurteilt Doz. Dr. Acartürk diese beiden Gebiete gemeinsam.",
  "creds":["Ehem. Direktor für Kopf-Hals-Rekonstruktion, University of Pittsburgh",
-          "300+ mikrochirurgische Eingriffe · 97% Lappenerfolgsrate",
+          "600+ mikrochirurgische Eingriffe · 1% Gewebeverlustrate",
           "Teilnahme an der europäischen Gruppe für lymphatische Mikrochirurgie"],
  "sections":[
   {"id":"mekanizma","tag":"Mechanismus","h2":"Wie entsteht ein Lymphödem?","body":[
@@ -350,8 +350,8 @@ T = {
              ("Konservative Behandlung","Physikalische Medizin und Rehabilitation"),
              ("Ideal","Beide Fächer arbeiten zusammen"),
              ("Warnung","Die zugrunde liegende Ursache ist zuerst abzuklären")],
- "authority":"Die Lymphödem-Mikrochirurgie ist ein eigenes Gebiet innerhalb der plastischen Chirurgie — nicht jeder plastische Chirurg führt diese Eingriffe durch. Doz. Dr. Acartürk hat an der University of Pittsburgh 300+ mikrochirurgische Fälle durchgeführt, nimmt an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teil und hat auf dem Weltkongress für Lymphologie vorgetragen.",
- "creds":["Ehem. Direktor für Kopf-Hals-Rekonstruktion, University of Pittsburgh — 300+ mikrochirurgische Fälle",
+ "authority":"Die Lymphödem-Mikrochirurgie ist ein eigenes Gebiet innerhalb der plastischen Chirurgie — nicht jeder plastische Chirurg führt diese Eingriffe durch. Doz. Dr. Acartürk hat an der University of Pittsburgh 600+ mikrochirurgische Fälle durchgeführt, nimmt an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teil und hat auf dem Weltkongress für Lymphologie vorgetragen.",
+ "creds":["Ehem. Direktor für Kopf-Hals-Rekonstruktion, University of Pittsburgh — 600+ mikrochirurgische Fälle",
           "Teilnahme an der europäischen Gruppe für lymphatische Mikrochirurgie",
           "Vortrag auf dem Weltkongress für Lymphologie"],
  "sections":[
@@ -430,7 +430,7 @@ T = {
  "authority":"Die Stadieneinteilung ist der Rahmen, der die Behandlung bestimmt, reicht allein jedoch nicht aus — sie muss zusammen mit den Bildgebungsbefunden interpretiert werden. Als Mikrochirurg, der an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teilnimmt und auf dem Weltkongress für Lymphologie vorgetragen hat, beurteilt Doz. Dr. Acartürk beide Datenquellen gemeinsam.",
  "creds":["Teilnahme an der europäischen Gruppe für lymphatische Mikrochirurgie",
           "Vortrag auf dem Weltkongress für Lymphologie",
-          "300+ mikrochirurgische Fälle an der University of Pittsburgh"],
+          "600+ mikrochirurgische Fälle an der University of Pittsburgh"],
  "sections":[
   {"id":"isl","tag":"ISL-Klassifikation","h2":"Das ISL-Stadiensystem","body":[
    "Die Klassifikation der International Society of Lymphology (ISL) ist der weltweit anerkannte Rahmen. Die Stadien beschreiben den Zustand des Gewebes und seine Reversibilität.",

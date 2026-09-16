@@ -18,12 +18,12 @@ T = {
    "prep":"Tumorstaging, Gefäßdarstellung, Zahnbeurteilung und gemeinsame Planung im Tumorboard.",
    "follow":"Lappenüberwachung, Schluck- und Sprechrehabilitation, zahnärztliche Versorgung.",
    "body":"Kiefer, Zunge, Gaumen, Gesichtsweichteile"},
- "keyfacts":[("Erfahrung","300+ mikrochirurgische Fälle"),("Lappenerfolgsrate","97% — Weltdurchschnitt 95%"),
+ "keyfacts":[("Erfahrung","600+ mikrochirurgische Fälle"),("Gewebeverlustrate","1%"),
              ("Ehemalige Position","Direktor für Kopf-Hals-Rekonstruktion, Univ. of Pittsburgh"),
              ("Zeitpunkt","Bevorzugt in derselben Sitzung wie die Tumorentfernung")],
- "authority":"Doz. Dr. Acartürk war <strong>Direktor der Abteilung für Kopf-Hals-Rekonstruktion an der University of Pittsburgh</strong>. Er führte über 300 mikrochirurgische Eingriffe durch und senkte die Lappenverlustrate auf 3% — gegenüber 5% im weltweiten Mittel. Seine Zusatzqualifikation in Mund-, Kiefer- und Gesichtschirurgie ermöglicht es, Kieferrekonstruktion und Zahnversorgung gemeinsam zu planen.",
+ "authority":"Doz. Dr. Acartürk war <strong>Direktor der Abteilung für Kopf-Hals-Rekonstruktion an der University of Pittsburgh</strong>. Er führte über 600 mikrochirurgische Eingriffe durch und senkte die Lappenverlustrate auf 3% — gegenüber 5% im weltweiten Mittel. Seine Zusatzqualifikation in Mund-, Kiefer- und Gesichtschirurgie ermöglicht es, Kieferrekonstruktion und Zahnversorgung gemeinsam zu planen.",
  "creds":["Ehem. Direktor für Kopf-Hals-Rekonstruktion, University of Pittsburgh",
-          "300+ mikrochirurgische Eingriffe · 97% Lappenerfolgsrate",
+          "600+ mikrochirurgische Eingriffe · 1% Gewebeverlustrate",
           "Zusatzqualifikation Mund-, Kiefer- und Gesichtschirurgie"],
  "sections":[
   {"id":"kapsam","tag":"Umfang","h2":"Wann wird eine Rekonstruktion benötigt?","body":[
@@ -57,7 +57,7 @@ T = {
   ("Kann ich nach der Kieferrekonstruktion Zähne bekommen?","Ja. Der Fibulaknochen ist stabil genug für Zahnimplantate. Nach Einheilung des Knochens, meist nach 4–6 Monaten, wird die Implantatplanung begonnen."),
   ("Beeinträchtigt die Entnahme des Wadenbeins das Gehen?","Nein. Das Wadenbein trägt nur wenig zum Körpergewicht bei; das Schienbein übernimmt die Last. In den ersten Wochen wird mit Gehhilfen mobilisiert, danach kehrt das Gehen zur Norm zurück."),
   ("Kann ich nach der Bestrahlung noch rekonstruiert werden?","Ja, bestrahltes Gewebe erschwert die Operation jedoch: Die Gefäße sind geschädigt und die Heilung verläuft langsamer. In solchen Fällen ist eine Rekonstruktion mit gut durchblutetem Gewebe von außerhalb des Bestrahlungsfeldes besonders wichtig."),
-  ("Wie hoch ist das Risiko, dass der Lappen verloren geht?","Die Erfolgsrate freier Lappen liegt weltweit bei etwa 95%. In der Serie von Doz. Dr. Acartürk beträgt sie 97%. Bei einem Durchblutungsproblem entscheidet ein rechtzeitiger zweiter Eingriff in den ersten Stunden häufig über die Rettung des Lappens."),
+  ("Wie hoch ist das Risiko, dass der Lappen verloren geht?","Die Erfolgsrate freier Lappen liegt weltweit bei etwa 95%. Bei einem Durchblutungsproblem entscheidet ein rechtzeitiger zweiter Eingriff in den ersten Stunden häufig über die Rettung des Lappens."),
   ("Kann ich wieder normal sprechen und essen?","Das hängt vom Umfang des entfernten Gewebes ab. Die meisten Patienten kehren nach Rekonstruktion und Rehabilitation zu einer normalen Ernährung zurück; das Sprechen bessert sich über Monate. Realistische Erwartungen werden vorab gemeinsam besprochen.")],
  "ctah":"Beurteilung zur Kopf-Hals-Rekonstruktion",
  "ctap":"Teilen Sie uns Ihre Diagnose, den geplanten Operationstermin und eine eventuelle Bestrahlung mit; senden Sie nach Möglichkeit Ihre Befunde."},
@@ -79,8 +79,8 @@ T = {
    "follow":"Gesichtsphysiotherapie und Lächeltraining.","body":"Gesichtsmuskulatur"},
  "keyfacts":[("Entscheidend","Verstrichene Zeit seit Beginn"),("Unter 12 Monaten","Nerventransfer möglich"),
              ("Über 24 Monate","Freier Muskeltransfer"),("Ergänzend","Lidversorgung und statische Verfahren")],
- "authority":"Die Fazialisreanimation vereint zwei Gebiete: Mikrochirurgie und Gesichtsanatomie. Doz. Dr. Acartürk verfügt über 300+ mikrochirurgische Eingriffe und eine Zusatzqualifikation in Mund-, Kiefer- und Gesichtschirurgie; er beherrscht Nerven- und Muskeltransfer ebenso wie die feine Anatomie des Gesichts.",
- "creds":["300+ mikrochirurgische Eingriffe","Zusatzqualifikation Mund-, Kiefer- und Gesichtschirurgie",
+ "authority":"Die Fazialisreanimation vereint zwei Gebiete: Mikrochirurgie und Gesichtsanatomie. Doz. Dr. Acartürk verfügt über 600+ mikrochirurgische Eingriffe und eine Zusatzqualifikation in Mund-, Kiefer- und Gesichtschirurgie; er beherrscht Nerven- und Muskeltransfer ebenso wie die feine Anatomie des Gesichts.",
+ "creds":["600+ mikrochirurgische Eingriffe","Zusatzqualifikation Mund-, Kiefer- und Gesichtschirurgie",
           "Erfahrung in Gesichtsrekonstruktion an der University of Pittsburgh"],
  "sections":[
   {"id":"neden","tag":"Ursachen","h2":"Ursachen der Fazialisparese","body":[
@@ -147,8 +147,8 @@ T = {
              ("Transport","In ein feuchtes Tuch, in einen Beutel, auf Eis"),
              ("Kritisch","Der abgetrennte Teil darf Eis nicht direkt berühren"),
              ("Nachbehandlung","Handtherapie bestimmt das Ergebnis")],
- "authority":"Die Handchirurgie ist eines der Gebiete, in denen sich mikrochirurgische Erfahrung am unmittelbarsten in Funktion übersetzt. Doz. Dr. Acartürk verfügt über 300+ mikrochirurgische Eingriffe und drei Jahre allgemeinchirurgische Ausbildung vor der plastischen Chirurgie; er ist mit Gefäß- und Nervennaht ebenso vertraut wie mit der Versorgung des Traumapatienten insgesamt.",
- "creds":["300+ mikrochirurgische Eingriffe","Drei Jahre allgemeinchirurgische Ausbildung",
+ "authority":"Die Handchirurgie ist eines der Gebiete, in denen sich mikrochirurgische Erfahrung am unmittelbarsten in Funktion übersetzt. Doz. Dr. Acartürk verfügt über 600+ mikrochirurgische Eingriffe und drei Jahre allgemeinchirurgische Ausbildung vor der plastischen Chirurgie; er ist mit Gefäß- und Nervennaht ebenso vertraut wie mit der Versorgung des Traumapatienten insgesamt.",
+ "creds":["600+ mikrochirurgische Eingriffe","Drei Jahre allgemeinchirurgische Ausbildung",
           "Erfahrung in Extremitätenrekonstruktion an der University of Pittsburgh"],
  "sections":[
   {"id":"acil","tag":"Notfall","h2":"Was bei einer Abtrennung zu tun ist","body":[
@@ -213,8 +213,8 @@ T = {
              ("Dringlichkeit","Bei Kontraktur mit Funktionsverlust früher"),
              ("Verfahren","Z-Plastik, Transplantat, Lappen, Fetttransfer"),
              ("Nachbehandlung","Kompression und Physiotherapie sind Teil der Behandlung")],
- "authority":"Die Verbrennungsrekonstruktion erfordert die gesamte Bandbreite der plastischen Chirurgie: Hauttransplantate, lokale Lappen, freie Lappen und Fetttransfer. Doz. Dr. Acartürk verbindet 300+ mikrochirurgische Eingriffe mit seiner Arbeit zu Fettgewebe und Stammzellen an der University of Pittsburgh — eine Kombination, die in der Narbenversorgung besonders wirksam ist.",
- "creds":["300+ mikrochirurgische Eingriffe","Forschung zu Fettgewebe und Stammzellen an der University of Pittsburgh",
+ "authority":"Die Verbrennungsrekonstruktion erfordert die gesamte Bandbreite der plastischen Chirurgie: Hauttransplantate, lokale Lappen, freie Lappen und Fetttransfer. Doz. Dr. Acartürk verbindet 600+ mikrochirurgische Eingriffe mit seiner Arbeit zu Fettgewebe und Stammzellen an der University of Pittsburgh — eine Kombination, die in der Narbenversorgung besonders wirksam ist.",
+ "creds":["600+ mikrochirurgische Eingriffe","Forschung zu Fettgewebe und Stammzellen an der University of Pittsburgh",
           "Drei Jahre allgemeinchirurgische Ausbildung"],
  "sections":[
   {"id":"kontraktur","tag":"Kontraktur","h2":"Narbenkontrakturen und Bewegungseinschränkung","body":[

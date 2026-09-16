@@ -23,8 +23,8 @@ T = {
              ("Stemmer","Positive if skin over the toe cannot be lifted"),
              ("Early stage","LVA — the least invasive option"),
              ("Critical","One-sided swelling must always be investigated")],
- "authority":"Leg lymphedema is a harder field than arm lymphedema: gravity increases the lymphatic load, the distances are longer and the risk of infection is higher. With over 300 microsurgical cases from the University of Pittsburgh, Assoc. Prof. Dr. Acarturk works on lymphatic channels 0.3–0.8 mm in diameter and participates in the work of the European lymphatic microsurgery group.",
- "creds":["Former Director of Head and Neck Reconstruction, University of Pittsburgh — 300+ microsurgical cases",
+ "authority":"Leg lymphedema is a harder field than arm lymphedema: gravity increases the lymphatic load, the distances are longer and the risk of infection is higher. With over 600 microsurgical cases from the University of Pittsburgh, Assoc. Prof. Dr. Acarturk works on lymphatic channels 0.3–0.8 mm in diameter and participates in the work of the European lymphatic microsurgery group.",
+ "creds":["Former Director of Head and Neck Reconstruction, University of Pittsburgh — 600+ microsurgical cases",
           "Participation in the European lymphatic microsurgery group",
           "Presentation at the World Congress of Lymphology"],
  "sections":[
@@ -111,8 +111,8 @@ T = {
              ("Timing","Usually begins within the first 2 years"),
              ("Early stage","Volume control possible with LVA"),
              ("Prevention","LYMPHA — a protective approach during surgery")],
- "authority":"Arm lymphedema surgery requires knowledge of both breast surgery and microsurgery. Assoc. Prof. Dr. Acarturk is a surgeon who performs both breast reconstruction and lymphatic microsurgery; with 300+ microsurgical cases and a 97% flap success rate, he brings these two fields into a single plan.",
- "creds":["300+ microsurgical operations · 97% flap success rate",
+ "authority":"Arm lymphedema surgery requires knowledge of both breast surgery and microsurgery. Assoc. Prof. Dr. Acarturk is a surgeon who performs both breast reconstruction and lymphatic microsurgery; with 600+ microsurgical cases and a 1% tissue loss rate, he brings these two fields into a single plan.",
+ "creds":["600+ microsurgical operations · 1% tissue loss rate",
           "Participation in the European lymphatic microsurgery group",
           "An integrated approach to breast reconstruction and lymphatic surgery"],
  "sections":[
@@ -195,10 +195,10 @@ T = {
              ("Stemmer","Positive if the skin cannot be lifted"),
              ("Warning","Swelling lasting longer than 3 months should be assessed"),
              ("Critical","Treatment options are widest at stage 0")],
- "authority":"Early diagnosis of lymphedema directly determines the success of treatment. Assoc. Prof. Dr. Acarturk is a microsurgeon who participates in the work of the European lymphatic microsurgery group and has presented at the World Congress of Lymphology; with 300+ microsurgical cases he translates staging into a treatment plan.",
+ "authority":"Early diagnosis of lymphedema directly determines the success of treatment. Assoc. Prof. Dr. Acarturk is a microsurgeon who participates in the work of the European lymphatic microsurgery group and has presented at the World Congress of Lymphology; with 600+ microsurgical cases he translates staging into a treatment plan.",
  "creds":["Participation in the European lymphatic microsurgery group",
           "Presentation at the World Congress of Lymphology",
-          "300+ microsurgical cases at the University of Pittsburgh"],
+          "600+ microsurgical cases at the University of Pittsburgh"],
  "sections":[
   {"id":"erken","tag":"Early Signs","h2":"The earliest symptoms: felt before they are measured","body":[
    "The first symptom of lymphedema is usually not visible swelling. Most patients describe a <strong>change in sensation</strong> before any measurable difference has developed.",
@@ -273,7 +273,7 @@ T = {
              ("Modifiable","Weight, infection, skin care")],
  "authority":"Establishing the cause of lymphedema correctly both prevents unnecessary treatment and makes the right surgery possible. As a surgeon who performs both reconstruction after oncological surgery and lymphatic microsurgery, Assoc. Prof. Dr. Acarturk assesses these two fields together.",
  "creds":["Former Director of Head and Neck Reconstruction, University of Pittsburgh",
-          "300+ microsurgical operations · 97% flap success rate",
+          "600+ microsurgical operations · 1% tissue loss rate",
           "Participation in the European lymphatic microsurgery group"],
  "sections":[
   {"id":"mekanizma","tag":"Mechanism","h2":"How does lymphedema develop?","body":[
@@ -346,8 +346,8 @@ T = {
              ("Conservative treatment","Physical Medicine and Rehabilitation"),
              ("Ideal","The two specialties working together"),
              ("Warning","The underlying cause must be investigated first")],
- "authority":"Lymphedema microsurgery is a distinct field within plastic surgery — not every plastic surgeon performs these operations. Assoc. Prof. Dr. Acarturk has performed 300+ microsurgical cases at the University of Pittsburgh, participates in the work of the European lymphatic microsurgery group and has presented at the World Congress of Lymphology.",
- "creds":["Former Director of Head and Neck Reconstruction, University of Pittsburgh — 300+ microsurgical cases",
+ "authority":"Lymphedema microsurgery is a distinct field within plastic surgery — not every plastic surgeon performs these operations. Assoc. Prof. Dr. Acarturk has performed 600+ microsurgical cases at the University of Pittsburgh, participates in the work of the European lymphatic microsurgery group and has presented at the World Congress of Lymphology.",
+ "creds":["Former Director of Head and Neck Reconstruction, University of Pittsburgh — 600+ microsurgical cases",
           "Participation in the European lymphatic microsurgery group",
           "Presentation at the World Congress of Lymphology"],
  "sections":[
@@ -425,7 +425,7 @@ T = {
  "authority":"Staging is the framework that determines treatment but is not sufficient on its own — it must be interpreted together with imaging findings. As a microsurgeon who participates in the work of the European lymphatic microsurgery group and has presented at the World Congress of Lymphology, Assoc. Prof. Dr. Acarturk assesses these two sets of data together.",
  "creds":["Participation in the European lymphatic microsurgery group",
           "Presentation at the World Congress of Lymphology",
-          "300+ microsurgical cases at the University of Pittsburgh"],
+          "600+ microsurgical cases at the University of Pittsburgh"],
  "sections":[
   {"id":"isl","tag":"ISL Classification","h2":"The ISL staging system","body":[
    "The classification of the International Society of Lymphology (ISL) is the framework accepted worldwide. The stages describe the condition of the tissue and its reversibility.",

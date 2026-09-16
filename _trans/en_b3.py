@@ -21,7 +21,7 @@ T = {
  "keyfacts":[("Early stage","LVA — the least invasive option"),("Advanced stage","Lymph node transfer + debulking"),
              ("Diagnosis","ICG lymphography, lymphoscintigraphy"),("Decisive factor","Stage and time elapsed")],
  "authority":"Lymphedema microsurgery is the most technically demanding field in plastic surgery: connecting lymphatic channels 0.3–0.8 mm in diameter to veins under the microscope. Assoc. Prof. Dr. Acarturk performed more than 300 microsurgical operations as Director of Head & Neck Reconstruction at the University of Pittsburgh; he takes part in the work of the European lymphatic microsurgery group and has presented at the World Congress of Lymphology.",
- "creds":["Former Director of Head & Neck Reconstruction, University of Pittsburgh — 300+ microsurgical cases",
+ "creds":["Former Director of Head & Neck Reconstruction, University of Pittsburgh — 600+ microsurgical cases",
           "Participation in the European lymphatic microsurgery group",
           "Reduced microsurgical flap loss to 3% — against a global average of 5%"],
  "sections":[

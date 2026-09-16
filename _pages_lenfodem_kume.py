@@ -35,8 +35,8 @@ LENFODEM_KUME = [
              ("Stemmer","Ayak parmağında deri kaldırılamıyorsa pozitif"),
              ("Erken evre","LVA — en az invaziv seçenek"),
              ("Kritik","Tek taraflı şişlik her zaman araştırılmalı")],
- "authority":"Bacak lenfödemi, kol lenfödeminden daha zor bir alandır: yerçekimi lenfatik yükü artırır, mesafeler uzundur ve enfeksiyon riski yüksektir. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde 300+ mikrocerrahi vaka deneyimiyle 0,3–0,8 mm çapındaki lenf kanallarında çalışır ve Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılmaktadır.",
- "creds":["Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü — 300+ mikrocerrahi vaka",
+ "authority":"Bacak lenfödemi, kol lenfödeminden daha zor bir alandır: yerçekimi lenfatik yükü artırır, mesafeler uzundur ve enfeksiyon riski yüksektir. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde 600+ mikrocerrahi vaka deneyimiyle 0,3–0,8 mm çapındaki lenf kanallarında çalışır ve Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılmaktadır.",
+ "creds":["Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü — 600+ mikrocerrahi vaka",
           "Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım",
           "Dünya Lenfoloji Kongresi'nde bildiri sunumu"],
  "sections":[
@@ -126,8 +126,8 @@ LENFODEM_KUME = [
              ("Zamanlama","Genellikle ilk 2 yılda başlar"),
              ("Erken evre","LVA ile hacim kontrolü mümkün"),
              ("Önleme","LYMPHA — ameliyat sırasında koruyucu yaklaşım")],
- "authority":"Kol lenfödemi cerrahisi, meme cerrahisi ve mikrocerrahiyi birlikte bilmeyi gerektirir. Doç. Dr. Acartürk hem meme rekonstrüksiyonu hem de lenfatik mikrocerrahi yapan bir cerrahtır; 300+ mikrocerrahi vakası ve %97 flep başarı oranı ile bu iki alanı aynı planda birleştirir.",
- "creds":["300+ mikrocerrahi operasyon · %97 flep başarı oranı",
+ "authority":"Kol lenfödemi cerrahisi, meme cerrahisi ve mikrocerrahiyi birlikte bilmeyi gerektirir. Doç. Dr. Acartürk hem meme rekonstrüksiyonu hem de lenfatik mikrocerrahi yapan bir cerrahtır; 600+ mikrocerrahi vakası ve %1 doku kaybı oranı ile bu iki alanı aynı planda birleştirir.",
+ "creds":["600+ mikrocerrahi operasyon · %1 doku kaybı oranı",
           "Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım",
           "Meme rekonstrüksiyonu ve lenfatik cerrahide birleşik yaklaşım"],
  "sections":[
@@ -213,10 +213,10 @@ LENFODEM_KUME = [
              ("Stemmer","Deri kaldırılamıyorsa pozitif"),
              ("Uyarı","Şişlik 3 aydan uzun sürüyorsa değerlendirilmeli"),
              ("Kritik","Evre 0'da tedavi seçenekleri en geniştir")],
- "authority":"Lenfödemin erken tanısı, tedavi başarısını doğrudan belirler. Doç. Dr. Acartürk, Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılan ve Dünya Lenfoloji Kongresi'nde bildiri sunmuş bir mikrocerrahtır; 300+ mikrocerrahi vaka deneyimiyle evrelemeyi tedavi planına dönüştürür.",
+ "authority":"Lenfödemin erken tanısı, tedavi başarısını doğrudan belirler. Doç. Dr. Acartürk, Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılan ve Dünya Lenfoloji Kongresi'nde bildiri sunmuş bir mikrocerrahtır; 600+ mikrocerrahi vaka deneyimiyle evrelemeyi tedavi planına dönüştürür.",
  "creds":["Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım",
           "Dünya Lenfoloji Kongresi'nde bildiri sunumu",
-          "Pittsburgh Üniversitesi'nde 300+ mikrocerrahi vaka"],
+          "Pittsburgh Üniversitesi'nde 600+ mikrocerrahi vaka"],
  "sections":[
   {"id":"erken","tag":"Erken Bulgular","h2":"En erken belirtiler: ölçülmeden önce hissedilir","body":[
    "Lenfödemin ilk belirtisi genellikle gözle görülen bir şişlik değildir. Hastaların çoğu, henüz ölçülebilir bir fark oluşmadan önce bir <strong>his değişikliği</strong> tarif eder.",
@@ -294,7 +294,7 @@ LENFODEM_KUME = [
              ("Değiştirilebilir","Kilo, enfeksiyon, cilt bakımı")],
  "authority":"Lenfödemin nedenini doğru koymak, gereksiz tedaviyi önlediği kadar doğru cerrahiyi de mümkün kılar. Doç. Dr. Acartürk, hem onkolojik cerrahi sonrası rekonstrüksiyon hem de lenfatik mikrocerrahi yapan bir cerrah olarak bu iki alanı birlikte değerlendirir.",
  "creds":["Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü",
-          "300+ mikrocerrahi operasyon · %97 flep başarı oranı",
+          "600+ mikrocerrahi operasyon · %1 doku kaybı oranı",
           "Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım"],
  "sections":[
   {"id":"mekanizma","tag":"Mekanizma","h2":"Lenfödem nasıl oluşur?","body":[
@@ -370,8 +370,8 @@ LENFODEM_KUME = [
              ("Konservatif tedavi","Fiziksel Tıp ve Rehabilitasyon"),
              ("İdeal","İki branşın birlikte çalışması"),
              ("Uyarı","Önce altta yatan neden araştırılmalı")],
- "authority":"Lenfödem mikrocerrahisi, plastik cerrahi içinde ayrı bir uzmanlık alanıdır — her plastik cerrah bu ameliyatları yapmaz. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde 300+ mikrocerrahi vaka gerçekleştirmiş, Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılan ve Dünya Lenfoloji Kongresi'nde bildiri sunmuş bir mikrocerrahtır.",
- "creds":["Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü — 300+ mikrocerrahi vaka",
+ "authority":"Lenfödem mikrocerrahisi, plastik cerrahi içinde ayrı bir uzmanlık alanıdır — her plastik cerrah bu ameliyatları yapmaz. Doç. Dr. Acartürk, Pittsburgh Üniversitesi'nde 600+ mikrocerrahi vaka gerçekleştirmiş, Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılan ve Dünya Lenfoloji Kongresi'nde bildiri sunmuş bir mikrocerrahtır.",
+ "creds":["Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü — 600+ mikrocerrahi vaka",
           "Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım",
           "Dünya Lenfoloji Kongresi'nde bildiri sunumu"],
  "sections":[
@@ -452,7 +452,7 @@ LENFODEM_KUME = [
  "authority":"Evreleme, tedaviyi belirleyen çerçevedir ama tek başına yeterli değildir — görüntüleme bulguları ile birlikte yorumlanmalıdır. Doç. Dr. Acartürk, Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılan ve Dünya Lenfoloji Kongresi'nde bildiri sunmuş bir mikrocerrah olarak bu iki veriyi birlikte değerlendirir.",
  "creds":["Avrupa Lenfatik Mikrocerrahi Grubu çalışmalarına katılım",
           "Dünya Lenfoloji Kongresi'nde bildiri sunumu",
-          "Pittsburgh Üniversitesi'nde 300+ mikrocerrahi vaka"],
+          "Pittsburgh Üniversitesi'nde 600+ mikrocerrahi vaka"],
  "sections":[
   {"id":"isl","tag":"ISL Sınıflaması","h2":"ISL evreleme sistemi","body":[
    "Uluslararası Lenfoloji Derneği'nin (ISL) sınıflaması, dünya genelinde kabul gören çerçevedir. Evreler, dokunun durumunu ve geri döndürülebilirliği tanımlar.",

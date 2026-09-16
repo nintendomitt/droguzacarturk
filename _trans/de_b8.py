@@ -24,7 +24,7 @@ T = {
               ("Verfahren", "Radikale Exzision + Lappen/Transplantat"),
               ("Wichtig", "Frühstadium gehört in die Dermatologie")],
  "authority": "Im fortgeschrittenen Stadium der Hidradenitis suppurativa ist die radikale Exzision mit anschließender Rekonstruktion die einzige dauerhafte Lösung. Das ist ein grundlegend anderer Eingriff als die wiederholte Abszessspaltung: Das gesamte erkrankte Schweißdrüsenareal muss entfernt und der entstehende große Defekt mit einem Lappen oder Transplantat gedeckt werden. Die Erfahrung von Doz. Dr. Acartürk in freiem Gewebetransfer und Lappenchirurgie ist entscheidend für die Planung in beweglichen Regionen wie Achselhöhle und Leiste, in denen keine Kontraktur zurückbleiben darf.",
- "creds": ["300+ mikrochirurgische und Lappen-Eingriffe an der University of Pittsburgh",
+ "creds": ["600+ mikrochirurgische und Lappen-Eingriffe an der University of Pittsburgh",
            "Erfahrung in Narben- und Kontrakturrekonstruktion nach Verbrennungen und Trauma",
            "Zusatzqualifikation Mund-, Kiefer- und Gesichtschirurgie"],
  "sections": [

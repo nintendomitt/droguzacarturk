@@ -82,3 +82,9 @@ nav.main .navdrop:nth-of-type(3) .dropm a+a{border-top:0}
 .srcs li{margin-bottom:9px;font-size:.92rem;line-height:1.55;color:var(--muted)}
 .srcs a{color:var(--primary);text-decoration:underline;text-underline-offset:2px}
 .srcs a:hover{color:var(--primary-d)}
+
+/* ---- iki disiplin semasi (anasayfa uzmanlik bolumu) ---- */
+.disc-fig{margin:0 0 40px;padding:26px 20px 18px;border:1px solid #E6E9EF;border-radius:10px;background:#FBFCFD}
+.disc-fig svg{display:block;width:100%;height:auto;max-width:760px;margin:0 auto}
+.disc-fig figcaption{margin-top:14px;text-align:center;font-size:.86rem;color:#6B7280}
+@media(max-width:640px){.disc-fig{padding:18px 12px 14px}.disc-fig figcaption{font-size:.8rem}}

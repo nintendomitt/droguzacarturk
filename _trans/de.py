@@ -20,8 +20,8 @@ T = {
    "body":"Lymphsystem der Arme und Beine"},
  "keyfacts":[("Frühstadium","LVA — die schonendste Option"),("Fortgeschritten","Lymphknotentransfer + Reduktion"),
              ("Diagnostik","ICG-Lymphographie, Lymphszintigraphie"),("Entscheidend","Stadium und verstrichene Zeit")],
- "authority":"Die Lymphödem-Mikrochirurgie ist das technisch anspruchsvollste Gebiet der plastischen Chirurgie: das Verbinden von Lymphbahnen mit 0,3–0,8 mm Durchmesser mit Venen unter dem Mikroskop. Doz. Dr. Acartürk führte als Direktor für Kopf-Hals-Rekonstruktion an der University of Pittsburgh über 300 mikrochirurgische Eingriffe durch; er nimmt an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teil und hat auf dem Weltkongress für Lymphologie vorgetragen.",
- "creds":["Ehem. Direktor für Kopf-Hals-Rekonstruktion, University of Pittsburgh — 300+ mikrochirurgische Fälle",
+ "authority":"Die Lymphödem-Mikrochirurgie ist das technisch anspruchsvollste Gebiet der plastischen Chirurgie: das Verbinden von Lymphbahnen mit 0,3–0,8 mm Durchmesser mit Venen unter dem Mikroskop. Doz. Dr. Acartürk führte als Direktor für Kopf-Hals-Rekonstruktion an der University of Pittsburgh über 600 mikrochirurgische Eingriffe durch; er nimmt an den Arbeiten der europäischen lymphatischen Mikrochirurgie-Gruppe teil und hat auf dem Weltkongress für Lymphologie vorgetragen.",
+ "creds":["Ehem. Direktor für Kopf-Hals-Rekonstruktion, University of Pittsburgh — 600+ mikrochirurgische Fälle",
           "Teilnahme an der europäischen Gruppe für lymphatische Mikrochirurgie",
           "Senkung der mikrochirurgischen Lappenverlustrate auf 3% — gegenüber 5% im weltweiten Mittel"],
  "sections":[

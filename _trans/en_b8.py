@@ -24,7 +24,7 @@ T = {
               ("Method", "Wide excision + flap/graft"),
               ("Important", "Early stage belongs to dermatology")],
  "authority": "In advanced hidradenitis suppurativa the only durable solution is wide excision followed by reconstruction. This is a fundamentally different operation from repeated abscess drainage: the entire diseased sweat-gland field must be removed and the resulting large defect closed with a flap or graft. Assoc. Prof. Dr. Acarturk's experience in free tissue transfer and flap surgery is decisive when planning closures in mobile regions such as the armpit and groin, where a contracture must not be left behind.",
- "creds": ["300+ microsurgical and flap cases at the University of Pittsburgh",
+ "creds": ["600+ microsurgical and flap cases at the University of Pittsburgh",
            "Experience in scar and contracture reconstruction after burns and trauma",
            "Subspecialty in Oral, Facial and Maxillofacial Surgery"],
  "sections": [

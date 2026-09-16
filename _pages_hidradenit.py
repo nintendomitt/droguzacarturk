@@ -19,7 +19,7 @@ Semrush TR: hidradenitis supurativa 6.600/ay (KD 19) · hidradenit 1.000 (16)
 HIDRADENIT = [{
  "key": "hidradenit",
  "authority": "Hidradenitis süpürativanın ileri evresinde tek kalıcı çözüm geniş eksizyon ve ardından yapılan rekonstrüksiyondur. Bu, tekrarlayan apse drenajından tamamen farklı bir cerrahidir: hastalıklı ter bezi alanının bütünüyle çıkarılması ve oluşan geniş defektin flep ya da greftle kapatılması gerekir. Doç. Dr. Acartürk'ün serbest doku aktarımı ve flep cerrahisindeki pratiği, koltuk altı ve kasık gibi hareketli bölgelerde kontraktür bırakmayan kapama planlaması için belirleyicidir.",
- "creds": ["University of Pittsburgh'da 300+ mikrocerrahi ve flep vakası",
+ "creds": ["University of Pittsburgh'da 600+ mikrocerrahi ve flep vakası",
            "Yanık ve travma sonrası skar-kontraktür rekonstrüksiyonu deneyimi",
            "Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı"],
  "slug": "hidradenit-onarimi.html", "prio": "0.75",

@@ -183,7 +183,7 @@ def author_box(post):
     return f"""<section class="alt"><div class="wrap"><div class="narrow prose">
 <div class="note"><p><b>Yazan ve tıbbi olarak inceleyen:</b> Doç. Dr. Tahsin Oğuz Acartürk —
 Plastik, Rekonstrüktif ve Estetik Cerrahi · Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı ·
-Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü · 300+ mikrocerrahi vaka.
+Pittsburgh Üniversitesi Baş–Boyun Onarımları eski Direktörü · 600+ mikrocerrahi vaka.
 <br><span style="color:var(--muted);font-size:.9rem">Yayın: {tr_date(post['date'])} ·
 Son tıbbi inceleme: {tr_date(post['date'])}</span></p></div>
 </div></div></section>"""

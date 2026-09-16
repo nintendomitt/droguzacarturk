@@ -1,6 +1,6 @@
 var I18N={
 en:{
-"sv.img.l":"Reconstruction","sv.img.r":"Aesthetics",
+
 
 "cr.b0t":"University of Pittsburgh — Residency Training","cr.b0s":"Integrated plastic surgery residency; the first Turkish plastic surgeon accepted to the programme","cr.b1bt":"University of Pittsburgh — Associate Professor","cr.b1bs":"Ongoing academic appointment in the Department of Plastic Surgery","sv.b.11":"Prominent Ear Correction (Otoplasty)","nav.e11":"Prominent Ear (Otoplasty)","ab.t4hb":"HANOI, VIETNAM","ab.t4hs":"<strong>Honorary Professorship</strong> — volunteer surgical missions continued every year",
 
@@ -118,7 +118,7 @@ en:{
 "cr.lic.no":"Certificate No: ST-6183 · Issued: 21.07.2025"
 },
 de:{
-"sv.img.l":"Rekonstruktion","sv.img.r":"Ästhetik",
+
 
 "cr.b0t":"University of Pittsburgh — Facharztausbildung","cr.b0s":"Integrierte Facharztausbildung für Plastische Chirurgie; erster türkischer plastischer Chirurg im Programm","cr.b1bt":"University of Pittsburgh — Associate Professor","cr.b1bs":"Laufende akademische Tätigkeit in der Abteilung für Plastische Chirurgie","sv.b.11":"Ohrenkorrektur (Otoplastik)","nav.e11":"Ohrenkorrektur (Otoplastik)","ab.t4hb":"HANOI, VIETNAM","ab.t4hs":"<strong>Ehrenprofessur</strong> — jährlich fortgeführte ehrenamtliche chirurgische Missionen",
 
@@ -236,7 +236,7 @@ de:{
 "cr.lic.no":"Urkunde Nr.: ST-6183 · Ausgestellt: 21.07.2025"
 },
 ru:{
-"sv.img.l":"Реконструкция","sv.img.r":"Эстетика",
+
 
 "cr.b0t":"Питтсбургский университет — ординатура","cr.b0s":"Интегрированная резидентура по пластической хирургии; первый турецкий пластический хирург, принятый в программу","cr.b1bt":"Питтсбургский университет — доцент","cr.b1bs":"Действующая academic должность на кафедре пластической хирургии","sv.b.11":"Коррекция лопоухости (отопластика)","nav.e11":"Лопоухость (отопластика)","ab.t4hb":"ХАНОЙ, ВЬЕТНАМ","ab.t4hs":"<strong>Почётная профессура</strong> — ежегодные волонтёрские хирургические миссии",
 
@@ -354,7 +354,7 @@ ru:{
 "cr.lic.no":"Документ №: ST-6183 · Выдан: 21.07.2025"
 },
 ar:{
-"sv.img.l":"الترميم","sv.img.r":"التجميل",
+
 
 "cr.b0t":"جامعة بيتسبرغ — التدريب التخصصي","cr.b0s":"برنامج التخصص المتكامل في الجراحة التجميلية؛ أول جرّاح تجميل تركي يُقبل في البرنامج","cr.b1bt":"جامعة بيتسبرغ — أستاذ مشارك","cr.b1bs":"تعيين أكاديمي مستمر في قسم الجراحة التجميلية","sv.b.11":"تصحيح الأذن البارزة","nav.e11":"الأذن البارزة","ab.t4hb":"هانوي، فيتنام","ab.t4hs":"<strong>أستاذية فخرية</strong> — بعثات جراحية تطوعية تتواصل كل عام",
 

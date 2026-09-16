@@ -639,7 +639,7 @@ BLOG = [
           "<strong>Her gün yıkanır:</strong> ter ve deri yağı elastik lifleri bozar",
           "<strong>Elde veya file içinde, 30 derecede:</strong> yumuşatıcı ve çamaşır suyu kullanılmaz",
           "<strong>Gölgede kurutulur:</strong> radyatör ve kurutma makinesi elastikiyeti bitirir"]),
-   ("note","İki takım bulundurmak pratikte tek çözümdür: biri yıkanırken diğeri kullanılır. Tek takımla giden hastalar, yıkama günlerinde giysisiz kaldıkları için kazanımlarını yavaş yavaş kaybederler.")]},
+   ("note","İki takım bulundurmak pratikte en kullanışlı yoldur: biri yıkanırken diğeri kullanılır. Tek takımla giden hastalar, yıkama günlerinde giysisiz kaldıkları için kazanımlarını yavaş yavaş kaybederler.")]},
   {"id":"yenileme","tag":"Yenileme","h2":"Ne zaman değiştirilmeli?","body":[
    "Bası giysisi zamanla elastikiyetini kaybeder ve basıncı düşer. Görünümü bozulmamış olsa bile işlevini yitirmiş olabilir.",
    ("table",["Durum","Ne yapmalı"],[
@@ -2120,7 +2120,7 @@ BLOG = [
    "Uzuvdaki sıvıyı gövdeye doğru itiyorsanız, gövdedeki yolun açık olması gerekir. Bu nedenle seans öncesi boyun ve gövde bölgesine yapılan kısa manuel drenaj, cihazın etkisini belirgin şekilde artırır. Yalnızca uzva odaklanan bir kullanım, tıkalı bir lavaboya daha fazla su dökmeye benzer.",
    ("note","Kasık veya koltuk altında yeni ortaya çıkan şişlik, dolgunluk veya ağrı, basıncın yüksek olduğunun ya da gövde hazırlığının atlandığının işaretidir. Bu durumda kullanımı durdurup ayarları gözden geçirmek gerekir.")]},
   {"id":"beklenti","tag":"Beklenti","h2":"Gerçekçi fayda beklentisi ne olmalı?","body":[
-   "Dürüst olmak gerekirse: cihaz, hastaların bir kısmında ağırlık ve gerginlik hissini azaltır, uzuv çevresinde ölçülebilir ama mütevazı bir düşüş sağlar. Hiçbir hastada tek başına kalıcı çözüm olmamıştır.",
+   "Dürüst olmak gerekirse: cihaz, hastaların bir kısmında ağırlık ve gerginlik hissini azaltır, uzuv çevresinde ölçülebilir ama mütevazı bir düşüş sağlar. Tek başına kalıcı çözüm sağladığı gösterilmemiştir.",
    ("steps",[
     ("İLK 2 HAFTA","Ağırlık hissinde azalma, uzuvda yumuşama. Ölçülebilir hacim değişimi henüz küçüktür."),
     ("1–3 AY","Düzenli kullanım ve kompresyonla birlikte çevre ölçümlerinde belirgin düşüş görülebilir."),

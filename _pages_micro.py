@@ -158,7 +158,7 @@ MICRO = [
    "follow":"Yoğun bakım takibi, doku dolaşımının izlenmesi, konuşma ve yutma terapisi.",
    "body":"Çene, ağız içi, boyun, kafa kaidesi"},
  "keyfacts":[("Deneyim","Pittsburgh Ü. Baş–Boyun Onarımları Direktörlüğü"),("Vaka","600+ mikrocerrahi vaka"),
-             ("Doku yaşayabilirliği","%100 (Pittsburgh dönemi)"),("Ameliyat süresi","Ortalama 10–12 saat")],
+             ("Doku kaybı oranı","%1"),("Ameliyat süresi","Ortalama 10–12 saat")],
  "sections":[
   {"id":"neden","tag":"Kapsam","h2":"Bu onarımlar neden özeldir?","body":[
    "Baş–boyun bölgesi, küçük bir hacimde çok sayıda işlevi barındırır: konuşma, çiğneme, yutma, nefes alma ve yüz ifadesi. Kanserin güvenli sınırlarla çıkarılması genellikle kemik, kas, mukoza ve deriyi aynı anda etkileyen bir kayıp bırakır.",

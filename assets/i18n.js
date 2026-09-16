@@ -1,6 +1,8 @@
 var I18N={
 en:{
-"cr.b0t":"University of Pittsburgh — Residency Training","cr.b0s":"Integrated plastic surgery residency; the first Turkish plastic surgeon accepted to the programme","cr.b1bt":"University of Pittsburgh — Associate Professor","cr.b1bs":"Ongoing academic appointment in the Department of Plastic Surgery","sv.figcap":"In both fields, what matters is how the tissue is handled.","sv.b.11":"Prominent Ear Correction (Otoplasty)","nav.e11":"Prominent Ear (Otoplasty)","ab.t4hb":"HANOI, VIETNAM","ab.t4hs":"<strong>Honorary Professorship</strong> — volunteer surgical missions continued every year",
+"sv.img.l":"Reconstruction","sv.img.r":"Aesthetics",
+
+"cr.b0t":"University of Pittsburgh — Residency Training","cr.b0s":"Integrated plastic surgery residency; the first Turkish plastic surgeon accepted to the programme","cr.b1bt":"University of Pittsburgh — Associate Professor","cr.b1bs":"Ongoing academic appointment in the Department of Plastic Surgery","sv.b.11":"Prominent Ear Correction (Otoplasty)","nav.e11":"Prominent Ear (Otoplasty)","ab.t4hb":"HANOI, VIETNAM","ab.t4hs":"<strong>Honorary Professorship</strong> — volunteer surgical missions continued every year",
 
 "skip":"Skip to content","tb.loc":"Izmir · Bayrakli","brand.sub":"Plastic, Reconstructive & Aesthetic Surgery",
 "nav.services":"Expertise","nav.lymph":"Lymphedema & Lipedema","nav.process":"Process","nav.about":"Your Surgeon","nav.faq":"FAQ","nav.cta":"Book a Consultation","nav.cta2":"Book a Consultation",
@@ -116,7 +118,9 @@ en:{
 "cr.lic.no":"Certificate No: ST-6183 · Issued: 21.07.2025"
 },
 de:{
-"cr.b0t":"University of Pittsburgh — Facharztausbildung","cr.b0s":"Integrierte Facharztausbildung für Plastische Chirurgie; erster türkischer plastischer Chirurg im Programm","cr.b1bt":"University of Pittsburgh — Associate Professor","cr.b1bs":"Laufende akademische Tätigkeit in der Abteilung für Plastische Chirurgie","sv.figcap":"In beiden Bereichen ist entscheidend, wie das Gewebe behandelt wird.","sv.b.11":"Ohrenkorrektur (Otoplastik)","nav.e11":"Ohrenkorrektur (Otoplastik)","ab.t4hb":"HANOI, VIETNAM","ab.t4hs":"<strong>Ehrenprofessur</strong> — jährlich fortgeführte ehrenamtliche chirurgische Missionen",
+"sv.img.l":"Rekonstruktion","sv.img.r":"Ästhetik",
+
+"cr.b0t":"University of Pittsburgh — Facharztausbildung","cr.b0s":"Integrierte Facharztausbildung für Plastische Chirurgie; erster türkischer plastischer Chirurg im Programm","cr.b1bt":"University of Pittsburgh — Associate Professor","cr.b1bs":"Laufende akademische Tätigkeit in der Abteilung für Plastische Chirurgie","sv.b.11":"Ohrenkorrektur (Otoplastik)","nav.e11":"Ohrenkorrektur (Otoplastik)","ab.t4hb":"HANOI, VIETNAM","ab.t4hs":"<strong>Ehrenprofessur</strong> — jährlich fortgeführte ehrenamtliche chirurgische Missionen",
 
 "skip":"Zum Inhalt springen","tb.loc":"Izmir · Bayrakli","brand.sub":"Plastische, Rekonstruktive & Ästhetische Chirurgie",
 "nav.services":"Fachgebiete","nav.lymph":"Lymphödem & Lipödem","nav.process":"Ablauf","nav.about":"Ihr Chirurg","nav.faq":"FAQ","nav.cta":"Termin vereinbaren","nav.cta2":"Termin vereinbaren",
@@ -232,7 +236,9 @@ de:{
 "cr.lic.no":"Urkunde Nr.: ST-6183 · Ausgestellt: 21.07.2025"
 },
 ru:{
-"cr.b0t":"Питтсбургский университет — ординатура","cr.b0s":"Интегрированная резидентура по пластической хирургии; первый турецкий пластический хирург, принятый в программу","cr.b1bt":"Питтсбургский университет — доцент","cr.b1bs":"Действующая academic должность на кафедре пластической хирургии","sv.figcap":"В обеих областях решающим является то, как обращаются с тканью.","sv.b.11":"Коррекция лопоухости (отопластика)","nav.e11":"Лопоухость (отопластика)","ab.t4hb":"ХАНОЙ, ВЬЕТНАМ","ab.t4hs":"<strong>Почётная профессура</strong> — ежегодные волонтёрские хирургические миссии",
+"sv.img.l":"Реконструкция","sv.img.r":"Эстетика",
+
+"cr.b0t":"Питтсбургский университет — ординатура","cr.b0s":"Интегрированная резидентура по пластической хирургии; первый турецкий пластический хирург, принятый в программу","cr.b1bt":"Питтсбургский университет — доцент","cr.b1bs":"Действующая academic должность на кафедре пластической хирургии","sv.b.11":"Коррекция лопоухости (отопластика)","nav.e11":"Лопоухость (отопластика)","ab.t4hb":"ХАНОЙ, ВЬЕТНАМ","ab.t4hs":"<strong>Почётная профессура</strong> — ежегодные волонтёрские хирургические миссии",
 
 "skip":"Перейти к содержанию","tb.loc":"Измир · Байраклы","brand.sub":"Пластическая, реконструктивная и эстетическая хирургия",
 "nav.services":"Направления","nav.lymph":"Лимфедема и липедема","nav.process":"Процесс","nav.about":"Ваш хирург","nav.faq":"Вопросы","nav.cta":"Записаться","nav.cta2":"Записаться",
@@ -348,7 +354,9 @@ ru:{
 "cr.lic.no":"Документ №: ST-6183 · Выдан: 21.07.2025"
 },
 ar:{
-"cr.b0t":"جامعة بيتسبرغ — التدريب التخصصي","cr.b0s":"برنامج التخصص المتكامل في الجراحة التجميلية؛ أول جرّاح تجميل تركي يُقبل في البرنامج","cr.b1bt":"جامعة بيتسبرغ — أستاذ مشارك","cr.b1bs":"تعيين أكاديمي مستمر في قسم الجراحة التجميلية","sv.figcap":"في كلا المجالين، الفيصل هو كيفية التعامل مع النسيج.","sv.b.11":"تصحيح الأذن البارزة","nav.e11":"الأذن البارزة","ab.t4hb":"هانوي، فيتنام","ab.t4hs":"<strong>أستاذية فخرية</strong> — بعثات جراحية تطوعية تتواصل كل عام",
+"sv.img.l":"الترميم","sv.img.r":"التجميل",
+
+"cr.b0t":"جامعة بيتسبرغ — التدريب التخصصي","cr.b0s":"برنامج التخصص المتكامل في الجراحة التجميلية؛ أول جرّاح تجميل تركي يُقبل في البرنامج","cr.b1bt":"جامعة بيتسبرغ — أستاذ مشارك","cr.b1bs":"تعيين أكاديمي مستمر في قسم الجراحة التجميلية","sv.b.11":"تصحيح الأذن البارزة","nav.e11":"الأذن البارزة","ab.t4hb":"هانوي، فيتنام","ab.t4hs":"<strong>أستاذية فخرية</strong> — بعثات جراحية تطوعية تتواصل كل عام",
 
 "skip":"انتقل إلى المحتوى",
 "tb.loc":"إزمير · بايراكلي",

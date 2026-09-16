@@ -29,7 +29,7 @@ BLOG_MIKROTIA = [
  "cat": "Mikrotia",
  "title": "Mikrotia Nedir? Doğuştan Küçük veya Gelişmemiş Kulak",
  "ogtitle": "Mikrotia nedir, nasıl tedavi edilir?",
- "desc": "Mikrotia, kulak kepçesinin doğuştan küçük veya gelişmemiş olmasıdır. Dereceleri, işitmeyle ilişkisi ve onarım cerrahisinin zamanlaması hakkında.",
+ "desc": "Mikrotia, kulak kepçesinin doğuştan küçük veya gelişmemiş olmasıdır. İşitmeyle ilişkisi, onarım seçenekleri ve mikrotia ameliyatının zamanlaması.",
  "h1": "Mikrotia nedir?",
  "lead": "Mikrotia, <strong>kulak kepçesinin doğuştan küçük, şekilsiz ya da hiç gelişmemiş olmasıdır</strong>. Çoğunlukla tek taraflıdır ve sıklıkla dış kulak yolunun da kapalı olmasıyla (atrezi) birlikte görülür. İki ayrı konu vardır ve karıştırılmamalıdır: <strong>kulağın görünümü</strong> plastik cerrahinin, <strong>işitme</strong> ise KBB ve odyolojinin alanıdır. İkisi birlikte planlanır ama aynı ameliyat değildir.",
  "watopic": "mikrotia değerlendirmesi",
@@ -87,14 +87,14 @@ BLOG_MIKROTIA = [
    "Kulak kepçesinin onarımı için plastik ve rekonstrüktif cerrahi; işitme değerlendirmesi ve dış kulak yolu ile ilgili girişimler için KBB ve odyoloji. İki branşın birlikte planlama yapması en doğru yaklaşımdır.")]},
 
 # ------------------------------------------------------------------ 2
-{"slug": "dogustan-kulak-olmamasi", "sources": K_TEMEL,
+{"slug": "bebegin-kulagi-dogustan-yok", "sources": K_TEMEL,
  "date": "2026-10-01",
  "cat": "Mikrotia",
- "title": "Doğuştan Kulak Olmaması: Anotia ve Mikrotia Ayrımı",
- "ogtitle": "Doğuştan kulak olmaması ne anlama gelir?",
- "desc": "Kulağın doğuştan hiç olmamasına anotia, küçük veya gelişmemiş olmasına mikrotia denir. Ailelerin ilk günlerde bilmesi gerekenler ve izlenecek yol.",
- "h1": "Doğuştan kulak olmaması",
- "lead": "Bebeğin kulağının doğuştan hiç olmamasına <strong>anotia</strong>, küçük ya da şekilsiz olmasına <strong>mikrotia</strong> denir. İkisi de aynı gelişim farklılığının farklı dereceleridir. Ailelerin doğumdan sonraki ilk haftalarda yapması gereken tek acil şey vardır: <strong>işitmenin değerlendirilmesi</strong>. Kulağın görünümüne yönelik onarım ise aylar, çoğu zaman yıllar sonra planlanır ve acele gerektirmez.",
+ "title": "Bebeğimin Kulağı Doğuştan Yok: İlk Haftalarda Ne Yapmalı?",
+ "ogtitle": "Bebeğin kulağı doğuştan yoksa ilk ne yapılır?",
+ "desc": "Bebeğinizin kulağı doğuştan yok ya da küçükse ilk yapılması gereken işitme değerlendirmesidir. Ailelerin ilk haftalarda izlemesi gereken yol.",
+ "h1": "Bebeğimin kulağı doğuştan yok, ne yapmalıyım?",
+ "lead": "Bebeğinizin kulağı doğuştan yoksa ya da çok küçükse, ilk günlerin telaşı içinde sorulacak doğru soru \"ne zaman ameliyat olur\" değildir. Kulağın hiç olmamasına <strong>anotia</strong>, küçük ya da şekilsiz olmasına <strong>mikrotia</strong> denir. İkisi de aynı gelişim farklılığının farklı dereceleridir. Ailelerin doğumdan sonraki ilk haftalarda yapması gereken tek acil şey vardır: <strong>işitmenin değerlendirilmesi</strong>. Kulağın görünümüne yönelik onarım ise aylar, çoğu zaman yıllar sonra planlanır ve acele gerektirmez.",
  "watopic": "doğuştan kulak gelişmemesi hakkında bilgi",
  "related": ["mikrotia"],
  "sections": [
@@ -143,14 +143,14 @@ BLOG_MIKROTIA = [
    "Protez, günlük olarak takılıp çıkarılan ya da implanta tutturulan bir seçenektir. Görünüm açısından oldukça başarılı sonuçlar verebilir, ancak kendi dokusuyla yapılan onarımdan farklı olarak bakım ve düzenli yenileme gerektirir.")]},
 
 # ------------------------------------------------------------------ 3
-{"slug": "mikrotia-dereceleri", "sources": K_TEMEL,
+{"slug": "mikrotia-tipleri", "sources": K_TEMEL,
  "date": "2026-10-02",
  "cat": "Mikrotia",
- "title": "Mikrotia Dereceleri: Grade 1, 2, 3 ve Anotia",
- "ogtitle": "Mikrotia dereceleri nasıl ayrılır?",
- "desc": "Mikrotia dört dereceye ayrılır. Grade 1'de kulak küçük ama şekli belli, Grade 3'te sadece doku parçası vardır. Derece, onarım planını nasıl değiştirir?",
- "h1": "Mikrotia dereceleri",
- "lead": "Mikrotia, kulak kepçesinde ne kadar yapı kaldığına göre <strong>dört dereceye</strong> ayrılır. Grade 1'de kulak küçüktür ama biçimi tanınabilir; Grade 3'te yalnızca küçük bir doku parçası ve memeye benzer bir yapı bulunur; anotiada kepçe hiç yoktur. Bu derecelendirme yalnızca bir tanımlama değildir — <strong>hangi onarım yönteminin uygun olacağını doğrudan belirler</strong>.",
+ "title": "Mikrotia Tipleri ve Dereceleri: Grade 1, 2, 3 ve Anotia",
+ "ogtitle": "Mikrotia tipleri nasıl ayrılır?",
+ "desc": "Mikrotia dört tipe ayrılır. Grade 1'de kulak küçük ama şekli belli, Grade 3'te sadece doku parçası vardır. Tip, onarım planını nasıl değiştirir?",
+ "h1": "Mikrotia tipleri ve dereceleri",
+ "lead": "Mikrotia, kulak kepçesinde ne kadar yapı kaldığına göre <strong>dört tipe</strong> ayrılır; literatürde bunlara <strong>Grade 1, 2, 3 ve anotia</strong> denir. Grade 1'de kulak küçüktür ama biçimi tanınabilir; Grade 3'te yalnızca küçük bir doku parçası ve memeye benzer bir yapı bulunur; anotiada kepçe hiç yoktur. Bu ayrım yalnızca bir tanımlama değildir — <strong>hangi onarım yönteminin uygun olacağını doğrudan belirler</strong>.",
  "watopic": "mikrotia derecesinin belirlenmesi",
  "related": ["mikrotia"],
  "sections": [
@@ -205,18 +205,18 @@ BLOG_MIKROTIA = [
    "Evet. Çift taraflı vakalarda iki kulak farklı derecelerde olabilir ve her biri için ayrı plan yapılır. Çift taraflı tutulumda işitme desteği önceliklidir.")]},
 
 # ------------------------------------------------------------------ 4
-{"slug": "mikrotia-ameliyati-ne-zaman-yapilir", "sources": K_CERRAHI,
+{"slug": "mikrotia-ameliyati-kac-yasinda-yapilir", "sources": K_CERRAHI,
  "date": "2026-10-03",
  "cat": "Mikrotia",
- "title": "Mikrotia Ameliyatı Kaç Yaşında Yapılır? Zamanlama Rehberi",
+ "title": "Mikrotia Ameliyatı Kaç Yaşında Yapılır?",
  "ogtitle": "Mikrotia ameliyatı için doğru yaş",
- "desc": "Kendi kıkırdağıyla onarımda okul çağı beklenir, sentetik iskelet daha erken yapılabilir. İşitme değerlendirmesi ise ertelenmez. Zamanlamayı belirleyen etkenler.",
+ "desc": "Kendi kıkırdağıyla onarımda okul çağı beklenir, sentetik iskelet daha erken yapılabilir. İşitme değerlendirmesi ise ertelenmez. Zamanlamayı belirleyenler.",
  "h1": "Mikrotia ameliyatı ne zaman yapılır?",
- "lead": "Mikrotia ameliyatının zamanlamasında tek bir sayı yoktur, ama net bir kural vardır: <strong>işitme değerlendirmesi beklemez, kepçe onarımı bekler</strong>. Kendi kaburga kıkırdağıyla yapılan onarımda genellikle <strong>okul çağı ve sonrası</strong> beklenir, çünkü kıkırdağın bir kulak iskeleti çıkaracak boyuta ulaşması gerekir. Sentetik iskeletle daha erken yaşta girişim mümkündür.",
+ "lead": "\"Mikrotia ameliyatı kaç yaşında yapılır?\" sorusunun tek bir sayıyla cevabı yoktur, ama net bir kural vardır: <strong>işitme değerlendirmesi beklemez, kepçe onarımı bekler</strong>. Kendi kaburga kıkırdağıyla yapılan onarımda genellikle <strong>okul çağı ve sonrası</strong> beklenir, çünkü kıkırdağın bir kulak iskeleti çıkaracak boyuta ulaşması gerekir. Sentetik iskeletle daha erken yaşta girişim mümkündür.",
  "watopic": "mikrotia ameliyatı zamanlaması",
  "related": ["mikrotia"],
  "sections": [
-  {"id": "iki-saat", "tag": "İki ayrı takvim", "h2": "İşitme ve görünüm: iki ayrı takvim", "body": [
+  {"id": "iki-saat", "tag": "İki ayrı takvim", "h2": "Kaç yaşında? İşitme ve görünüm için iki ayrı takvim", "body": [
    ("table", ["", "İşitme", "Kulak kepçesi"],
     [["Değerlendirme zamanı", "Doğumdan hemen sonra", "Okul öncesi dönemde planlama"],
      ["Aciliyet", "Çift taraflıysa acil", "Acil değil"],
@@ -269,11 +269,11 @@ BLOG_MIKROTIA = [
 {"slug": "mikrotia-ameliyati-nasil-yapilir", "sources": K_CERRAHI,
  "date": "2026-10-04",
  "cat": "Tedavi",
- "title": "Mikrotia Ameliyatı Nasıl Yapılır? Aşamalar ve Yöntem",
+ "title": "Mikrotia Ameliyatı Nedir, Nasıl Yapılır? Aşamalar",
  "ogtitle": "Mikrotia ameliyatı nasıl yapılır?",
- "desc": "Kulak iskeleti kaburga kıkırdağından şekillendirilir ve deri altına yerleştirilir. Ameliyatın aşamaları, kulağın kaldırılması ve beklenen sonuç.",
+ "desc": "Mikrotia ameliyatında kulak iskeleti kaburga kıkırdağından şekillendirilir ve deri altına yerleştirilir. Aşamalar, kulağın kaldırılması ve beklenen sonuç.",
  "h1": "Mikrotia ameliyatı nasıl yapılır?",
- "lead": "Mikrotia onarımı <strong>tek bir ameliyat değil, aşamalı bir süreçtir</strong>. En yaygın yöntemde çocuğun kendi kaburga kıkırdağından bir kulak iskeleti şekillendirilir, kulak bölgesindeki derinin altına yerleştirilir ve sonraki aşamalarda kulak baştan ayrılarak doğal açısı verilir. Süreç genellikle <strong>2-4 aşamada</strong> tamamlanır ve aşamalar arasında birkaç ay beklenir.",
+ "lead": "Mikrotia ameliyatı nedir? Kısaca: gelişmemiş kulak kepçesinin yerine yeni bir kulak yapılmasıdır. Bu, <strong>tek bir ameliyat değil, aşamalı bir süreçtir</strong>. En yaygın yöntemde çocuğun kendi kaburga kıkırdağından bir kulak iskeleti şekillendirilir, kulak bölgesindeki derinin altına yerleştirilir ve sonraki aşamalarda kulak baştan ayrılarak doğal açısı verilir. Süreç genellikle <strong>2-4 aşamada</strong> tamamlanır ve aşamalar arasında birkaç ay beklenir.",
  "watopic": "mikrotia ameliyatı planlaması",
  "related": ["mikrotia"],
  "sections": [
@@ -327,7 +327,7 @@ BLOG_MIKROTIA = [
 {"slug": "mikrotia-kaburga-kikirdagi-mi-implant-mi", "sources": K_CERRAHI,
  "date": "2026-10-05",
  "cat": "Tedavi",
- "title": "Mikrotiada Kaburga Kıkırdağı mı, Sentetik İskelet mi?",
+ "title": "Mikrotia Ameliyatında Kaburga Kıkırdağı mı, İmplant mı?",
  "ogtitle": "Mikrotia onarımında iki yöntem karşılaştırması",
  "desc": "Kendi kaburga kıkırdağı kalıcıdır ama daha ileri yaş ve daha fazla aşama ister. Sentetik iskelet erken yapılır ama darbeye hassastır. Karşılaştırma.",
  "h1": "Kaburga kıkırdağı mı, sentetik iskelet mi?",
@@ -359,7 +359,7 @@ BLOG_MIKROTIA = [
            "Sonuç, iskeletin oyulmasındaki ustalığa doğrudan bağlıdır"])]},
 
   {"id": "sentetik", "tag": "Sentetik", "h2": "Sentetik iskeletle onarım", "body": [
-   "Hazır, gözenekli bir iskelet kullanılır. İskeletin çevre dokuyla bütünleşebilmesi için ince bir fasya örtüsüyle kaplanması ve üzerine deri grefti uygulanması gerekir.",
+   "Hazır, gözenekli bir iskelet — hastaların sıklıkla <strong>implant</strong> dediği yapı — kullanılır. İskeletin çevre dokuyla bütünleşebilmesi için ince bir fasya örtüsüyle kaplanması ve üzerine deri grefti uygulanması gerekir.",
    ("h3", "Güçlü yanları"),
    ("ul", ["Daha erken yaşta uygulanabilir",
            "Göğüsten doku alınmaz",
@@ -394,13 +394,13 @@ BLOG_MIKROTIA = [
    "Sentetik iskelet çıkarılmak zorunda kalırsa, sonrasında kendi kıkırdağıyla onarım genellikle mümkündür. Ancak bölgedeki deri ve nedbe durumu planlamayı zorlaştırır. Bu nedenle ilk kararın dikkatli verilmesi önemlidir.")]},
 
 # ------------------------------------------------------------------ 7
-{"slug": "mikrotia-ve-isitme", "sources": K_ISITME,
+{"slug": "mikrotia-isitme-kaybi", "sources": K_ISITME,
  "date": "2026-10-06",
  "cat": "Mikrotia",
- "title": "Mikrotiada İşitme: Atrezi, Odyoloji ve Çözümler",
- "ogtitle": "Mikrotiada işitme nasıl değerlendirilir?",
+ "title": "Mikrotiada İşitme Kaybı: Atrezi ve Çözüm Seçenekleri",
+ "ogtitle": "Mikrotiada işitme kaybı nasıl değerlendirilir?",
  "desc": "Mikrotiada işitme kaybı genellikle dış kulak yolu kapalılığından kaynaklanır. Değerlendirme zamanı, kemik yolu cihazları ve atrezi cerrahisi seçenekleri.",
- "h1": "Mikrotia ve işitme",
+ "h1": "Mikrotiada işitme kaybı",
  "lead": "Mikrotiada işitmeyi belirleyen şey kulak kepçesinin küçüklüğü değil, çoğu zaman ona eşlik eden <strong>dış kulak yolu kapalılığıdır (atrezi)</strong>. Bu durumda ses iç kulağa yeterince iletilemez — buna <strong>iletim tipi işitme kaybı</strong> denir. İyi haber şu: vakaların büyük bölümünde <strong>iç kulak ve işitme siniri sağlamdır</strong>, yani sesi iç kulağa ulaştıracak bir yol bulunduğunda işitme sağlanabilir.",
  "watopic": "mikrotiada işitme değerlendirmesi",
  "related": ["mikrotia"],
@@ -486,7 +486,7 @@ BLOG_MIKROTIA = [
    "Bu nedenle mikrotia tanısı konan her bebeğin <strong>genel bir değerlendirmeden geçmesi</strong> önerilir. Amaç kaygı yaratmak değil, varsa eşlik eden durumları erken saptamaktır.",
    ("note", "Vakaların çoğunda mikrotia tek başınadır ve başka bir sorun eşlik etmez. Genel değerlendirme, bunu teyit etmek için de yapılır.")]},
 
-  {"id": "sucluluk", "tag": "Aileye", "h2": "\"Benim yüzümden mi oldu?\"", "body": [
+  {"id": "sucluluk", "tag": "Aileye", "h2": "Yanlış inanışlar: \"benim yüzümden mi oldu?\"", "body": [
    "Bu soru neredeyse her ailede sorulur ve cevabı nettir: <strong>hayır.</strong>",
    ("ul", ["Mikrotia, annenin gebelikte yaptığı ya da yapmadığı bir şeyden kaynaklanmaz",
            "Beslenme, stres, çalışma ya da hareket etmekle ilgisi yoktur",
@@ -507,12 +507,12 @@ BLOG_MIKROTIA = [
    "Bazı vakalarda ileri düzey ultrason ile fark edilebilir, ancak kulak kepçesi küçük bir yapı olduğu için rutin taramalarda gözden kaçabilir. Doğumdan sonra fark edilmesi sık görülen bir durumdur.")]},
 
 # ------------------------------------------------------------------ 9
-{"slug": "mikrotia-ameliyati-sonrasi-surec", "sources": K_CERRAHI,
+{"slug": "mikrotia-ameliyati-sonrasi", "sources": K_CERRAHI,
  "date": "2026-10-08",
  "cat": "Hasta Rehberi",
  "title": "Mikrotia Ameliyatı Sonrası: Aileler İçin Bakım Rehberi",
  "ogtitle": "Mikrotia ameliyatı sonrası süreç",
- "desc": "Mikrotia ameliyatından sonra hastane süreci, kulağa baskı yapmama kuralı, göğüs bölgesi ağrısı, okula ve spora dönüş hakkında bilmeniz gerekenler.",
+ "desc": "Mikrotia ameliyatı sonrası hastane süreci, kulağa baskı yapmama kuralı, göğüs bölgesi ağrısı, okula ve spora dönüş hakkında bilmeniz gerekenler.",
  "h1": "Mikrotia ameliyatı sonrası süreç",
  "lead": "Mikrotia onarımından sonraki dönemin tek bir altın kuralı vardır: <strong>yeni kulağa baskı uygulanmaması</strong>. İskelet yerleştirildikten sonra deri ile iskelet arasındaki uyum haftalar içinde oturur; bu dönemde üzerine yatmak, sıkı bere takmak ya da darbe almak sonucu doğrudan etkiler. İkinci konu, kıkırdağın alındığı göğüs bölgesidir — ilk haftalarda derin nefes alırken ağrı olması beklenir.",
  "watopic": "mikrotia ameliyatı sonrası bakım",

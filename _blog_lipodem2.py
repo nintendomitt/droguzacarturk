@@ -18,14 +18,14 @@ KAYNAK = [SRC_SP, SRC_DER]
 BLOG_LIPODEM2 = [
 
 # ------------------------------------------------------------------ 1
-{"slug": "lipodemde-agri-neden-olur", "sources": KAYNAK,
+{"slug": "lipodem-agrisi-nasil-olur", "sources": KAYNAK,
  "date": "2026-10-09",
  "cat": "Lipödem",
- "title": "Lipödemde Ağrı Neden Olur? Dokunma Hassasiyeti ve Morarma",
- "ogtitle": "Lipödemde bacak ağrısı neden olur?",
- "desc": "Lipödemde ağrı, yağ dokusundaki iltihabi değişiklik ve sinir uçlarına baskıdan kaynaklanır. Dokunma hassasiyeti ve kolay morarma neden olur?",
- "h1": "Lipödemde ağrı neden olur?",
- "lead": "Lipödemi basit bir kilo fazlalığından ayıran en güçlü bulgu <strong>ağrıdır</strong>. Hastalar bacaklarına hafifçe dokunulduğunda bile acı duyduklarını, çarpmadıkları halde morluklar oluştuğunu ve gün sonunda bacaklarında derin bir sızı hissettiklerini anlatır. Bunun nedeni yağ dokusunun fazlalığı değil, o dokudaki <strong>iltihabi değişiklik, artmış sıvı ve sinir uçlarına binen baskıdır</strong>.",
+ "title": "Lipödem Ağrısı Nasıl Olur, Neye Benzer? Ağrı Yapar mı?",
+ "ogtitle": "Lipödem ağrısı nasıl olur, neye benzer?",
+ "desc": "Lipödem ağrı yapar; dokunmakla bile hassasiyet olur. Ağrı yağ dokusundaki iltihabi değişiklik ve sinir uçlarına baskıdan kaynaklanır. Neye iyi gelir?",
+ "h1": "Lipödem ağrısı nasıl olur?",
+ "lead": "<strong>Evet, lipödem ağrı yapar</strong> — ve bu, lipödemi basit bir kilo fazlalığından ayıran en güçlü bulgudur. Hastalar bacaklarına hafifçe dokunulduğunda bile acı duyduklarını, çarpmadıkları halde morluklar oluştuğunu ve gün sonunda bacaklarında derin bir sızı hissettiklerini anlatır. Bunun nedeni yağ dokusunun fazlalığı değil, o dokudaki <strong>iltihabi değişiklik, artmış sıvı ve sinir uçlarına binen baskıdır</strong>.",
  "watopic": "lipödem ağrısı değerlendirmesi",
  "related": ["lipodem", "lipodem-belirtileri"],
  "sections": [
@@ -44,6 +44,7 @@ BLOG_LIPODEM2 = [
            "Sıcak havada belirginleşen şikâyetler",
            "Çarpmadan oluşan, açıklanamayan morluklar",
            "Bacaklarda gerginlik ve dolgunluk hissi"]),
+   "Hastalara <strong>\"ağrınız neye benzer\"</strong> diye sorulduğunda en sık verilen yanıtlar şunlardır: çürük üzerine basılmış gibi, içeriden zonklayan, bacak dolmuş da patlayacakmış gibi. Yani ağrı yüzeysel bir yanma değil, <strong>derin ve künt</strong> bir karakterdedir.",
    ("note", "Ağrının varlığı, lipödemi <strong>obeziteden ve lenfödemden</strong> ayırmada en değerli bulgulardan biridir. Lenfödemde ön planda ağrı değil, ağırlık ve hareket kısıtlılığı vardır.")]},
 
   {"id": "ayrim", "tag": "Ayrım", "h2": "Bu ağrı başka neyin işareti olabilir?", "body": [
@@ -79,7 +80,7 @@ BLOG_LIPODEM2 = [
 {"slug": "lipodem-mi-selulit-mi", "sources": KAYNAK,
  "date": "2026-10-10",
  "cat": "Ayrım",
- "title": "Lipödem mi, Selülit mi? Portakal Kabuğu Görünümü Ayrımı",
+ "title": "Lipödem mi, Selülit mi? Bacaktaki Görünümün Ayrımı",
  "ogtitle": "Lipödem ile selülit arasındaki fark",
  "desc": "Selülit yaygın ve zararsız bir cilt görünümüdür; lipödem ise ağrı, morarma ve simetrik yağ birikimiyle giden bir hastalıktır. Ayırt edici bulgular.",
  "h1": "Lipödem mi, selülit mi?",
@@ -138,14 +139,14 @@ BLOG_LIPODEM2 = [
    "Lipödem tanısı temel olarak muayene ve öyküyle konur; spesifik bir kan testi ya da görüntüleme yöntemi yoktur. Lenfödem ya da venöz yetmezlik şüphesinde ek tetkikler istenebilir.")]},
 
 # ------------------------------------------------------------------ 3
-{"slug": "lipodem-mi-obezite-mi", "sources": KAYNAK,
+{"slug": "zayifliyorum-bacaklarim-incelmiyor", "sources": KAYNAK,
  "date": "2026-10-11",
  "cat": "Ayrım",
- "title": "Lipödem mi, Obezite mi? Kilo Vermeyen Bacakların Nedeni",
- "ogtitle": "Lipödem ile obezite arasındaki fark",
- "desc": "Obezitede kilo verilince tüm vücut incelir; lipödemde bacaklar aynı kalır. Orantısızlık, ağrı ve bilek sınırı ayrımın üç anahtarıdır.",
- "h1": "Lipödem mi, obezite mi?",
- "lead": "İkisi bir arada bulunabilir, ama aynı şey değildir. Obezitede kilo verildiğinde <strong>vücudun her yeri</strong> incelir. Lipödemde ise yüz, kollar, bel ve göğüs incelirken <strong>bacaklar büyük ölçüde aynı kalır</strong> — hastaların en çok bildirdiği ve en çok yıpratan durum budur. Ayrımı yapan üç bulgu vardır: <strong>orantısızlık</strong>, <strong>ağrı</strong> ve <strong>bilekte biten şişlik</strong>.",
+ "title": "Zayıflıyorum Ama Bacaklarım İncelmiyor: Lipödem mi?",
+ "ogtitle": "Zayıflıyorum ama bacaklarım incelmiyor, neden?",
+ "desc": "Bacakların kilo vermeye yanıt vermemesi lipödemin tanımlayıcı özelliğidir. Lipödemi obeziteden ayıran üç bulgu: orantısızlık, ağrı, bilek sınırı.",
+ "h1": "Zayıflıyorum ama bacaklarım incelmiyor",
+ "lead": "Kilo veriyorsunuz; yüzünüz, boynunuz ve beliniz inceliyor — ama <strong>bacaklarınız büyük ölçüde aynı kalıyor</strong>. Bu tablo obezitede görülmez; obezitede kilo verildiğinde vücudun her yeri incelir. Bacakların yanıt vermediği durumda akla gelmesi gereken tanı <strong>lipödemdir</strong>. Ayrımı yapan üç bulgu vardır: <strong>orantısızlık</strong>, <strong>ağrı</strong> ve <strong>bilekte biten şişlik</strong>.",
  "watopic": "lipödem mi obezite mi değerlendirmesi",
  "related": ["lipodem-nedir", "lipodem-belirtileri", "lipodem-diyeti"],
  "sections": [
@@ -250,13 +251,13 @@ BLOG_LIPODEM2 = [
    "Bugün lipödemi ortadan kaldıran bir hormonal tedavi bulunmamaktadır. Hormonların tabloyu tetiklediği düşünülmekle birlikte, hormonal düzenleme hastalığın tedavisi değildir.")]},
 
 # ------------------------------------------------------------------ 5
-{"slug": "lipodemde-egzersiz", "sources": KAYNAK,
+{"slug": "lipodem-egzersizleri", "sources": KAYNAK,
  "date": "2026-10-13",
  "cat": "Tedavi",
- "title": "Lipödemde Egzersiz: Hangi Hareketler Yardımcı Olur?",
+ "title": "Lipödem Egzersizleri: Hangi Hareketler Yardımcı Olur?",
  "ogtitle": "Lipödemde hangi egzersizler yapılmalı?",
- "desc": "Lipödemde egzersiz bacakları inceltmez ama ağrıyı, ödemi ve eklem yükünü azaltır. Su egzersizleri, yürüyüş ve kaçınılması gerekenler.",
- "h1": "Lipödemde egzersiz",
+ "desc": "Lipödem egzersizleri bacakları inceltmez ama ağrıyı, ödemi ve eklem yükünü azaltır. Su egzersizleri, yürüyüş ve kaçınılması gerekenler.",
+ "h1": "Lipödem egzersizleri",
  "lead": "Egzersiz, lipödemde <strong>bacakları inceltmek için</strong> yapılmaz — bu beklenti baştan hayal kırıklığı yaratır. Egzersizin gerçek katkısı başka yerdedir: <strong>ödemi azaltır, ağrıyı hafifletir, eklem yükünü dengeler ve hareket kabiliyetini korur</strong>. En uygun seçenekler, eklem üzerindeki baskıyı azaltan ve dolaşımı destekleyen hareketlerdir; bunların başında da <strong>suda yapılan egzersizler</strong> gelir.",
  "watopic": "lipödemde egzersiz planı",
  "related": ["ameliyatsiz-lipodem-tedavisi", "lipodem"],
@@ -313,14 +314,14 @@ BLOG_LIPODEM2 = [
    "Yapılan işleme ve iyileşmenin seyrine göre değişir; karar cerrahınıza aittir. Genellikle erken dönemde hafif yürüyüşe izin verilir, daha yoğun egzersiz için birkaç hafta beklenir.")]},
 
 # ------------------------------------------------------------------ 6
-{"slug": "lipodemde-basi-giysisi", "sources": KAYNAK,
+{"slug": "lipodem-tayti-ve-basi-giysisi", "sources": KAYNAK,
  "date": "2026-10-14",
  "cat": "Tedavi",
- "title": "Lipödemde Bası Giysisi: Nasıl Seçilir, Nasıl Kullanılır?",
- "ogtitle": "Lipödemde bası giysisi kullanımı",
- "desc": "Bası giysisi lipödemde ödemi ve ağrıyı azaltır. Doğru ölçü, basınç sınıfı, giyme zamanı ve sık yapılan hataların rehberi.",
- "h1": "Lipödemde bası giysisi",
- "lead": "Bası giysisi, lipödemde <strong>en çok işe yarayan ameliyatsız yöntemdir</strong>. Yağ dokusunu eritmez — bunu net söylemek gerekir — ama doku basıncını dengeleyerek <strong>gün içi ödemi, ağırlık hissini ve ağrıyı belirgin şekilde azaltır</strong>. Etkili olmasının tek koşulu vardır: <strong>doğru ölçüde olması ve düzenli kullanılması</strong>. Yanlış ölçüdeki bir giysi fayda sağlamadığı gibi zarar da verebilir.",
+ "title": "Lipödem Taytı ve Bası Giysisi: Nasıl Seçilir, Nasıl Kullanılır?",
+ "ogtitle": "Lipödem taytı ve bası giysisi nasıl seçilir?",
+ "desc": "Lipödem taytı ve bası giysisi ödemi ve ağrıyı azaltır. Doğru ölçü, basınç sınıfı, giyme zamanı ve sık yapılan hataların rehberi.",
+ "h1": "Lipödem taytı ve bası giysisi",
+ "lead": "Bası giysisi — piyasada sık kullanılan adıyla <strong>lipödem taytı</strong> — lipödemde <strong>en çok işe yarayan ameliyatsız yöntemdir</strong>. Yağ dokusunu eritmez, bunu net söylemek gerekir; ama doku basıncını dengeleyerek <strong>gün içi ödemi, ağırlık hissini ve ağrıyı belirgin şekilde azaltır</strong>. Etkili olmasının tek koşulu vardır: <strong>doğru ölçüde olması ve düzenli kullanılması</strong>. Yanlış ölçüdeki bir giysi fayda sağlamadığı gibi zarar da verebilir.",
  "watopic": "lipödemde bası giysisi seçimi",
  "related": ["ameliyatsiz-lipodem-tedavisi", "lipodem"],
  "sections": [
@@ -383,9 +384,9 @@ BLOG_LIPODEM2 = [
 {"slug": "lipodem-ameliyati-kac-seans", "sources": KAYNAK,
  "date": "2026-10-15",
  "cat": "Tedavi",
- "title": "Lipödem Ameliyatı Kaç Seansta Biter? Aşamalı Planlama",
+ "title": "Lipödem Ameliyatı Kaç Seans Sürer? Aşamalı Planlama",
  "ogtitle": "Lipödem ameliyatı kaç seans sürer?",
- "desc": "Lipödem cerrahisi genellikle birden fazla seansta yapılır. Seans sayısını belirleyen etkenler, seanslar arası süre ve neden tek seferde yapılmadığı.",
+ "desc": "Lipödem ameliyatı genellikle birden fazla seansta yapılır. Seans sayısını belirleyen etkenler, seanslar arası süre ve neden tek seferde yapılmadığı.",
  "h1": "Lipödem ameliyatı kaç seansta biter?",
  "lead": "Lipödem cerrahisi çoğu hastada <strong>tek seansta tamamlanmaz</strong>. Tutulan bölgenin genişliğine göre genellikle <strong>2-4 seans</strong> planlanır ve seanslar arasında birkaç ay beklenir. Bunun nedeni cerrahi bir sınırlama değil, <strong>güvenliktir</strong>: tek seansta çıkarılan doku ve sıvı hacminin belirli bir sınırı vardır ve bu sınırın aşılması ciddi riskler doğurur.",
  "watopic": "lipödem ameliyatı seans planlaması",
@@ -438,13 +439,13 @@ BLOG_LIPODEM2 = [
    "Lenfatik kanalları koruyan tekniklerle çalışıldığında bu risk düşüktür. Agresif ve lenfatik yönü gözetmeyen bir çalışma ise riski artırır. Bu, teknik seçiminin neden önemli olduğunu gösteren en açık örnektir.")]},
 
 # ------------------------------------------------------------------ 8
-{"slug": "lipodem-kollarda-gorulur-mu", "sources": KAYNAK,
+{"slug": "lipodem-kollarda-olur-mu", "sources": KAYNAK,
  "date": "2026-10-16",
  "cat": "Lipödem",
- "title": "Lipödem Kollarda Görülür mü? Kol Tutulumu ve Bulguları",
+ "title": "Lipödem Kollarda Olur mu? Kol Tutulumu ve Bulguları",
  "ogtitle": "Lipödem kollarda da olur mu?",
- "desc": "Lipödem hastalarının önemli bir bölümünde kollar da tutulur. Kol lipödeminin bulguları, lenfödemden ayrımı ve tedavi yaklaşımı.",
- "h1": "Lipödem kollarda görülür mü?",
+ "desc": "Lipödem hastalarının önemli bir bölümünde kollar da tutulur. Kol lipödeminin bulguları, lenfödemden ayrımı ve kol çorabı ile tedavi yaklaşımı.",
+ "h1": "Lipödem kollarda olur mu?",
  "lead": "Evet. Lipödem denince akla bacaklar gelir, ancak hastaların <strong>önemli bir bölümünde kollar da tutulur</strong>. Bulgular bacaktakinin aynısıdır: iki kolda <strong>simetrik hacim artışı</strong>, <strong>dokunma hassasiyeti</strong>, <strong>kolay morarma</strong> ve en tipik olarak şişliğin <strong>bileklerde bitmesi</strong> — eller normal görünür. Kol tutulumu sıklıkla gözden kaçar, çünkü hasta da hekim de dikkatini bacaklara yöneltir.",
  "watopic": "kollarda lipödem değerlendirmesi",
  "related": ["lipodem-belirtileri", "lipodem", "kol-uyluk-germe"],
@@ -480,7 +481,7 @@ BLOG_LIPODEM2 = [
 
   {"id": "tedavi", "tag": "Tedavi", "h2": "Kol tutulumunda tedavi", "body": [
    ("h3", "Konservatif tedavi"),
-   "Kol için üretilen bası giysileri, egzersiz ve gerektiğinde manuel lenf drenajı ilk basamaktır. Kol giysilerinde doğru ölçü, bacaktakinden daha kritiktir; yanlış ölçü el sırtında ödem oluşturabilir.",
+   "Kol için üretilen bası giysileri — halk arasındaki adıyla <strong>kol çorabı</strong> — egzersiz ve gerektiğinde manuel lenf drenajı ilk basamaktır. Kol giysilerinde doğru ölçü, bacaktakinden daha kritiktir; yanlış ölçü el sırtında ödem oluşturabilir.",
    ("h3", "Cerrahi"),
    "Şikâyetler konservatif tedaviye rağmen sürüyorsa, kol lipödemi için de hacim azaltıcı cerrahi planlanabilir. Kolda deri toparlanması bacağa göre farklı seyrettiği için, bazı hastalarda deri fazlalığının giderilmesi de gündeme gelebilir.",
    ("ul", ["Kol cerrahisi genellikle bacak seanslarıyla birlikte değil, ayrı planlanır",

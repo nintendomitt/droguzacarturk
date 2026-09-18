@@ -35,9 +35,11 @@ nav.main.open{display:flex}
 nav.main>a{padding:15px 0;border-bottom:1px solid var(--line);font-size:1rem}
 nav.main .btn{margin-top:16px;border-bottom:0}
 nav.main .navdrop{display:block}
-nav.main .navdrop>a{display:block;padding:15px 0;border-bottom:1px solid var(--line);font-size:1rem}
-nav.main .navdrop>a::after{display:none}
-nav.main .dropm{position:static;opacity:1;visibility:visible;transform:none;border:0;box-shadow:none;padding:0 0 10px 16px;min-width:0;background:none}
+nav.main .navdrop>a{display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line);font-size:1rem}
+nav.main .navdrop>a::after{content:'';display:inline-block;width:7px;height:7px;margin-left:8px;border-right:1.6px solid var(--muted);border-bottom:1.6px solid var(--muted);transform:rotate(45deg);transition:transform .2s;flex:none}
+nav.main .navdrop.open>a::after{transform:rotate(225deg)}
+nav.main .dropm{position:static;opacity:1;visibility:visible;transform:none;border:0;box-shadow:none;padding:0 0 10px 16px;min-width:0;background:none;display:none}
+nav.main .navdrop.open .dropm{display:flex}
 nav.main .dropm a{padding:11px 0;font-size:.93rem;color:var(--muted)}
 .menu-tgl{display:flex}
 header .wrap .btn:not(nav .btn){display:none}

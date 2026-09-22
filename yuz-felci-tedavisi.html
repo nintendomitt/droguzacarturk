@@ -66,9 +66,9 @@ else if(c!=='0'){
 <div class="navdrop"><a href="lenfodem-lipodem-cerrahisi.html">Lenfödem &amp; Lipödem</a>
 <div class="dropm"><a href="lenfodem-lipodem-cerrahisi.html">Lenfödem cerrahisi</a><a href="lipodem-cerrahisi.html">Lipödem cerrahisi</a></div></div>
 <div class="navdrop"><a href="index.html#onarim">Onarım</a>
-<div class="dropm"><a href="mikrotia-kulak-onarimi.html">Kulak Onarımı (Mikrotia)</a><a href="yanik-travma-onarimi.html">Yanık Onarımı</a><a href="hidradenit-onarimi.html">Hidradenitis Suppurativa</a><a href="bas-boyun-cene-rekonstruksiyonu.html">Baş–Boyun Onarımı</a><a href="yuz-kiriklari-cene-cerrahisi.html">Yüz Kırıkları ve Çene Cerrahisi</a><a href="meme-rekonstruksiyonu.html">Meme Rekonstrüksiyonu</a><a href="yuz-felci-tedavisi.html">Yüz Felci</a><a href="alt-ekstremite-onarimi.html">Alt Ekstremite Onarımı</a><a href="el-cerrahisi-replantasyon.html">El Cerrahisi</a></div></div>
+<div class="dropm"><a href="mikrotia-kulak-onarimi.html">Mikrotia onarımı</a><a href="yanik-travma-onarimi.html">Yanık onarımı</a><a href="hidradenit-onarimi.html">Hidradenit onarımı</a><a href="bas-boyun-cene-rekonstruksiyonu.html">Baş–boyun onarımı</a><a href="yuz-felci-tedavisi.html">Yüz felci cerrahisi</a><a href="meme-rekonstruksiyonu.html">Meme rekonstrüksiyonu</a><a href="el-cerrahisi-replantasyon.html">El cerrahisi</a></div></div>
 <div class="navdrop"><a href="index.html#estetik">Estetik</a>
-<div class="dropm"><a href="meme-estetigi.html">Meme Estetiği</a><a href="karin-germe.html">Karın Germe</a><a href="liposuction-vucut-sekillendirme.html">Liposuction ve Vücut Şekillendirme</a><a href="kol-uyluk-germe.html">Kol ve Uyluk Germe</a><a href="jinekomasti.html">Jinekomasti</a><a href="burun-estetigi-rinoplasti.html">Burun Estetiği - Rinoplasti</a><a href="yuz-germe.html">Yüz ve Boyun Germe</a><a href="goz-kapagi-estetigi.html">Göz Kapağı Estetiği</a><a href="lip-lift-bisektomi-kulak-estetigi.html#liplift">Lip Lift</a><a href="lip-lift-bisektomi-kulak-estetigi.html#bisektomi">Bişektomi</a><a href="lip-lift-bisektomi-kulak-estetigi.html#otoplasti">Kepçe Kulak (Otoplasti)</a><a href="yag-enjeksiyonu.html">Yağ Enjeksiyonu</a></div></div>
+<div class="dropm"><a href="burun-estetigi-rinoplasti.html">Rinoplasti</a><a href="meme-estetigi.html">Meme estetiği</a><a href="yuz-germe.html">Yüz germe</a><a href="goz-kapagi-estetigi.html">Göz kapağı estetiği</a><a href="karin-germe.html">Karın germe</a><a href="liposuction-vucut-sekillendirme.html">Liposuction</a><a href="yag-enjeksiyonu.html">Yağ enjeksiyonu</a><a href="kol-uyluk-germe.html">Kol ve uyluk germe</a><a href="jinekomasti.html">Jinekomasti</a><a href="lip-lift-bisektomi-kulak-estetigi.html">Lip lift · Bişektomi · Otoplasti</a></div></div>
 <a href="index.html#hakkinda">Cerrahınız</a>
 <a href="#sss">S.S.S.</a>
 <a class="btn btn-p" href="#randevu">Randevu Al</a>
@@ -150,17 +150,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 var t=document.getElementById('tgl'),n=document.getElementById('nav');
 if(t&&n){
 t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
-n.addEventListener('click',function(e){
-var gt=e.target.closest('.navdrop>a');
-if(gt&&window.matchMedia('(max-width:900px)').matches){
-e.preventDefault();
-var grp=gt.parentElement,wasOpen=grp.classList.contains('open');
-n.querySelectorAll('.navdrop.open').forEach(function(g){if(g!==grp)g.classList.remove('open')});
-grp.classList.toggle('open',!wasOpen);
-return;
-}
-if(e.target.tagName==='A'){n.classList.remove('open');t.setAttribute('aria-expanded','false')}
-});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');t.setAttribute('aria-expanded','false')}});
 }
 /* Dil secici artik gercek baglanti. JS yalnizca tercihi hatirliyor;
    gezinmeyi tarayici kendi yapiyor. */

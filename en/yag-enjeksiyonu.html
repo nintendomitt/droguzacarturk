@@ -64,11 +64,11 @@ else if(c!=='0'){
 <a class="brand" href="index.html"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>Plastic, Reconstructive & Aesthetic Surgery</small></a>
 <nav class="main" id="nav">
 <div class="navdrop"><a href="lenfodem-lipodem-cerrahisi.html">Lymphedema &amp; Lipedema</a>
-<div class="dropm"><a href="lenfodem-lipodem-cerrahisi.html">Lymphedema Surgery</a><a href="lipodem-cerrahisi.html">Lipedema Surgery</a></div></div>
+<div class="dropm"><a href="lenfodem-lipodem-cerrahisi.html">Lenfödem cerrahisi</a><a href="lipodem-cerrahisi.html">Lipödem cerrahisi</a></div></div>
 <div class="navdrop"><a href="index.html#onarim">Reconstruction</a>
-<div class="dropm"><a href="mikrotia-kulak-onarimi.html">Ear Reconstruction (Microtia)</a><a href="yanik-travma-onarimi.html">Burn Reconstruction</a><a href="hidradenit-onarimi.html">Hidradenitis Suppurativa</a><a href="bas-boyun-cene-rekonstruksiyonu.html">Head and Neck Reconstruction</a><a href="yuz-kiriklari-cene-cerrahisi.html">Facial Fractures and Jaw Surgery</a><a href="meme-rekonstruksiyonu.html">Breast Reconstruction</a><a href="yuz-felci-tedavisi.html">Facial Palsy</a><a href="alt-ekstremite-onarimi.html">Lower Extremity Reconstruction</a><a href="el-cerrahisi-replantasyon.html">Hand Surgery</a></div></div>
+<div class="dropm"><a href="mikrotia-kulak-onarimi.html">Mikrotia onarımı</a><a href="yanik-travma-onarimi.html">Yanık onarımı</a><a href="hidradenit-onarimi.html">Hidradenit onarımı</a><a href="bas-boyun-cene-rekonstruksiyonu.html">Baş–boyun onarımı</a><a href="yuz-felci-tedavisi.html">Yüz felci cerrahisi</a><a href="meme-rekonstruksiyonu.html">Meme rekonstrüksiyonu</a><a href="el-cerrahisi-replantasyon.html">El cerrahisi</a></div></div>
 <div class="navdrop"><a href="index.html#estetik">Aesthetics</a>
-<div class="dropm"><a href="meme-estetigi.html">Breast Aesthetics</a><a href="karin-germe.html">Tummy Tuck</a><a href="liposuction-vucut-sekillendirme.html">Liposuction and Body Contouring</a><a href="kol-uyluk-germe.html">Arm and Thigh Lift</a><a href="jinekomasti.html">Gynecomastia</a><a href="burun-estetigi-rinoplasti.html">Nose Aesthetics - Rhinoplasty</a><a href="yuz-germe.html">Face and Neck Lift</a><a href="goz-kapagi-estetigi.html">Eyelid Aesthetics</a><a href="lip-lift-bisektomi-kulak-estetigi.html#liplift">Lip Lift</a><a href="lip-lift-bisektomi-kulak-estetigi.html#bisektomi">Buccal Fat Removal</a><a href="lip-lift-bisektomi-kulak-estetigi.html#otoplasti">Prominent Ear (Otoplasty)</a><a href="yag-enjeksiyonu.html">Fat Grafting</a></div></div>
+<div class="dropm"><a href="burun-estetigi-rinoplasti.html">Rinoplasti</a><a href="meme-estetigi.html">Meme estetiği</a><a href="yuz-germe.html">Yüz germe</a><a href="goz-kapagi-estetigi.html">Göz kapağı estetiği</a><a href="karin-germe.html">Karın germe</a><a href="liposuction-vucut-sekillendirme.html">Liposuction</a><a href="yag-enjeksiyonu.html">Yağ enjeksiyonu</a><a href="kol-uyluk-germe.html">Kol ve uyluk germe</a><a href="jinekomasti.html">Jinekomasti</a><a href="lip-lift-bisektomi-kulak-estetigi.html">Lip lift · Bişektomi · Otoplasti</a></div></div>
 <a href="index.html#hakkinda">Your Surgeon</a>
 <a href="#sss">FAQ</a>
 <a class="btn btn-p" href="#randevu">Book a Consultation</a>
@@ -147,17 +147,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 var t=document.getElementById('tgl'),n=document.getElementById('nav');
 if(t&&n){
 t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
-n.addEventListener('click',function(e){
-var gt=e.target.closest('.navdrop>a');
-if(gt&&window.matchMedia('(max-width:900px)').matches){
-e.preventDefault();
-var grp=gt.parentElement,wasOpen=grp.classList.contains('open');
-n.querySelectorAll('.navdrop.open').forEach(function(g){if(g!==grp)g.classList.remove('open')});
-grp.classList.toggle('open',!wasOpen);
-return;
-}
-if(e.target.tagName==='A'){n.classList.remove('open');t.setAttribute('aria-expanded','false')}
-});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');t.setAttribute('aria-expanded','false')}});
 }
 /* Dil secici artik gercek baglanti. JS yalnizca tercihi hatirliyor;
    gezinmeyi tarayici kendi yapiyor. */

@@ -22,6 +22,19 @@ BASE = SITE["base"]
 FIELDS = ("title", "ogtitle", "desc", "crumb", "h1", "lead", "eyebrow", "watopic",
           "about", "card", "cardsub", "authority", "creds", "keyfacts", "sections",
           "faqs", "ctah", "ctap", "procedure")
+# ---- MENU: TEK KAYNAK ----
+# Hizmet sayfalari (_build.py) ve blog (_build_blog.py) menuyu buradan uretir.
+# Sira ve uyelik anasayfa (index.html) menusuyle AYNI olmali — index.html elle
+# bakimda. Burasi farkli kalirsa her gunluk otomatik derleme tum sayfalarin
+# menusunu eski haline dondurur (Eylul 2026'da 197 sayfada yasandi).
+# Sayfasi henuz uretilmeyen anahtarlar sessizce atlanir; sayfa eklendiginde
+# menuye kendiliginden girer.
+NAV_LENFODEM = ("lenfodem", "lipodem")
+NAV_ONARIM = ("mikrotia", "yanik", "hidradenit", "bas-boyun", "yuz-kiriklari",
+              "meme-rek", "yuz-felci", "alt-ekstremite", "el-cerrahisi")
+NAV_ESTETIK = ("meme-estetigi", "karin-germe", "liposuction", "kol-uyluk-germe", "jinekomasti",
+               "rinoplasti", "yuz-germe", "goz-kapagi", "lip-lift", "yag-enjeksiyonu")
+
 _AVAIL = {}
 
 
@@ -59,6 +72,33 @@ def url_for(p, lg):
     return f"{BASE}/{p['slug']}" if lg == "tr" else f"{BASE}/{lg}/{p['slug']}"
 
 
+_AYLAR = {
+    "tr": ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"],
+    "en": ["January","February","March","April","May","June","July","August","September","October","November","December"],
+    "de": ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],
+    "ru": ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"],
+    "ar": ["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],
+}
+
+
+def page_modified(p, lg):
+    """Sayfanin o dildeki son guncelleme tarihi (ISO).
+    Sayfa kaydinda "modified": {"tr": "2026-09-27"} varsa o kullanilir; yoksa
+    site geneli tarih. Dil bazli: yalnizca icerigi gercekten degisen dilin
+    tarihi ilerler (cevrilmemis surumlere sahte tazelik sinyali verilmez)."""
+    return (p.get("modified") or {}).get(lg) or SITE["modified"]
+
+
+def page_modified_text(p, lg):
+    iso = page_modified(p, lg)
+    if iso == SITE["modified"]:
+        return DATE_TR[lg]
+    y, m, d = (int(x) for x in iso.split("-"))
+    ay = _AYLAR[lg][m - 1]
+    return {"tr": f"{d} {ay} {y}", "en": f"{d} {ay} {y}", "de": f"{d}. {ay} {y}",
+            "ru": f"{d} {ay} {y}", "ar": f"{d} {ay} {y}"}[lg]
+
+
 def wa_link(topic, lg):
     from urllib.parse import quote
     return f"{WA}?text={quote(UI[lg]['wamsg'].format(t=topic))}"
@@ -68,8 +108,8 @@ def jsonld(p, lg, url):
     u = UI[lg]
     graph = [{
         "@type": "MedicalWebPage", "@id": url + "#page", "url": url, "name": p["h1"],
-        "inLanguage": lg, "datePublished": SITE["published"], "dateModified": SITE["modified"],
-        "lastReviewed": SITE["modified"],
+        "inLanguage": lg, "datePublished": SITE["published"], "dateModified": page_modified(p, lg),
+        "lastReviewed": page_modified(p, lg),
         "reviewedBy": {"@id": BASE + "/#physician"}, "author": {"@id": BASE + "/#physician"},
         "publisher": {"@id": BASE + "/#physician"}, "specialty": "PlasticSurgery",
         "about": {"@type": p.get("aboutType", "MedicalCondition"), "name": p["about"]},
@@ -169,10 +209,9 @@ def render(p, lg, index, avail):
     hub_href = ("lenfodem-lipodem-cerrahisi.html"
                 if "lenfodem" in _AVAIL.get(lg, set())
                 else A + "lenfodem-lipodem-cerrahisi.html")
-    drop1 = _links(("lenfodem", "lipodem"))
-    drop2 = _links(("mikrotia", "yanik", "hidradenit", "bas-boyun", "yuz-felci", "meme-rek", "el-cerrahisi"))
-    drop3 = _links(("rinoplasti", "meme-estetigi", "yuz-germe", "goz-kapagi", "karin-germe",
-                    "liposuction", "yag-enjeksiyonu", "kol-uyluk-germe", "jinekomasti", "lip-lift"))
+    drop1 = _links(NAV_LENFODEM)
+    drop2 = _links(NAV_ONARIM)
+    drop3 = _links(NAV_ESTETIK)
 
     kf = ""
     if p.get("keyfacts"):
@@ -312,7 +351,7 @@ else if(c!=='0'){{
 <a class="btn btn-w btn-lg" href="{wa_link(p['watopic'], lg)}" target="_blank" rel="noopener">{u['wabtn']}</a>
 <a class="btn btn-o btn-lg" href="{home}#iletisim">{u['formbtn']}</a>
 </div>
-<p style="font-size:.83rem;color:var(--muted);margin-top:22px;padding-top:16px;border-top:1px solid var(--line)">{u['byline']} <strong style="color:var(--ink)">Doç. Dr. Tahsin Oğuz Acartürk</strong> — {u['bylinesub']} <span style="white-space:nowrap">{u['updated']} <time datetime="{SITE['modified']}">{DATE_TR[lg]}</time></span></p>
+<p style="font-size:.83rem;color:var(--muted);margin-top:22px;padding-top:16px;border-top:1px solid var(--line)">{u['byline']} <strong style="color:var(--ink)">Doç. Dr. Tahsin Oğuz Acartürk</strong> — {u['bylinesub']} <span style="white-space:nowrap">{u['updated']} <time datetime="{page_modified(p, lg)}">{page_modified_text(p, lg)}</time></span></p>
 {kf}
 <div class="toc"><b>{u['toc']}</b><ol>{toc}</ol></div>
 </div></div>
@@ -402,7 +441,7 @@ def main():
         for lg in avail:
             x.append("  <url>")
             x.append(f"    <loc>{url_for(p, lg)}</loc>")
-            x.append(f"    <lastmod>{SITE['modified']}</lastmod>")
+            x.append(f"    <lastmod>{page_modified(p, lg)}</lastmod>")
             x.append("    <changefreq>monthly</changefreq>")
             x.append(f"    <priority>{p.get('prio','0.8')}</priority>")
             for l2 in avail:

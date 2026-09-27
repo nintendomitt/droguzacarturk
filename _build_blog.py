@@ -11,7 +11,7 @@ Tasarim kararlari:
 import os, re, json, html, datetime
 from urllib.parse import quote
 from _pages import PAGES, SITE
-from _build import body_html, wa_link
+from _build import body_html, wa_link, NAV_LENFODEM, NAV_ONARIM, NAV_ESTETIK
 from _ui import UI
 
 BASE = SITE["base"]
@@ -82,6 +82,16 @@ def ga_snippet():
 'document.getElementById("ckNo").onclick=function(){try{localStorage.setItem(K,"0")}catch(_){}b.style.display="none"};});}\n'
 '})();\n</script>')
 
+_IDX = {p["key"]: p for p in PAGES}
+
+
+def _navlinks(keys):
+    """Menu ogeleri _build.py'deki NAV_* listelerinden — tek kaynak.
+    Henuz uretilmeyen sayfalar atlanir."""
+    return "".join(f'<a href="../{_IDX[k]["slug"]}">{_IDX[k]["card"]}</a>'
+                   for k in keys if k in _IDX)
+
+
 def topbar_nav():
     """Hizmet sayfalariyla birebir ayni baslik — yollar ../ ile."""
     return """<div class="topbar"><div class="wrap">
@@ -93,17 +103,17 @@ def topbar_nav():
 <a class="brand" href="../index.html"><b>Doç. Dr. Tahsin Oğuz Acartürk</b><small>Plastik, Rekonstrüktif ve Estetik Cerrahi</small></a>
 <nav class="main" id="nav">
 <div class="navdrop"><a href="../lenfodem-lipodem-cerrahisi.html">Lenfödem &amp; Lipödem</a>
-<div class="dropm"><a href="../lenfodem-lipodem-cerrahisi.html">Lenfödem cerrahisi</a><a href="../lipodem-cerrahisi.html">Lipödem cerrahisi</a></div></div>
+<div class="dropm">%s</div></div>
 <div class="navdrop"><a href="../index.html#onarim">Onarım</a>
-<div class="dropm"><a href="../mikrotia-kulak-onarimi.html">Mikrotia onarımı</a><a href="../yanik-travma-onarimi.html">Yanık onarımı</a><a href="../hidradenit-onarimi.html">Hidradenit onarımı</a><a href="../bas-boyun-cene-rekonstruksiyonu.html">Baş–boyun onarımı</a><a href="../yuz-felci-tedavisi.html">Yüz felci cerrahisi</a><a href="../meme-rekonstruksiyonu.html">Meme rekonstrüksiyonu</a><a href="../el-cerrahisi-replantasyon.html">El cerrahisi</a></div></div>
+<div class="dropm">%s</div></div>
 <div class="navdrop"><a href="../index.html#estetik">Estetik</a>
-<div class="dropm"><a href="../burun-estetigi-rinoplasti.html">Rinoplasti</a><a href="../meme-estetigi.html">Meme estetiği</a><a href="../yuz-germe.html">Yüz germe</a><a href="../goz-kapagi-estetigi.html">Göz kapağı estetiği</a><a href="../karin-germe.html">Karın germe</a><a href="../liposuction-vucut-sekillendirme.html">Liposuction</a><a href="../yag-enjeksiyonu.html">Yağ enjeksiyonu</a><a href="../kol-uyluk-germe.html">Kol ve uyluk germe</a><a href="../jinekomasti.html">Jinekomasti</a><a href="../lip-lift-bisektomi-kulak-estetigi.html">Lip lift · Bişektomi · Otoplasti</a></div></div>
+<div class="dropm">%s</div></div>
 <a href="../index.html#hakkinda">Cerrahınız</a>
 <a href="./">Yazılar</a>
 <a class="btn btn-p" href="#iletisim">Randevu Al</a>
 </nav>
 <button class="menu-tgl" id="tgl" aria-label="Menu" aria-expanded="false"><span></span></button>
-</div></header>""" % WA
+</div></header>""" % (WA, _navlinks(NAV_LENFODEM), _navlinks(NAV_ONARIM), _navlinks(NAV_ESTETIK))
 
 def footer():
     return """<footer><div class="wrap">

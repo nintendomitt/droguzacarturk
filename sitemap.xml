@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/lenfodem-lipodem-cerrahisi.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/lenfodem-lipodem-cerrahisi.html"/>
@@ -784,7 +784,7 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/mikrotia-kulak-onarimi.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/mikrotia-kulak-onarimi.html"/>
@@ -1004,7 +1004,7 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/el-cerrahisi-replantasyon.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/el-cerrahisi-replantasyon.html"/>
@@ -1059,7 +1059,7 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/yanik-travma-onarimi.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/yanik-travma-onarimi.html"/>
@@ -1111,6 +1111,20 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.droguzacarturk.com/de/yanik-travma-onarimi.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.droguzacarturk.com/ru/yanik-travma-onarimi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.droguzacarturk.com/ar/yanik-travma-onarimi.html"/>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/yuz-kiriklari-cene-cerrahisi.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/yuz-kiriklari-cene-cerrahisi.html"/>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/alt-ekstremite-onarimi.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.droguzacarturk.com/alt-ekstremite-onarimi.html"/>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/hidradenit-onarimi.html</loc>
@@ -1719,9 +1733,15 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/hidradenitis-suppurativa-ve-sigara.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/hidradenitis-suppurativa-tekrarlar-mi.html</loc>

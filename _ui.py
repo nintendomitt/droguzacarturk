@@ -8,6 +8,7 @@ LOCALE = {"tr": "tr_TR", "en": "en_US", "de": "de_DE", "ru": "ru_RU", "ar": "ar_
 
 UI = {
 "tr": {
+ "vtag":"Video","vh":"Videolar","vnote":"Kapağa dokunun, video bu sayfada oynar.",
   "srch":"Kaynaklar", "srcp":"Bu sayfadaki tıbbi bilgiler aşağıdaki kaynaklara dayanmaktadır.",
  "loc":"İzmir · Bayraklı","wa":"WhatsApp ile yazın",
  "sub":"Plastik, Rekonstrüktif ve Estetik Cerrahi",
@@ -28,6 +29,7 @@ UI = {
  "wamsg":"Merhaba, {t} hakkında bilgi almak istiyorum.",
 },
 "en": {
+ "vtag":"Video","vh":"Videos","vnote":"Tap a cover to play the video right here. Videos are in Turkish.",
   "srch":"Sources", "srcp":"The medical information on this page is based on the following sources.",
  "loc":"Izmir · Bayrakli","wa":"Message us on WhatsApp",
  "sub":"Plastic, Reconstructive & Aesthetic Surgery",
@@ -48,6 +50,7 @@ UI = {
  "wamsg":"Hello, I would like information about {t}.",
 },
 "de": {
+ "vtag":"Video","vh":"Videos","vnote":"Tippen Sie auf ein Vorschaubild, das Video wird hier abgespielt. Videos auf Türkisch.",
   "srch":"Quellen", "srcp":"Die medizinischen Angaben auf dieser Seite stützen sich auf folgende Quellen.",
  "loc":"Izmir · Bayrakli","wa":"Schreiben Sie uns per WhatsApp",
  "sub":"Plastische, Rekonstruktive & Ästhetische Chirurgie",
@@ -68,6 +71,7 @@ UI = {
  "wamsg":"Hallo, ich hätte gerne Informationen zu {t}.",
 },
 "ru": {
+ "vtag":"Видео","vh":"Видео","vnote":"Нажмите на обложку — видео откроется на этой странице. Видео на турецком языке.",
   "srch":"Источники", "srcp":"Медицинская информация на этой странице основана на следующих источниках.",
  "loc":"Измир · Байраклы","wa":"Напишите нам в WhatsApp",
  "sub":"Пластическая, реконструктивная и эстетическая хирургия",
@@ -88,6 +92,7 @@ UI = {
  "wamsg":"Здравствуйте, хотел(а) бы получить информацию о {t}.",
 },
 "ar": {
+ "vtag":"فيديو","vh":"فيديوهات","vnote":"اضغط على الغلاف ليُعرض الفيديو في هذه الصفحة. الفيديوهات باللغة التركية.",
   "srch":"المصادر", "srcp":"تستند المعلومات الطبية في هذه الصفحة إلى المصادر التالية.",
  "loc":"إزمير · بايراكلي","wa":"راسلنا عبر واتساب",
  "sub":"الجراحة التجميلية والترميمية والتقويمية",

@@ -1,5 +1,9 @@
 var I18N={
 en:{
+"vd.eyebrow":"Videos",
+"vd.h2":"Assoc. Prof. Acartürk Explains",
+"vd.lead":"Talks on lymphedema, microsurgery and aesthetic surgery, plus surgical results. Tap a video to play it right here. (Videos are in Turkish.)",
+"vd.cta":"See the full YouTube channel",
 
 
 "cr.b0t":"University of Pittsburgh — Residency Training","cr.b0s":"The First Turkish Plastic Surgeon Accepted to an Integrated Plastic Surgery Residency Programme in the United States","cr.b1bt":"University of Pittsburgh — Associate Professor (Active)","cr.b1bs":"Ongoing academic appointment in the Department of Clinical Plastic Surgery","sv.b.11":"Prominent Ear Correction (Otoplasty)","nav.e11":"Prominent Ear (Otoplasty)","ab.t4hb":"HANOI, VIETNAM","ab.t4hs":"<strong>Honorary Professorship</strong> — volunteer surgical missions continued every year",
@@ -123,6 +127,10 @@ en:{
 "rv.1.q":"\"I had a breast reduction and lift with my doctor... I felt very comfortable after day 3, and my stitches look carefully done. It went better than I expected.\"","rv.1.m":"May 8, 2025 · Breast Reduction · DoktorTakvimi","rv.2.q":"\"Dr. Oğuz performed my rhinoplasty and breast augmentation... two days after surgery I was back to my daily life with zero pain. I strongly recommend him to everyone.\"","rv.2.m":"February 27, 2023 · Rhinoplasty · DoktorTakvimi","rv.3.q":"\"I sincerely thank him for helping me overcome years of fear about nose surgery... on the 3rd day after surgery I was already out of bed without any pain.\"","rv.3.m":"January 19, 2023 · Rhinoplasty · DoktorTakvimi","rv.4.q":"\"A doctor who truly does his profession justice... I can say I had no pain thanks to the technique he used. The only doctor I'd recommend without hesitation to anyone considering it.\"","rv.4.m":"December 22, 2022 · Breast Reduction · DoktorTakvimi","rv.5.q":"\"I think he has a good understanding of women's aesthetics. After the surgery he was very comforting... I felt he listened to my needs attentively.\"","rv.5.m":"October 17, 2022 · Rhinoplasty · DoktorTakvimi","rv.6.q":"\"My sister and I travelled from Bodrum to Marmaris to see Dr. Oğuz for breast reduction. He gave us so much confidence at our first meeting that we scheduled the surgery date right away.\"","rv.6.m":"February 2, 2022 · Breast Reduction · DoktorTakvimi",
 },
 de:{
+"vd.eyebrow":"Videos",
+"vd.h2":"Doç. Dr. Acartürk erklärt",
+"vd.lead":"Vorträge zu Lymphödem, Mikrochirurgie und ästhetischer Chirurgie sowie Operationsergebnisse. Tippen Sie auf ein Video, es wird direkt hier abgespielt. (Videos auf Türkisch.)",
+"vd.cta":"Zum YouTube-Kanal",
 
 
 "cr.b0t":"University of Pittsburgh — Facharztausbildung","cr.b0s":"Integrierte Facharztausbildung für Plastische Chirurgie; erster türkischer plastischer Chirurg im Programm","cr.b1bt":"University of Pittsburgh — Associate Professor","cr.b1bs":"Laufende akademische Tätigkeit in der Abteilung für Plastische Chirurgie","sv.b.11":"Ohrenkorrektur (Otoplastik)","nav.e11":"Ohrenkorrektur (Otoplastik)","ab.t4hb":"HANOI, VIETNAM","ab.t4hs":"<strong>Ehrenprofessur</strong> — jährlich fortgeführte ehrenamtliche chirurgische Missionen",
@@ -246,6 +254,10 @@ de:{
 "rv.1.q":"\"Ich habe bei meinem Arzt eine Bruststraffung mit Verkleinerung machen lassen... Ab dem 3. Tag fühlte ich mich sehr wohl, die Nähte sehen sorgfältig gesetzt aus. Es lief besser als erwartet.\"","rv.1.m":"8. Mai 2025 · Bruststraffung · DoktorTakvimi","rv.2.q":"\"Dr. Oğuz hat bei mir eine Nasenkorrektur und Brustvergrößerung durchgeführt... zwei Tage nach der Operation war ich schmerzfrei wieder im Alltag. Ich kann ihn jedem wärmstens empfehlen.\"","rv.2.m":"27. Februar 2023 · Nasenkorrektur · DoktorTakvimi","rv.3.q":"\"Ich danke ihm von Herzen, dass er mir geholfen hat, meine jahrelange Angst vor einer Nasenoperation zu überwinden... am 3. Tag nach der OP war ich bereits schmerzfrei aus dem Bett.\"","rv.3.m":"19. Januar 2023 · Nasenkorrektur · DoktorTakvimi","rv.4.q":"\"Ein Arzt, der seinen Beruf wirklich ernst nimmt... dank seiner Technik hatte ich praktisch keine Schmerzen. Der einzige Arzt, den ich jedem, der es in Erwägung zieht, bedenkenlos empfehlen kann.\"","rv.4.m":"22. Dezember 2022 · Bruststraffung · DoktorTakvimi","rv.5.q":"\"Ich finde, er hat ein gutes Verständnis für weibliche Ästhetik. Nach der Operation war er sehr fürsorglich... ich hatte das Gefühl, dass er aufmerksam auf meine Bedürfnisse eingegangen ist.\"","rv.5.m":"17. Oktober 2022 · Nasenkorrektur · DoktorTakvimi","rv.6.q":"\"Meine Schwester und ich sind für eine Bruststraffung von Bodrum nach Marmaris zu Dr. Oğuz gereist. Er gab uns beim ersten Gespräch so viel Vertrauen, dass wir sofort den Operationstermin vereinbart haben.\"","rv.6.m":"2. Februar 2022 · Bruststraffung · DoktorTakvimi",
 },
 ru:{
+"vd.eyebrow":"Видео",
+"vd.h2":"Доц. д-р Акартюрк рассказывает",
+"vd.lead":"Рассказы о лимфедеме, микрохирургии и эстетической хирургии, а также результаты операций. Нажмите на видео — оно откроется прямо здесь. (Видео на турецком языке.)",
+"vd.cta":"Весь YouTube-канал",
 
 
 "cr.b0t":"Питтсбургский университет — ординатура","cr.b0s":"Интегрированная резидентура по пластической хирургии; первый турецкий пластический хирург, принятый в программу","cr.b1bt":"Питтсбургский университет — доцент","cr.b1bs":"Действующая academic должность на кафедре пластической хирургии","sv.b.11":"Коррекция лопоухости (отопластика)","nav.e11":"Лопоухость (отопластика)","ab.t4hb":"ХАНОЙ, ВЬЕТНАМ","ab.t4hs":"<strong>Почётная профессура</strong> — ежегодные волонтёрские хирургические миссии",
@@ -369,6 +381,10 @@ ru:{
 "rv.1.q":"\"Мне сделали операцию по уменьшению и подтяжке груди... После 3-го дня я чувствовала себя очень комфортно, швы выглядят аккуратно наложенными. Всё прошло лучше, чем я ожидала.\"","rv.1.m":"8 мая 2025 · Уменьшение груди · DoktorTakvimi","rv.2.q":"\"Доктор Огуз сделал мне ринопластику и увеличение груди... через два дня после операции я вернулась к обычной жизни без боли. Настоятельно всем рекомендую.\"","rv.2.m":"27 февраля 2023 · Ринопластика · DoktorTakvimi","rv.3.q":"\"Искренне благодарю его за то, что помог мне преодолеть многолетний страх перед операцией на носу... уже на 3-й день после операции я без боли встала с постели.\"","rv.3.m":"19 января 2023 · Ринопластика · DoktorTakvimi","rv.4.q":"\"Врач, который по-настоящему достойно выполняет свою профессию... благодаря его технике я могу сказать, что боли не было. Единственный врач, которого я без колебаний порекомендую всем, кто это рассматривает.\"","rv.4.m":"22 декабря 2022 · Уменьшение груди · DoktorTakvimi","rv.5.q":"\"Мне кажется, он хорошо понимает женскую эстетику. После операции он был очень заботлив... я чувствовала, что он внимательно прислушивался к моим пожеланиям.\"","rv.5.m":"17 октября 2022 · Ринопластика · DoktorTakvimi","rv.6.q":"\"Мы с сестрой приехали из Бодрума в Мармарис к доктору Огузу на уменьшение груди. На первой же встрече он вселил в нас столько доверия, что мы сразу назначили дату операции.\"","rv.6.m":"2 февраля 2022 · Уменьшение груди · DoktorTakvimi",
 },
 ar:{
+"vd.eyebrow":"فيديوهات",
+"vd.h2":"الدكتور أجارتورك يشرح",
+"vd.lead":"شروحات عن الوذمة اللمفية والجراحة المجهرية والجراحة التجميلية، ونتائج العمليات. اضغط على أي فيديو ليُعرض هنا مباشرة. (الفيديوهات باللغة التركية.)",
+"vd.cta":"قناة يوتيوب كاملة",
 
 
 "cr.b0t":"جامعة بيتسبرغ — التدريب التخصصي","cr.b0s":"أول جرّاح تجميل تركي يُقبل في برنامج التخصص المتكامل في الجراحة التجميلية في الولايات المتحدة","cr.b1bt":"جامعة بيتسبرغ — أستاذ مشارك (نشط)","cr.b1bs":"تعيين أكاديمي مستمر في قسم الجراحة التجميلية السريرية","sv.b.11":"تصحيح الأذن البارزة","nav.e11":"الأذن البارزة","ab.t4hb":"هانوي، فيتنام","ab.t4hs":"<strong>أستاذية فخرية</strong> — بعثات جراحية تطوعية تتواصل كل عام",

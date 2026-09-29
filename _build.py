@@ -16,6 +16,7 @@ Elle HTML duzenlemeyin; bu betigi calistirin.
 import json, os, html, importlib.util
 from _pages import PAGES, SITE, EXTRA_REFS
 from _ui import UI, LANGS, LANGNAME, RTL, LOCALE, DATE_TR
+from _videos import PAGE_VIDEOS, card as video_card, video_ld
 
 WA = "https://wa.me/905449714801"
 BASE = SITE["base"]
@@ -133,6 +134,8 @@ def jsonld(p, lg, url):
         graph.append({"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q,
              "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faqs"]]})
+    for _v in PAGE_VIDEOS.get(p["key"], []):
+        graph.append(video_ld(_v))
     graph.append({"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": u["home"], "item": BASE + "/"},
         {"@type": "ListItem", "position": 2, "name": p["crumb"], "item": url}]})
@@ -219,6 +222,15 @@ def render(p, lg, index, avail):
             f'<div class="kf"><b>{a}</b><span>{b}</span></div>' for a, b in p["keyfacts"]) + "</div>"
     toc = "".join(f'<li><a href="#{s.get("id", f"b{i+1}")}">{s["h2"]}</a></li>'
                   for i, s in enumerate(p["sections"]))
+    # Videolar — _videos.py tek kaynak. Kapaga tiklaninca assets/yt.js yerinde oynatir.
+    videos = ""
+    _vids = PAGE_VIDEOS.get(p["key"], [])
+    if _vids:
+        videos = (f'<section class="alt" id="videolar"><div class="wrap"><div class="narrow">'
+                  f'<span class="tag">{u["vtag"]}</span><h2 style="margin:0 0 4px">{u["vh"]}</h2>'
+                  f'<p class="vd-note">{u["vnote"]}</p>'
+                  f'<div class="vd-grid">{"".join(video_card(v) for v in _vids)}</div>'
+                  f'</div></div></section><script src="{A}assets/yt.js" defer></script>')
     faq = ""
     if p.get("faqs"):
         items = "".join(f'<details{" open" if i == 0 else ""}><summary>{q}</summary><p>{a}</p></details>'
@@ -356,6 +368,7 @@ else if(c!=='0'){{
 <div class="toc"><b>{u['toc']}</b><ol>{toc}</ol></div>
 </div></div>
 {body_html(p)}
+{videos}
 {faq}
 {src}
 {surgeon}

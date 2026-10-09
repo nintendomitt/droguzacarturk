@@ -222,6 +222,30 @@ def render(p, lg, index, avail):
             f'<div class="kf"><b>{a}</b><span>{b}</span></div>' for a, b in p["keyfacts"]) + "</div>"
     toc = "".join(f'<li><a href="#{s.get("id", f"b{i+1}")}">{s["h2"]}</a></li>'
                   for i, s in enumerate(p["sections"]))
+    # Ameliyat öncesi-sonrası (yalnız TR; Yönetmelik m.7 şartları veride kontrol edilir)
+    sonuc_html = ""
+    _so = p.get("sonuc")
+    if _so and lg == "tr" and _so.get("yayinda"):
+        _eksik = [k for k in ("islem_tarihi",) if not _so.get(k)] + \
+                 [k + ".tarih" for k in ("oncesi", "sonrasi") if not _so[k].get("tarih")]
+        if _eksik:
+            raise SystemExit(f"[{p['key']}] öncesi-sonrası yayında ama zorunlu tarih eksik: {_eksik}")
+        def _fig(d, cls):
+            return (f'<figure class="ba-fig {cls}"><div class="ba-img"><picture>'
+                    f'<source srcset="{A}{d["src"]}.webp" type="image/webp">'
+                    f'<img src="{A}{d["src"]}.jpg" width="{d["w"]}" height="{d["h"]}" loading="lazy" '
+                    f'alt="{d["etiket"]} — {_so["baslik"]}"></picture></div>'
+                    f'<figcaption><b>{d["etiket"]}</b><span>Çekim: {d["tarih"]}</span></figcaption></figure>')
+        sonuc_html = (f'<section class="ba-sec" id="sonuc"><div class="wrap">'
+            f'<div class="vd-head"><p class="eyebrow">Tedavi sonucu</p><h2>{_so["baslik"]}</h2>'
+            f'<p class="lead">{_so["aciklama"]}</p></div>'
+            f'<div class="ba-grid">{_fig(_so["oncesi"], "pre")}{_fig(_so["sonrasi"], "post")}</div>'
+            f'<div class="ba-legal"><p class="ba-warn">Her cerrahi veya girişimsel işlemde sonuçlar kişiden kişiye '
+            f'değişiklik gösterebilir. İşlem öncesinde hekiminizden detaylı görüş almanız önerilir.</p>'
+            f'<p>İşlem tarihi: {_so["islem_tarihi"]}. Görseller Doç. Dr. Tahsin Oğuz Acartürk\'ün gerçek hastasına aittir '
+            f've hastanın Görsel İçerik Kaydetme ve İşleme Onam Formu ile alınan yazılı açık rızasıyla, bilgilendirme '
+            f'amacıyla paylaşılmıştır. Fotoğraflarda rötuş, filtre veya düzenleme yapılmamıştır; yalnızca işlem bölgesi '
+            f'dışındaki alanlar kırpılmıştır.</p></div></div></section>')
     # Videolar — _videos.py tek kaynak. Tasarim anasayfa seridiyle ayni:
     # yeterli video varsa kendiliginden kayan serit, azsa ortalanmis sira.
     # Kapaga tiklaninca assets/yt.js videoyu kartin icinde oynatir.
@@ -382,6 +406,7 @@ else if(c!=='0'){{
 <div class="toc"><b>{u['toc']}</b><ol>{toc}</ol></div>
 </div></div>
 {body_html(p)}
+{sonuc_html}
 {videos}
 {faq}
 {src}

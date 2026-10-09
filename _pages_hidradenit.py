@@ -18,6 +18,16 @@ Semrush TR: hidradenitis supurativa 6.600/ay (KD 19) · hidradenit 1.000 (16)
 
 HIDRADENIT = [{
  "key": "hidradenit",
+ # Öncesi-sonrası (Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hk. Yönetmelik,
+ # RG 12.11.2025/33075, m.7). Yayın şartları: hastadan Ek-1 Onam Formu alınmış olmalı (m.7/1-b),
+ # işlem tarihi + her iki çekim tarihi yazılmalı (m.7/1-f), rötuş/filtre yok (m.7/1-e),
+ # zorunlu uyarı metni (m.7/1-k) şablonda sabit. "yayinda": True yapılana kadar sayfada görünmez.
+ "sonuc": {"yayinda": False,
+           "baslik": "Koltuk altı hidradenitinde geniş eksizyon ve onarım",
+           "aciklama": "İleri evre koltuk altı hidradenitinde hastalıklı bölgenin bütünüyle çıkarılıp onarıldığı bir hastamızın ameliyat öncesi ve 1 yıl sonraki görünümü.",
+           "islem_tarihi": "",          # örn. "Mart 2024"
+           "oncesi": {"src": "assets/sonuc/hidradenit-oncesi", "w": 597, "h": 1000, "tarih": "", "etiket": "Ameliyat öncesi"},
+           "sonrasi": {"src": "assets/sonuc/hidradenit-sonrasi", "w": 722, "h": 840, "tarih": "", "etiket": "Ameliyattan 1 yıl sonra"}},
  "authority": "Hidradenitis süpürativanın ileri evresinde tek kalıcı çözüm geniş eksizyon ve ardından yapılan rekonstrüksiyondur. Bu, tekrarlayan apse drenajından tamamen farklı bir cerrahidir: hastalıklı ter bezi alanının bütünüyle çıkarılması ve oluşan geniş defektin flep ya da greftle kapatılması gerekir. Doç. Dr. Acartürk'ün serbest doku aktarımı ve flep cerrahisindeki pratiği, koltuk altı ve kasık gibi hareketli bölgelerde kontraktür bırakmayan kapama planlaması için belirleyicidir.",
  "creds": ["University of Pittsburgh'da 600+ mikrocerrahi ve flep vakası",
            "Yanık ve travma sonrası skar-kontraktür rekonstrüksiyonu deneyimi",

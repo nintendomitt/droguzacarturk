@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.droguzacarturk.com/</loc>
     <lastmod>2026-08-13</lastmod>
@@ -1136,6 +1136,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.droguzacarturk.com/de/hidradenit-onarimi.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.droguzacarturk.com/ru/hidradenit-onarimi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.droguzacarturk.com/ar/hidradenit-onarimi.html"/>
+    <image:image><image:loc>https://www.droguzacarturk.com/assets/sonuc/koltuk-alti-hidradenit-ameliyat-oncesi.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.droguzacarturk.com/assets/sonuc/koltuk-alti-hidradenit-ameliyattan-1-yil-sonra.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/en/hidradenit-onarimi.html</loc>

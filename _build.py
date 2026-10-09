@@ -136,6 +136,20 @@ def jsonld(p, lg, url):
              "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faqs"]]})
     for _v in PAGE_VIDEOS.get(p["key"], []):
         graph.append(video_ld(_v))
+    # Öncesi-sonrası görselleri: Google Görseller ve AI motorları için ImageObject
+    _so = p.get("sonuc")
+    if _so and lg == "tr" and _so.get("yayinda"):
+        for _k in ("oncesi", "sonrasi"):
+            _d = _so[_k]
+            graph.append({"@type": "ImageObject", "@id": url + "#gorsel-" + _k,
+                "contentUrl": BASE + "/" + _d["src"] + ".jpg", "url": BASE + "/" + _d["src"] + ".jpg",
+                "name": _so["baslik"] + " — " + _d["etiket"], "caption": _d.get("alt") or _d["etiket"],
+                "description": _so["aciklama"], "width": _d["w"], "height": _d["h"],
+                "encodingFormat": "image/jpeg", "inLanguage": "tr", "dateCreated": _d["iso"],
+                "creator": {"@id": BASE + "/#physician"}, "creditText": "Doç. Dr. Tahsin Oğuz Acartürk",
+                "copyrightNotice": "© Doç. Dr. Tahsin Oğuz Acartürk",
+                "about": {"@type": "MedicalCondition", "name": "Hidradenitis suppurativa (koltuk altı hidradeniti)"},
+                "isPartOf": {"@id": url + "#page"}})
     graph.append({"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": u["home"], "item": BASE + "/"},
         {"@type": "ListItem", "position": 2, "name": p["crumb"], "item": url}]})
@@ -234,7 +248,7 @@ def render(p, lg, index, avail):
             return (f'<figure class="ba-fig {cls}"><div class="ba-img"><picture>'
                     f'<source srcset="{A}{d["src"]}.webp" type="image/webp">'
                     f'<img src="{A}{d["src"]}.jpg" width="{d["w"]}" height="{d["h"]}" loading="lazy" '
-                    f'alt="{d["etiket"]} — {_so["baslik"]}"></picture></div>'
+                    f'alt="{d.get("alt") or d["etiket"]}" decoding="async"></picture></div>'
                     f'<figcaption><b>{d["etiket"]}</b><span>Çekim: {d["tarih"]}</span></figcaption></figure>')
         sonuc_html = (f'<section class="ba-sec" id="sonuc"><div class="wrap">'
             f'<div class="vd-head"><p class="eyebrow">Tedavi sonucu</p><h2>{_so["baslik"]}</h2>'
@@ -482,7 +496,7 @@ def main():
             print(f"  {p['slug']:42} {' '.join(avail)}")
 
     x = ['<?xml version="1.0" encoding="UTF-8"?>',
-         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
          "  <url>", f"    <loc>{BASE}/</loc>", f"    <lastmod>{SITE['modified']}</lastmod>",
          "    <changefreq>monthly</changefreq>", "    <priority>1.0</priority>"]
     for lg in LANGS:
@@ -503,6 +517,10 @@ def main():
             x.append(f"    <priority>{p.get('prio','0.8')}</priority>")
             for l2 in avail:
                 x.append(f'    <xhtml:link rel="alternate" hreflang="{l2}" href="{url_for(p, l2)}"/>')
+            _so = p.get("sonuc")
+            if _so and lg == "tr" and _so.get("yayinda"):
+                for _k in ("oncesi", "sonrasi"):
+                    x.append(f'    <image:image><image:loc>{BASE}/{_so[_k]["src"]}.jpg</image:loc></image:image>')
             x.append("  </url>")
             n += 1
     x.append("</urlset>")

@@ -245,7 +245,12 @@ def render(p, lg, index, avail):
             f'<p>İşlem tarihi: {_so["islem_tarihi"]}. Görseller Doç. Dr. Tahsin Oğuz Acartürk\'ün gerçek hastasına aittir '
             f've hastanın Görsel İçerik Kaydetme ve İşleme Onam Formu ile alınan yazılı açık rızasıyla, bilgilendirme '
             f'amacıyla paylaşılmıştır. Fotoğraflarda rötuş, filtre veya düzenleme yapılmamıştır; yalnızca işlem bölgesi '
-            f'dışındaki alanlar kırpılmıştır.</p></div></div></section>')
+            f'dışındaki alanlar kırpılmıştır.</p></div></div></section>'
+            # Kaydirinca yumusak belirme: JS yoksa ya da hareket azaltma aciksa gorseller dogrudan gorunur.
+            "<script>(function(){var s=document.getElementById('sonuc');if(!s||!('IntersectionObserver' in window)"
+            "||matchMedia('(prefers-reduced-motion: reduce)').matches)return;s.classList.add('ba-anim');"
+            "var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){s.classList.add('ba-in');o.disconnect()}})},"
+            "{threshold:.25});o.observe(s.querySelector('.ba-grid'))})()</script>")
     # Videolar — _videos.py tek kaynak. Tasarim anasayfa seridiyle ayni:
     # yeterli video varsa kendiliginden kayan serit, azsa ortalanmis sira.
     # Kapaga tiklaninca assets/yt.js videoyu kartin icinde oynatir.

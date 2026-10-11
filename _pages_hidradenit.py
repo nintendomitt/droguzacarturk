@@ -26,6 +26,7 @@ HIDRADENIT = [{
            "baslik": "Koltuk altı hidradenitinde geniş eksizyon ve onarım",
            "aciklama": "İleri evre koltuk altı hidradenitinde hastalıklı bölgenin bütünüyle çıkarılıp onarıldığı bir hastamızın ameliyat öncesi ve 1 yıl sonraki görünümü.",
            "islem_tarihi": "Ekim 2015",
+           "konu": "Hidradenitis suppurativa (koltuk altı hidradeniti)",
            "oncesi": {"src": "assets/sonuc/koltuk-alti-hidradenit-ameliyat-oncesi", "w": 600, "h": 800, "tarih": "15 Ekim 2015", "iso": "2015-10-15", "etiket": "Ameliyat öncesi",
                       "alt": "Koltuk altında ileri evre hidradenit (koltuk altı çıbanı): şişlik, apse ve akıntılı kanallar — ameliyat öncesi görünüm"},
            "sonrasi": {"src": "assets/sonuc/koltuk-alti-hidradenit-ameliyattan-1-yil-sonra", "w": 600, "h": 800, "tarih": "29 Ekim 2016", "iso": "2016-10-29", "etiket": "Ameliyattan 1 yıl sonra",

@@ -148,7 +148,7 @@ def jsonld(p, lg, url):
                 "encodingFormat": "image/jpeg", "inLanguage": "tr", "dateCreated": _d["iso"],
                 "creator": {"@id": BASE + "/#physician"}, "creditText": "Doç. Dr. Tahsin Oğuz Acartürk",
                 "copyrightNotice": "© Doç. Dr. Tahsin Oğuz Acartürk",
-                "about": {"@type": "MedicalCondition", "name": "Hidradenitis suppurativa (koltuk altı hidradeniti)"},
+                "about": {"@type": "MedicalCondition", "name": _so.get("konu", "Hidradenitis suppurativa (koltuk altı hidradeniti)")},
                 "isPartOf": {"@id": url + "#page"}})
     graph.append({"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": u["home"], "item": BASE + "/"},
@@ -240,8 +240,7 @@ def render(p, lg, index, avail):
     sonuc_html = ""
     _so = p.get("sonuc")
     if _so and lg == "tr" and _so.get("yayinda"):
-        _eksik = [k for k in ("islem_tarihi",) if not _so.get(k)] + \
-                 [k + ".tarih" for k in ("oncesi", "sonrasi") if not _so[k].get("tarih")]
+        _eksik = [k + ".tarih" for k in ("oncesi", "sonrasi") if not _so[k].get("tarih")]
         if _eksik:
             raise SystemExit(f"[{p['key']}] öncesi-sonrası yayında ama zorunlu tarih eksik: {_eksik}")
         def _fig(d, cls):
@@ -250,13 +249,13 @@ def render(p, lg, index, avail):
                     f'<img src="{A}{d["src"]}.jpg" width="{d["w"]}" height="{d["h"]}" loading="lazy" '
                     f'alt="{d.get("alt") or d["etiket"]}" decoding="async"></picture></div>'
                     f'<figcaption><b>{d["etiket"]}</b><span>Çekim: {d["tarih"]}</span></figcaption></figure>')
-        sonuc_html = (f'<section class="ba-sec" id="sonuc"><div class="wrap">'
+        sonuc_html = (f'<section class="ba-sec{" ba-uzun" if _so.get("oran") == "uzun" else ""}" id="sonuc"><div class="wrap">'
             f'<div class="vd-head"><p class="eyebrow">Tedavi sonucu</p><h2>{_so["baslik"]}</h2>'
             f'<p class="lead">{_so["aciklama"]}</p></div>'
             f'<div class="ba-grid">{_fig(_so["oncesi"], "pre")}{_fig(_so["sonrasi"], "post")}</div>'
             f'<div class="ba-legal"><p class="ba-warn">Her cerrahi veya girişimsel işlemde sonuçlar kişiden kişiye '
             f'değişiklik gösterebilir. İşlem öncesinde hekiminizden detaylı görüş almanız önerilir.</p>'
-            f'<p>İşlem tarihi: {_so["islem_tarihi"]}. Görseller Doç. Dr. Tahsin Oğuz Acartürk\'ün gerçek hastasına aittir '
+            f'<p>{("İşlem tarihi: " + _so["islem_tarihi"] + ". ") if _so.get("islem_tarihi") else ""}Görseller Doç. Dr. Tahsin Oğuz Acartürk\'ün gerçek hastasına aittir '
             f've hastanın Görsel İçerik Kaydetme ve İşleme Onam Formu ile alınan yazılı açık rızasıyla, bilgilendirme '
             f'amacıyla paylaşılmıştır. Fotoğraflarda rötuş, filtre veya düzenleme yapılmamıştır; yalnızca işlem bölgesi '
             f'dışındaki alanlar kırpılmıştır.</p></div></div></section>'

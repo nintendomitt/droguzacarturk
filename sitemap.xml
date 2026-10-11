@@ -77,6 +77,8 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.droguzacarturk.com/de/bacakta-lenfodem.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://www.droguzacarturk.com/ru/bacakta-lenfodem.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.droguzacarturk.com/ar/bacakta-lenfodem.html"/>
+    <image:image><image:loc>https://www.droguzacarturk.com/assets/sonuc/bacakta-lenfodem-tedavi-oncesi.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.droguzacarturk.com/assets/sonuc/bacakta-lenfodem-tedavi-sonrasi.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/en/bacakta-lenfodem.html</loc>
@@ -1735,9 +1737,21 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/zayifliyorum-bacaklarim-incelmiyor.html</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/lipodem-mi-selulit-mi.html</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/lipodem-agrisi-nasil-olur.html</loc>

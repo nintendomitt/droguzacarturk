@@ -13,6 +13,15 @@ Hedef sorgular ve aylik hacimler (Semrush TR):
 LENFODEM_KUME = [
 
 {"key":"bacakta-lenfodem",
+ # Öncesi-sonrası (Yönetmelik RG 12.11.2025/33075 m.7): hasta rızası alındı; çekim tarihleri zorunlu.
+ "sonuc": {"yayinda": True, "oran": "uzun",
+           "baslik": "Bacakta lenfödem: tedavi öncesi ve sonrası",
+           "aciklama": "İleri evre bacak lenfödemi olan bir hastamızın tedavi öncesi ve sonrası görünümü.",
+           "konu": "Bacakta lenfödem (alt ekstremite lenfödemi)",
+           "oncesi": {"src": "assets/sonuc/bacakta-lenfodem-tedavi-oncesi", "w": 500, "h": 1000, "tarih": "23 Ocak 2023", "iso": "2023-01-23", "etiket": "Tedavi öncesi",
+                      "alt": "İleri evre bacak lenfödemi: dizden ayak bileğine belirgin şişlik ve deri kıvrımları — tedavi öncesi görünüm"},
+           "sonrasi": {"src": "assets/sonuc/bacakta-lenfodem-tedavi-sonrasi", "w": 500, "h": 1000, "tarih": "28 Ekim 2024", "iso": "2024-10-28", "etiket": "Tedavi sonrası",
+                       "alt": "Bacakta lenfödem tedavisi sonrası: bacak hacminde azalma ve belirginleşen diz ile baldır hatları"}},
  "slug":"bacakta-lenfodem.html",
  "prio":0.9,
  "crumb":"Bacakta Lenfödem",

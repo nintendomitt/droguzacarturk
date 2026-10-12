@@ -609,12 +609,11 @@ def html_uret(d):
         tr = "".join(f"<tr><td>{a}</td><td class='s'>{b}</td><td class='s'><strong>{c}</strong></td><td class='s'>{e}</td></tr>"
                      for a, b, c, e in satirlar)
         kiyas_html = (f'<h3>Geçen dönemle karşılaştırma</h3>'
-            f'<table class="t"><thead><tr><th>Ölçü</th><th class="s">Geçen dönem ({g0} gün)</th>'
+            f'<table class="t sik"><thead><tr><th>Ölçü</th><th class="s">Geçen dönem ({g0} gün)</th>'
             f'<th class="s">Bu dönem ({g1} gün)</th><th class="s">Değişim</th></tr></thead><tbody>{tr}</tbody></table>'
-            f'<p class="dip">Dönem uzunlukları farklı olduğu için asıl karşılaştırma günlük ortalamalar üzerinden '
-            f'yapılmalıdır. Ortalama sırada küçük sayı daha iyidir.</p>')
+            f'<p class="dip">Dönemlerin gün sayısı farklı; asıl ölçü günlük ortalamalardır. Sırada küçük sayı daha iyidir.</p>')
 
-    A(f'''<section class="sy">
+    A(f'''<section class="sy ozet">
   <header class="sb"><span class="sn">01</span><h2>Yönetici özeti</h2>
     <div class="sb-alt">{donem}</div></header>
 
@@ -658,11 +657,10 @@ def html_uret(d):
   </div>
   <p class="dip">Marka dışı gösterimin payı
   <strong>%{_yz(100.0*md_g/(md_g+mk_g) if (md_g+mk_g) else 0, 0)}</strong>. Bu oran, sitenin
-  doktoru zaten tanıyan kişilerin ötesinde <em>yeni hasta</em> bulup bulmadığının göstergesidir
-  ve büyümenin asıl ölçüsüdür. — Not: bu iki kutu sorgu bazlı veriden hesaplanır; Google çok
-  az arananları gizlediği için toplamları sayfa üstündeki genel toplamın altında kalır.</p>
+  doktoru zaten tanıyan kişilerin ötesinde <em>yeni hasta</em> bulup bulmadığını gösterir. Google çok az
+  arananları gizlediği için bu iki kutunun toplamı genel toplamın altında kalır.</p>
 
-  <h3>Dönem içi rekorlar</h3>
+  <div class="blok"><h3>Dönem içi rekorlar</h3>
   <div class="serit">
     <div class="sr"><div class="sr-e">En çok tıklanan gün</div>
       <div class="sr-v">{en_iyi["tik"]}</div>
@@ -676,7 +674,7 @@ def html_uret(d):
     <div class="sr"><div class="sr-e">Sıralamaya giren sorgu</div>
       <div class="sr-v">{_no(len(sorgular))}</div>
       <div class="sr-a">farklı arama terimi</div></div>
-  </div>
+  </div></div>
 </section>''')
 
     # ---------------- 2. GUNLUK TREND ----------------
@@ -1119,6 +1117,19 @@ h3 {{ font-size: 11pt; font-weight: 600; margin: 7mm 0 3mm; color: {KOYU}; }}
 
 .dip {{ font-size: 8.2pt; color: {SOLUK}; line-height: 1.55;
   border-left: 2px solid {AMBER}; padding-left: 3.5mm; margin-top: 4mm; }}
+
+/* ---- yonetici ozeti tek sayfa ---- */
+.ozet h3 {{ margin: 4mm 0 2mm; }}
+.ozet .sb {{ margin-bottom: 4mm; }}
+.ozet .kpi {{ margin-bottom: 4mm; }}
+.ozet .ikili {{ margin: 2mm 0 2mm; }}
+.ozet .kutu {{ padding: 3mm 4mm; }}
+.ozet .sr {{ padding: 2.5mm 3mm; }}
+.ozet .sr-e {{ min-height: 0; }}
+.ozet .oz p {{ margin: 0 0 2.5mm; }}
+.ozet .dip {{ margin-top: 2.5mm; }}
+.t.sik td {{ padding: 1.5mm 2.5mm; }}
+.blok {{ break-inside: avoid; }}
 
 /* ---- rekor seridi ---- */
 .serit {{ display: flex; gap: 3.5mm; }}

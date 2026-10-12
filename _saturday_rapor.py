@@ -456,6 +456,52 @@ def notlari_oku():
     return yap, son
 
 
+def onceki_donem():
+    """_gsc/arsiv/ altindaki en son donemin Chart.csv toplamlari (gecen ayla kiyas)."""
+    ark = os.path.join(GSC, "arsiv")
+    if not os.path.isdir(ark):
+        return None
+    for ad in sorted(os.listdir(ark), reverse=True):
+        y = os.path.join(ark, ad, "Chart.csv")
+        if not os.path.exists(y):
+            continue
+        with open(y, encoding="utf-8-sig", newline="") as f:
+            rr = list(csv.DictReader(f))
+        if not rr:
+            continue
+        tik = sum(_sayi(_sut(r, "Clicks", "Tıklamalar")) for r in rr)
+        gos = sum(_sayi(_sut(r, "Impressions", "Gösterimler")) for r in rr)
+        sira = (sum(_ondalik(_sut(r, "Position", "Pozisyon")) * _sayi(_sut(r, "Impressions", "Gösterimler"))
+                    for r in rr) / gos) if gos else 0
+        return {"gun": len(rr), "tik": tik, "gos": gos, "sira": sira,
+                "to": 100.0 * tik / gos if gos else 0,
+                "bas": _sut(rr[0], "Date", "Tarih"), "son": _sut(rr[-1], "Date", "Tarih")}
+    return None
+
+
+def ai_gorunurluk():
+    """_gsc/ai-gorunurluk-log.csv: her sorgu icin ilk ve son Perplexity olcumu."""
+    y = os.path.join(GSC, "ai-gorunurluk-log.csv")
+    if not os.path.exists(y):
+        return None
+    with open(y, encoding="utf-8-sig", newline="") as f:
+        rr = [r for r in csv.DictReader(f) if (r.get("platform") or "").strip() == "perplexity"]
+    if not rr:
+        return None
+    sorgu = {}
+    for r in rr:
+        sorgu.setdefault(r["sorgu"].strip(), []).append(r)
+    satir = []
+    for q, lst in sorgu.items():
+        lst.sort(key=lambda r: r["tarih"])
+        ilk, son = lst[0], lst[-1]
+        satir.append({"q": q, "ilk_t": ilk["tarih"], "son_t": son["tarih"],
+                      "ilk": (ilk.get("oneri_seviyesi") or "yok").strip(),
+                      "son": (son.get("oneri_seviyesi") or "yok").strip(),
+                      "rakip": son.get("rakip_sayisi") or "0"})
+    return satir
+
+
 # ============================== HTML ==============================
 
 def font_css():
@@ -542,6 +588,32 @@ def html_uret(d):
         return (f'<div class="k-d"><span class="d {sinif}">{isaret}%{_yz(abs(o),0)}</span>'
                 f' son 7 gün / önceki 7 gün</div>')
 
+    # gecen donemle kiyas (gunluk ortalama — donem uzunluklari farkli olabilir)
+    kiyas_html = ""
+    od = onceki_donem()
+    if od and od["gun"]:
+        def _deg(a, b, ters=False, yuzde=True):
+            if not a:
+                return "—"
+            o = 100.0 * (b - a) / a
+            iyi = (o <= 0) if ters else (o >= 0)
+            sinif = "yuk" if iyi else "dus"
+            return f'<span class="d {sinif}">{"+" if o >= 0 else "−"}%{_yz(abs(o),0)}</span>'
+        g0, g1 = od["gun"], gun_sayisi
+        satirlar = [
+            ("Günlük ortalama tıklama", _yz(od["tik"]/g0,1), _yz(d["tik"]/g1,1), _deg(od["tik"]/g0, d["tik"]/g1)),
+            ("Günlük ortalama gösterim", _no(round(od["gos"]/g0)), _no(round(d["gos"]/g1)), _deg(od["gos"]/g0, d["gos"]/g1)),
+            ("Toplam tıklama", _no(od["tik"]), _no(d["tik"]), _deg(od["tik"], d["tik"])),
+            ("Ortalama sıra", _yz(od["sira"],1), _yz(d["sira"],1), _deg(od["sira"], d["sira"], ters=True)),
+        ]
+        tr = "".join(f"<tr><td>{a}</td><td class='s'>{b}</td><td class='s'><strong>{c}</strong></td><td class='s'>{e}</td></tr>"
+                     for a, b, c, e in satirlar)
+        kiyas_html = (f'<h3>Geçen dönemle karşılaştırma</h3>'
+            f'<table class="t"><thead><tr><th>Ölçü</th><th class="s">Geçen dönem ({g0} gün)</th>'
+            f'<th class="s">Bu dönem ({g1} gün)</th><th class="s">Değişim</th></tr></thead><tbody>{tr}</tbody></table>'
+            f'<p class="dip">Dönem uzunlukları farklı olduğu için asıl karşılaştırma günlük ortalamalar üzerinden '
+            f'yapılmalıdır. Ortalama sırada küçük sayı daha iyidir.</p>')
+
     A(f'''<section class="sy">
   <header class="sb"><span class="sn">01</span><h2>Yönetici özeti</h2>
     <div class="sb-alt">{donem}</div></header>
@@ -570,6 +642,7 @@ def html_uret(d):
     seviyesine çıktı.</p>
   </div>
 
+  {kiyas_html}
   <h3>Aramanın niteliği</h3>
   <div class="ikili">
     <div class="kutu">
@@ -875,12 +948,45 @@ def html_uret(d):
 '''
     A(envanter)
 
+    # ---------------- 8. YAPAY ZEKA GORUNURLUGU ----------------
+    ai = ai_gorunurluk()
+    if ai:
+        def _etk(v):
+            return ('<span class="d yuk">Öneriliyor</span>' if v == "onerildi"
+                    else ('<span class="d">Adı geçiyor</span>' if v == "bahsedildi"
+                          else '<span class="d dus">Geçmiyor</span>'))
+        def _tr(t):
+            y, m, g = t.split("-"); return f"{int(g)} {AYLAR[int(m)-1][:3]}"
+        ilk_t = min(r["ilk_t"] for r in ai); son_t = max(r["son_t"] for r in ai)
+        n_on = sum(1 for r in ai if r["son"] == "onerildi")
+        n_ilk = sum(1 for r in ai if r["ilk"] == "onerildi")
+        ts = "".join(f"<tr><td>{_kacis(r['q'])}</td><td class='s'>{_etk(r['ilk'])}</td>"
+                     f"<td class='s'>{_etk(r['son'])}</td><td class='s'>{r['rakip']}</td></tr>" for r in ai)
+        A(f'''<section class="sy">
+  <header class="sb"><span class="sn">08</span><h2>Yapay zekâ görünürlüğü</h2>
+    <div class="sb-alt">Perplexity'de İzmir'deki hasta sorularına verilen cevaplar</div></header>
+  <div class="serit">
+    <div class="sr"><div class="sr-e">Önerildiğimiz soru</div><div class="sr-v">{n_on} / {len(ai)}</div>
+      <div class="sr-a">son ölçüm · {_tr(son_t)}</div></div>
+    <div class="sr"><div class="sr-e">İlk ölçümde</div><div class="sr-v">{n_ilk} / {len(ai)}</div>
+      <div class="sr-a">{_tr(ilk_t)}</div></div>
+  </div>
+  <p class="dip" style="margin-bottom:5mm">Hastalar artık doktor ararken Google'ın yanında ChatGPT,
+  Gemini ve Perplexity gibi yapay zekâ asistanlarına da soruyor. Bu tablo, İzmir'deki hastaların
+  sorabileceği soruları Perplexity'ye sorduğumuzda cevapta Doç. Dr. Acartürk'ün önerilip önerilmediğini
+  gösterir. Son sütun, aynı cevapta adı geçen diğer hekim/kurum sayısıdır.</p>
+  <table class="t"><thead><tr><th>Soru</th><th class="s">{_tr(ilk_t)}</th><th class="s">{_tr(son_t)}</th>
+  <th class="s">Diğer isimler</th></tr></thead><tbody>{ts}</tbody></table>
+  <p class="dip">Yapay zekâ cevapları gün içinde değişebilir; tek bir ölçüm değil, aylar içindeki
+  eğilim önemlidir. Ölçüm her ayın başında aynı sorularla tekrarlanır.</p>
+</section>''')
+
     # ---------------- 8. CALISMALAR ----------------
     ly = "".join(f'<li>{_kacis(m)}</li>' for m in yap) or "<li>—</li>"
     ls = "".join(f'<li>{_kacis(m)}</li>' for m in son) or "<li>—</li>"
 
     A(f'''<section class="sy">
-  <header class="sb"><span class="sn">08</span><h2>Bu dönem yapılanlar</h2>
+  <header class="sb"><span class="sn">09</span><h2>Bu dönem yapılanlar</h2>
     <div class="sb-alt">Saturday Online çalışma özeti</div></header>
   <ul class="is">{ly}</ul>
 
@@ -890,7 +996,7 @@ def html_uret(d):
 </section>
 
 <section class="sy">
-  <header class="sb"><span class="sn">09</span><h2>Rapordaki terimler</h2>
+  <header class="sb"><span class="sn">10</span><h2>Rapordaki terimler</h2>
     <div class="sb-alt">Metriklerin karşılığı</div></header>
   <table class="t soz">
     <tbody>
@@ -933,7 +1039,7 @@ def html_uret(d):
       <div class="imza-b">{AJANS}</div>
       <div class="imza-a">{AJANS_WEB}</div>
     </div>
-    <div class="imza-not">Veri kaynağı: Google Search Console<br>{donem}</div>
+    <div class="imza-not">Veri kaynağı: Google Search Console, Perplexity<br>{donem}</div>
   </div>
 </section>''')
 

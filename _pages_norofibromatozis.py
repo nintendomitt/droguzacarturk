@@ -4,12 +4,12 @@ Norofibromatozis (NF1) cerrahisi sayfasi.
 
 Hoca talebi (Ekim 2026): anasayfa ve menude Onarim altinda, Hidradenit'in hemen
 altinda yer alacak. Dil olculu ve kurumsal; kesin sonuc vaadi yok.
-Ceviri henuz yok — Turkce yayinda, diger dillerde sayfa uretilmez.
+Ceviriler: _trans/<dil>_b9.py (EN, DE, RU, AR).
 """
 
 NOROFIBROMATOZIS = [{
  "key": "norofibromatozis",
- "modified": {"tr": "2026-10-16"},
+ "modified": {"tr": "2026-10-16", "en": "2026-10-16", "de": "2026-10-16", "ru": "2026-10-16", "ar": "2026-10-16"},
  "sources": [("Neurofibromatosis Type 1 — StatPearls, NCBI Bookshelf",
               "https://www.ncbi.nlm.nih.gov/books/NBK459358/"),
              ("Neurofibromatosis 1 — GeneReviews, NCBI Bookshelf",

@@ -16,7 +16,11 @@ Elle HTML duzenlemeyin; bu betigi calistirin.
 import json, os, html, importlib.util
 from _pages import PAGES, SITE, EXTRA_REFS
 from _ui import UI, LANGS, LANGNAME, RTL, LOCALE, DATE_TR
-from _videos import PAGE_VIDEOS, VIDEOS, CHANNEL, card as video_card, video_ld
+from _videos import PAGE_VIDEOS, VIDEOS, REELS, CHANNEL, INSTAGRAM, card as video_card, video_ld
+
+
+def _dikey(v):
+    return v in REELS or VIDEOS[v][3]
 
 WA = "https://wa.me/905449714801"
 BASE = SITE["base"]
@@ -31,7 +35,7 @@ FIELDS = ("title", "ogtitle", "desc", "crumb", "h1", "lead", "eyebrow", "watopic
 # Sayfasi henuz uretilmeyen anahtarlar sessizce atlanir; sayfa eklendiginde
 # menuye kendiliginden girer.
 NAV_LENFODEM = ("lenfodem", "lipodem")
-NAV_ONARIM = ("mikrotia", "yanik", "hidradenit", "bas-boyun", "yuz-kiriklari",
+NAV_ONARIM = ("mikrotia", "yanik", "hidradenit", "norofibromatozis", "bas-boyun", "yuz-kiriklari",
               "meme-rek", "yuz-felci", "alt-ekstremite", "el-cerrahisi")
 NAV_ESTETIK = ("meme-estetigi", "karin-germe", "liposuction", "kol-uyluk-germe", "jinekomasti",
                "rinoplasti", "yuz-germe", "goz-kapagi", "lip-lift", "yag-enjeksiyonu")
@@ -270,10 +274,10 @@ def render(p, lg, index, avail):
     videos = ""
     _vids = PAGE_VIDEOS.get(p["key"], [])
     if _vids:
-        _w = sum(146 if VIDEOS[v][3] else 462 for v in _vids) + 16 * len(_vids)
+        _w = sum(146 if _dikey(v) else 462 for v in _vids) + 16 * len(_vids)
         if len(_vids) >= 5 and _w >= 900:
             _set = list(_vids)
-            while sum(146 if VIDEOS[v][3] else 462 for v in _set) + 16 * len(_set) < 1500:
+            while sum(146 if _dikey(v) else 462 for v in _set) + 16 * len(_set) < 1500:
                 _set += _vids
             _body = ('<div class="vd-wrap"><div class="vd-track">'
                      + "".join(video_card(v) for v in _set) + '</div></div>'
@@ -285,7 +289,8 @@ def render(p, lg, index, avail):
         videos = (f'<section class="vd-sec" id="videolar"><div class="wrap">'
                   f'<div class="vd-head"><p class="eyebrow">{u["vh"]}</p><h2>{u["vh2"]}</h2>'
                   f'<p class="lead">{u["vnote"]}</p></div>{_body}'
-                  f'<div class="vd-more"><a class="btn btn-o" href="{CHANNEL}" target="_blank" rel="noopener">{u["vcta"]}</a></div>'
+                  f'<div class="vd-more"><a class="btn btn-o" href="{CHANNEL}" target="_blank" rel="noopener">{u["vcta"]}</a> '
+                  f'<a class="btn btn-o" href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram</a></div>'
                   f'</div></section><script src="{A}assets/yt.js" defer></script>')
     faq = ""
     if p.get("faqs"):

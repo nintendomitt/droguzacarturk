@@ -2727,5 +2727,6 @@ BLOG = [
 from _blog_hidradenit import BLOG_HIDRADENIT
 from _blog_mikrotia import BLOG_MIKROTIA
 from _blog_lipodem2 import BLOG_LIPODEM2
+from _blog_ekim2 import BLOG_EKIM2
 
-BLOG += BLOG_HIDRADENIT + BLOG_MIKROTIA + BLOG_LIPODEM2
+BLOG += BLOG_HIDRADENIT + BLOG_MIKROTIA + BLOG_LIPODEM2 + BLOG_EKIM2

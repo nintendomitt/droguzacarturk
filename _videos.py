@@ -200,14 +200,14 @@ def video_ld(vid):
         return {"@type": "VideoObject", "name": t, "description": d,
                 "thumbnailUrl": [f"https://www.droguzacarturk.com/assets/reels/{vid}.jpg"],
                 "uploadDate": up, "duration": iso_duration(sec),
-                "embedUrl": f"https://www.instagram.com/reel/{vid}/embed/",
+                "embedUrl": f"https://www.instagram.com/reel/{vid}/embed/", "inLanguage": "tr",
                 "contentUrl": f"https://www.instagram.com/reel/{vid}/",
                 "author": {"@id": "https://www.droguzacarturk.com/#physician"}}
     t, up, sec, _short, d = VIDEOS[vid]
     return {"@type": "VideoObject", "name": t, "description": d,
             "thumbnailUrl": [f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"],
             "uploadDate": up, "duration": iso_duration(sec),
-            "embedUrl": f"https://www.youtube-nocookie.com/embed/{vid}",
+            "embedUrl": f"https://www.youtube-nocookie.com/embed/{vid}", "inLanguage": "tr",
             "contentUrl": f"https://www.youtube.com/watch?v={vid}",
             "author": {"@id": "https://www.droguzacarturk.com/#physician"}}
 

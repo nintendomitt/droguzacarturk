@@ -57,7 +57,7 @@ BLOG_MIKROTIA = [
   {"id": "onarim", "tag": "Onarım", "h2": "Kulak kepçesi nasıl onarılır?", "body": [
    "İki ana yol vardır ve ikisi de aşamalı planlanır.",
    ("h3", "Kendi kaburga kıkırdağıyla onarım"),
-   "Çocuğun kendi kaburga kıkırdağından bir kulak iskeleti şekillendirilir ve deri altına yerleştirilir. Genellikle 2-4 aşamada tamamlanır. Kendi dokusu olduğu için ömür boyu kalıcıdır ve büyümeyle uyumludur.",
+   "Çocuğun kendi kaburga kıkırdağından bir kulak iskeleti şekillendirilir ve deri altına yerleştirilir. Onarım iki aşamada tamamlanır ve aşamalar arasında 12 ay beklenir. Kendi dokusu olduğu için ömür boyu kalıcıdır ve büyümeyle uyumludur.",
    ("h3", "Sentetik iskelet (implant) ile onarım"),
    "Hazır gözenekli bir iskelet kullanılır ve ince bir doku örtüsüyle kaplanır. Daha az aşama gerektirir ve daha erken yaşta yapılabilir; buna karşılık darbe ve enfeksiyona karşı daha hassastır.",
    ("h3", "Protez kulak"),
@@ -173,7 +173,7 @@ BLOG_MIKROTIA = [
    "Mikrotianın en sık görülen biçimidir. Kulak yerinde, öne ya da yukarı doğru duran küçük bir doku parçası ve kulak memesine benzeyen bir yapı bulunur. Kıvrımlar yoktur.",
    ("ul", ["Dış kulak yolu genellikle kapalıdır",
            "Onarımda <strong>tam bir kulak iskeleti</strong> hazırlanması gerekir",
-           "Süreç genellikle 2-4 aşamada tamamlanır",
+           "Onarım iki aşamada, aralarında 12 ay olacak şekilde tamamlanır",
            "Mevcut doku parçası, onarımda meme yapısı olarak değerlendirilebilir"]),
    ("note", "Grade 3, \"en ağır\" derece değildir — en sık görülenidir ve onarım sonuçları genellikle yüz güldürücüdür. Derecenin yüksek olması sonucun kötü olacağı anlamına gelmez.")]},
 
@@ -186,7 +186,7 @@ BLOG_MIKROTIA = [
    ("note", "Anotiada da onarım mümkündür. \"Hiç kulak yok, yapılacak bir şey yok\" bilgisi güncel değildir.")]},
 
   {"id": "karar", "tag": "Karar", "h2": "Derece tedavi kararını nasıl değiştirir?", "body": [
-   ("ul", ["<strong>Aşama sayısı:</strong> derece yükseldikçe genellikle daha fazla aşama gerekir",
+   ("ul", ["<strong>Planlamanın kapsamı:</strong> onarım iki aşamada yapılır; derece yükseldikçe her aşamada yapılacak iş genişler",
            "<strong>Kıkırdak miktarı:</strong> tam iskelet daha fazla kaburga kıkırdağı gerektirir; bu, yaş beklentisini etkiler",
            "<strong>Deri örtüsü:</strong> mevcut deri yetersizse ek yöntemler planlanır",
            "<strong>Protez seçeneği:</strong> doku çok yetersizse ya da aile tercih ederse öne çıkar"]),
@@ -196,7 +196,7 @@ BLOG_MIKROTIA = [
   ("Mikrotia derecesi nasıl belirlenir?",
    "Muayeneyle belirlenir; kulakta ne kadar yapı kaldığına bakılır. Ek görüntüleme genellikle kepçe için değil, dış kulak yolu ve orta kulak yapılarını değerlendirmek için istenir."),
   ("Grade 3 ağır bir durum mu?",
-   "Grade 3, mikrotianın en sık görülen biçimidir ve onarım sonuçları genellikle iyidir. Derecenin yüksek olması daha fazla aşama gerektirebilir, ancak sonucun kötü olacağı anlamına gelmez."),
+   "Grade 3, mikrotianın en sık görülen biçimidir ve onarım sonuçları genellikle iyidir. Derecenin yüksek olması daha kapsamlı bir planlama gerektirebilir, ancak sonucun kötü olacağı anlamına gelmez."),
   ("Grade 1'de ameliyat gerekir mi?",
    "Her zaman değil. Kulak küçük ama biçimi tanınabilir durumdaysa, aile ve çocuk görünümden rahatsız değilse girişim gerekmeyebilir. Karar, tıbbi bir zorunluluktan çok kişisel tercihle verilir. İşitme ayrıca değerlendirilir."),
   ("Derece işitme kaybının şiddetini gösterir mi?",
@@ -263,7 +263,7 @@ BLOG_MIKROTIA = [
   ("Yetişkin yaşta yaptırabilir miyim?",
    "Evet. Mikrotia onarımı yetişkin yaşta da yapılabilir ve sonuçları başarılıdır. Kıkırdak gelişimi tamamlandığı için zamanlama açısından bir engel yoktur. Daha önce yapılmış girişimler varsa planlama buna göre yapılır."),
   ("Ameliyat kaç aşamada biter?",
-   "Kendi kıkırdağıyla yapılan onarımda genellikle 2-4 aşama gerekir ve aşamalar arasında birkaç ay beklenir. Sentetik iskeletle aşama sayısı daha azdır. Toplam süre, derece ve seçilen yönteme göre değişir.")]},
+   "Kendi kaburga kıkırdağıyla yapılan onarım iki aşamada tamamlanır ve aşamalar arasında 12 ay beklenir. Sentetik iskeletle yapılan onarımlarda aşama sayısı daha azdır.")]},
 
 # ------------------------------------------------------------------ 5
 {"slug": "mikrotia-ameliyati-nasil-yapilir", "sources": K_CERRAHI,
@@ -273,7 +273,7 @@ BLOG_MIKROTIA = [
  "ogtitle": "Mikrotia ameliyatı nasıl yapılır?",
  "desc": "Mikrotia ameliyatında kulak iskeleti kaburga kıkırdağından şekillendirilir ve deri altına yerleştirilir. Aşamalar, kulağın kaldırılması ve beklenen sonuç.",
  "h1": "Mikrotia ameliyatı nasıl yapılır?",
- "lead": "Mikrotia ameliyatı nedir? Kısaca: gelişmemiş kulak kepçesinin yerine yeni bir kulak yapılmasıdır. Bu, <strong>tek bir ameliyat değil, aşamalı bir süreçtir</strong>. En yaygın yöntemde çocuğun kendi kaburga kıkırdağından bir kulak iskeleti şekillendirilir, kulak bölgesindeki derinin altına yerleştirilir ve sonraki aşamalarda kulak baştan ayrılarak doğal açısı verilir. Süreç genellikle <strong>2-4 aşamada</strong> tamamlanır ve aşamalar arasında birkaç ay beklenir.",
+ "lead": "Mikrotia ameliyatı nedir? Kısaca: gelişmemiş kulak kepçesinin yerine yeni bir kulak yapılmasıdır. Bu, <strong>tek bir ameliyat değil, aşamalı bir süreçtir</strong>. En yaygın yöntemde çocuğun kendi kaburga kıkırdağından bir kulak iskeleti şekillendirilir, kulak bölgesindeki derinin altına yerleştirilir ve ikinci aşamada kulak baştan ayrılarak doğal açısı verilir. Onarım <strong>iki aşamada</strong> tamamlanır ve aşamalar arasında 12 ay beklenir.",
  "watopic": "mikrotia ameliyatı planlaması",
  "related": ["mikrotia"],
  "sections": [
@@ -287,11 +287,9 @@ BLOG_MIKROTIA = [
 
   {"id": "asamalar", "tag": "Aşamalar", "h2": "Ameliyatın aşamaları", "body": [
    ("steps", [
-    ("1. AŞAMA — İSKELETİN YERLEŞTİRİLMESİ", "Kaburga kıkırdağı alınır, şablona göre bir kulak iskeleti oyularak şekillendirilir ve kulak bölgesinde hazırlanan deri cebine yerleştirilir. Bu aşama sonucun temelini belirler."),
-    ("2. AŞAMA — MEME AKTARIMI", "Mevcut doku parçası, yeni kulağın meme bölgesini oluşturacak şekilde konumlandırılır. Bazı planlamalarda bu adım birinci aşamayla birleştirilir."),
-    ("3. AŞAMA — KULAĞIN KALDIRILMASI", "Kulak, baştan ayrılarak doğal açısı verilir. Arkada oluşan alan bir doku örtüsü ve deri greftiyle kapatılır."),
-    ("4. AŞAMA — İNCE DÜZELTMELER", "Simetri, kıvrım derinliği ve çukurluk için küçük düzeltmeler yapılır. Her hastada gerekmez.")]),
-   ("note", "Aşamalar arasında genellikle 3-6 ay beklenir. Bu süre, dokunun iyileşmesi ve iskeletin yerleşmesi için gereklidir — acele edildiğinde sonuç kalıcı olarak etkilenir.")]},
+    ("1. AŞAMA — İSKELETİN YERLEŞTİRİLMESİ", "Kaburga kıkırdağı alınır, şablona göre bir kulak iskeleti oyularak şekillendirilir ve kulak bölgesinde hazırlanan deri cebine yerleştirilir. Mevcut kulak memesi doğru konuma taşınır ve iskeletle bütünleşir. Bu aşama sonucun temelini belirler."),
+    ("2. AŞAMA — KULAĞIN KALDIRILMASI", "Kulak, baştan ayrılarak doğal açısı verilir. Arkada oluşan alan bir doku örtüsü ve deri greftiyle kapatılır.")]),
+   ("note", "İki aşama arasında 12 ay beklenir. Bu süre, dokunun iyileşmesi ve iskeletin yerleşmesi için gereklidir — acele edildiğinde sonuç kalıcı olarak etkilenir.")]},
 
   {"id": "kaburga", "tag": "Kaburga", "h2": "Kaburgadan kıkırdak alınması sorun yaratır mı?", "body": [
    "Ailelerin en çok endişelendiği konudur. Alınan kıkırdak, göğüs kafesinin ön alt bölümündendir ve <strong>kemik değil kıkırdak</strong> kısmıdır.",
@@ -313,9 +311,9 @@ BLOG_MIKROTIA = [
   ("Mikrotia ameliyatı işitmeyi düzeltir mi?",
    "Hayır. Kulak kepçesinin onarımı görünüme yöneliktir. İşitme, dış kulak yolunun ve orta kulak yapılarının durumuna bağlıdır ve KBB tarafından ayrıca değerlendirilir. İki süreç birlikte planlanır ama aynı ameliyat değildir."),
   ("Kaç ameliyat gerekecek?",
-   "Kendi kaburga kıkırdağıyla yapılan onarımda genellikle 2-4 aşama gerekir. Sentetik iskeletle aşama sayısı daha azdır. Kesin sayı, mikrotianın derecesine ve seçilen yönteme göre belirlenir."),
+   "Kendi kaburga kıkırdağıyla yapılan onarım iki aşamada tamamlanır: birinci aşamada iskelet yerleştirilir ve kulak memesi konumlandırılır, ikinci aşamada kulak baştan ayrılır. Sentetik iskeletle yapılan onarımlarda aşama sayısı daha azdır."),
   ("Aşamalar arasında ne kadar beklenir?",
-   "Genellikle 3-6 ay. Bu süre dokunun iyileşmesi ve iskeletin yerleşmesi için gereklidir. Aceleyle yapılan ikinci aşama, ilk aşamada elde edilen sonucu bozabilir."),
+   "12 ay. Bu süre dokunun iyileşmesi ve iskeletin yerleşmesi için gereklidir. Aceleyle yapılan ikinci aşama, ilk aşamada elde edilen sonucu bozabilir."),
   ("Kaburgadan kıkırdak almak çocuğuma zarar verir mi?",
    "Alınan bölge kemik değil kıkırdaktır. İlk haftalarda derin nefes alırken ağrı olur ve bu geriler. Göğüs duvarında hafif bir kontur farkı kalabilir, ancak nefes alma kapasitesinde kalıcı bir kısıtlama beklenmez."),
   ("Ameliyattan sonra spor yapabilir mi?",
@@ -338,7 +336,7 @@ BLOG_MIKROTIA = [
   {"id": "tablo", "tag": "Karşılaştırma", "h2": "İki yöntem yan yana", "body": [
    ("table", ["", "Kendi kaburga kıkırdağı", "Sentetik iskelet"],
     [["Uygulama yaşı", "Kaburga gelişimi beklenir", "Daha erken mümkün"],
-     ["Aşama sayısı", "Genellikle 2-4", "Genellikle daha az"],
+     ["Aşama sayısı", "2 aşama, arada 12 ay", "Genellikle daha az"],
      ["Göğüsten doku alınması", "Var", "Yok"],
      ["Büyümeyle uyum", "Canlı doku; uyumlu kalır", "Büyümez; boyut baştan planlanır"],
      ["Darbeye dayanıklılık", "Daha dayanıklı", "Daha hassas"],
@@ -355,7 +353,7 @@ BLOG_MIKROTIA = [
    ("h3", "Zorlukları"),
    ("ul", ["Kaburga gelişiminin beklenmesi gerekir",
            "Göğüsten kıkırdak alınması ek bir iyileşme süreci demektir",
-           "Daha fazla aşama ve daha uzun toplam süre",
+           "İki aşama ve aralarında 12 ay; toplam süre daha uzundur",
            "Sonuç, iskeletin oyulmasındaki ustalığa doğrudan bağlıdır"])]},
 
   {"id": "sentetik", "tag": "Sentetik", "h2": "Sentetik iskeletle onarım", "body": [
@@ -553,7 +551,7 @@ BLOG_MIKROTIA = [
     ("1-2. HAFTA", "Evde dinlenme dönemi. Sargı bakımı ve ağrı kontrolü ön planda."),
     ("2-4. HAFTA", "Çoğu çocuk okula dönebilir. Beden eğitimi ve temaslı oyunlardan uzak durulur."),
     ("6-8. HAFTA", "Hekim onayıyla çoğu günlük etkinliğe dönülür."),
-    ("3-6. AY", "Şişlik tamamen geriler, kıvrımlar belirginleşir. Bir sonraki aşama bu dönemde planlanır.")]),
+    ("3-12. AY", "Şişlik tamamen geriler, kıvrımlar belirginleşir. İkinci aşama, birinci aşamadan 12 ay sonra yapılır.")]),
    ("ul", ["<strong>Yüzme:</strong> yara tam kapanmadan başlanmaz; tarihi hekiminiz belirler",
            "<strong>Temaslı sporlar:</strong> daha uzun süre beklenir; sentetik iskelet varsa uzun vadede de dikkat gerekir",
            "<strong>Gözlük:</strong> kulağın üzerine oturan çerçeveler için hekim onayı beklenir",
@@ -562,7 +560,7 @@ BLOG_MIKROTIA = [
 
  "faqs": [
   ("Ameliyattan sonra hastanede ne kadar kalınır?",
-   "Yapılan aşamaya ve çocuğun durumuna göre değişir; ilk aşamada genellikle birkaç gün kalınır. Sonraki aşamalar daha kısa sürelidir. Kesin süreyi cerrahınız planına göre belirtir."),
+   "Yapılan aşamaya ve çocuğun durumuna göre değişir; ilk aşamada genellikle birkaç gün kalınır. İkinci aşama daha kısa sürelidir. Kesin süreyi cerrahınız planına göre belirtir."),
   ("Çocuğum ne zaman okula dönebilir?",
    "Çoğu çocuk 2-4 hafta içinde okula döner. Beden eğitimi ve temaslı oyunlardan bir süre daha uzak durulması istenir. Karar, iyileşmenin seyrine göre hekiminiz tarafından verilir."),
   ("Ne zaman saçını yıkayabilirim?",
@@ -572,5 +570,5 @@ BLOG_MIKROTIA = [
   ("Kulağına yanlışlıkla baskı uygulanırsa ne olur?",
    "Kısa süreli hafif bir baskı genellikle sorun yaratmaz. Ancak uzun süreli baskı — özellikle üzerine yatmak — iskeletin üzerindeki derinin beslenmesini bozabilir. Böyle bir durumda hekiminizi bilgilendirin."),
   ("Sonraki aşama ne zaman yapılır?",
-   "Genellikle 3-6 ay sonra. Bu süre dokunun iyileşmesi ve iskeletin yerleşmesi için gereklidir. Aceleyle yapılan ikinci aşama, ilk aşamada elde edilen sonucu bozabilir.")]},
+   "Birinci aşamadan 12 ay sonra. Bu süre dokunun iyileşmesi ve iskeletin yerleşmesi için gereklidir. Aceleyle yapılan ikinci aşama, ilk aşamada elde edilen sonucu bozabilir.")]},
 ]

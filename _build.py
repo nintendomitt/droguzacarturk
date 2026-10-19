@@ -42,6 +42,18 @@ NAV_ESTETIK = ("meme-estetigi", "karin-germe", "liposuction", "kol-uyluk-germe",
 
 _AVAIL = {}
 
+# Henuz cevrilmemis sayfalar icin yabanci dil menu/kart etiketi (sayfa Turkce acilir).
+NAV_FALLBACK = {
+ "en": {"yuz-kiriklari": ("Facial fractures and jaw surgery", "Repair of jaw, cheekbone, nose and orbital fractures (page in Turkish)"),
+        "alt-ekstremite": ("Lower extremity reconstruction", "Flap and microsurgical repair of leg and foot wounds (page in Turkish)")},
+ "de": {"yuz-kiriklari": ("Gesichtsfrakturen und Kieferchirurgie", "Versorgung von Kiefer-, Jochbein-, Nasen- und Orbitafrakturen (Seite auf Türkisch)"),
+        "alt-ekstremite": ("Rekonstruktion der unteren Extremität", "Lappen- und mikrochirurgische Versorgung von Bein- und Fußwunden (Seite auf Türkisch)")},
+ "ru": {"yuz-kiriklari": ("Переломы лица и челюстно-лицевая хирургия", "Лечение переломов челюсти, скуловой кости, носа и орбиты (страница на турецком)"),
+        "alt-ekstremite": ("Реконструкция нижних конечностей", "Лоскутное и микрохирургическое закрытие ран голени и стопы (страница на турецком)")},
+ "ar": {"yuz-kiriklari": ("كسور الوجه وجراحة الفك", "علاج كسور الفك وعظم الوجنة والأنف والحجاج (الصفحة بالتركية)"),
+        "alt-ekstremite": ("ترميم الأطراف السفلية", "ترميم جروح الساق والقدم بالسدائل والجراحة المجهرية (الصفحة بالتركية)")},
+}
+
 
 def load_trans():
     out = {}
@@ -484,6 +496,39 @@ def main():
 
     for lg in LANGS:
         _AVAIL[lg] = {p["key"] for p in PAGES if merged(p, trans, lg)}
+        # Ek referanslar (or. kulak estetigi = lip-lift sayfasinin bir bolumu):
+        # ayni slug'li sayfa bu dilde varsa referans da o dildeki sayfaya gitsin.
+        for r in EXTRA_REFS:
+            if any(p["slug"] == r["slug"] and p["key"] in _AVAIL[lg] for p in PAGES):
+                _AVAIL[lg].add(r["key"])
+
+    # Menu ve "ilgili sayfalar" kartlari her dilde KENDI dilindeki baslikla
+    # yazilmali. Onceden tek (Turkce) index kullaniliyordu: ingilizce/almanca/
+    # rusca/arapca sayfalarin menusu Turkce basliklarla ("Mikrotia onarımı")
+    # gorunuyordu. Ceviri yoksa NAV_FALLBACK'teki etiket kullanilir.
+    idx = {}
+    for lg in LANGS:
+        d_ = {}
+        for p in PAGES:
+            m = merged(p, trans, lg)
+            if m is None:
+                m = dict(p)
+                fb = NAV_FALLBACK.get(lg, {}).get(p["key"])
+                if fb:
+                    m["card"], m["cardsub"] = fb
+            d_[p["key"]] = m
+        for r in EXTRA_REFS:
+            rr = dict(r)
+            if lg in r.get("i18n", {}):
+                rr["card"], rr["cardsub"] = r["i18n"][lg]
+            d_.setdefault(r["key"], rr)
+        idx[lg] = d_
+
+    # Anasayfa (index.html) dil degistirince hizmet sayfasi baglantilarini o
+    # dildeki surume cevirebilsin diye, hangi sayfanin hangi dilde var oldugunu yaz.
+    _lp = {lg: sorted(p["slug"] for p in PAGES if p["key"] in _AVAIL[lg]) for lg in LANGS if lg != "tr"}
+    open(os.path.join("assets", "lang-pages.js"), "w", encoding="utf-8").write(
+        "/* _build.py uretir — elle duzenlemeyin */\nvar LANG_PAGES=" + json.dumps(_lp, ensure_ascii=False) + ";\n")
 
     total = 0
     for p in PAGES:
@@ -494,7 +539,7 @@ def main():
             if d:
                 os.makedirs(d, exist_ok=True)
             path = os.path.join(d, p["slug"]) if d else p["slug"]
-            open(path, "w", encoding="utf-8").write(render(m, lg, index, avail))
+            open(path, "w", encoding="utf-8").write(render(m, lg, idx[lg], avail))
             total += 1
         if len(avail) > 1:
             print(f"  {p['slug']:42} {' '.join(avail)}")

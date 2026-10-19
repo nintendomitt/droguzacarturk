@@ -29,6 +29,10 @@ KULAK_REF = {
     "slug": "lip-lift-bisektomi-kulak-estetigi.html",
     "card": "Kulak estetiği",
     "cardsub": "Kepçe kulak (otoplasti) düzeltmesi",
+    "i18n": {"en": ("Ear aesthetics", "Correction of prominent ears (otoplasty)"),
+             "de": ("Ohrkorrektur", "Korrektur abstehender Ohren (Otoplastik)"),
+             "ru": ("Эстетика ушей", "Коррекция лопоухости (отопластика)"),
+             "ar": ("تجميل الأذن", "تصحيح الأذن البارزة (رأب الأذن)")},
 }
 
 PAGES = LENFODEM + LENFODEM_KUME + LIPODEM_KUME + MICRO + HIDRADENIT + NOROFIBROMATOZIS + ESTETIK

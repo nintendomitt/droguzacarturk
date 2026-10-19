@@ -77,7 +77,7 @@ MICRO = [
  "ctap":"Ne kadar süredir devam ettiğini, ağrının günlük yaşamınızı nasıl etkilediğini ve varsa bacak fotoğraflarınızı gönderin. İlk yönlendirme için size dönüş yapılır."},
 
 {
- "key":"mikrotia", "modified":{"tr":"2026-09-27"},
+ "key":"mikrotia", "modified":{"tr":"2026-10-19","en":"2026-10-19","de":"2026-10-19","ru":"2026-10-19","ar":"2026-10-19"},
  "authority":"Mikrotia onarımı, kıkırdak oymacılığında el becerisi ve çok sayıda vaka deneyimi gerektiren bir alandır. Doç. Dr. Acartürk, Helsinki Üniversitesi'ndeki fellowship döneminde kulak onarımları üzerine çalışmış; her yıl Vietnam'da yürüttüğü gönüllü cerrahi misyonlarda mikrotia onarımını düzenli olarak uygulamaktadır.",
  "creds":["Helsinki Üniversitesi — mikrocerrahi ve kulak onarımı fellowship'i","Vietnam gönüllü cerrahi misyonlarında düzenli mikrotia cerrahisi","Ağız, Yüz ve Çene Cerrahisi üst uzmanlığı"], "slug":"mikrotia-kulak-onarimi.html", "prio":"0.85",
  "crumb":"Mikrotia — Kulak Onarımı",
@@ -91,12 +91,12 @@ MICRO = [
  "about":"Mikrotia", "aboutType":"MedicalCondition",
  "card":"Mikrotia onarımı", "cardsub":"Doğuştan kulak yokluğunda kaburga kıkırdağı ile rekonstrüksiyon",
  "procedure":{"name":"Mikrotia Rekonstrüksiyonu",
-   "how":"Hastanın kendi kaburga kıkırdağından üç boyutlu bir kulak iskeleti şekillendirilir, cilt altına yerleştirilir ve sonraki aşamada kulak baştan ayrılarak doğal açısı verilir.",
+   "how":"İki aşamada yapılır. Birinci aşamada hastanın kendi kaburga kıkırdağından üç boyutlu bir kulak iskeleti şekillendirilip cilt altına yerleştirilir ve kulak memesi doğru konuma taşınır; 12 ay sonraki ikinci aşamada kulak baştan ayrılarak doğal açısı verilir.",
    "prep":"Kıkırdak olgunluğunun ve göğüs kafesi gelişiminin değerlendirilmesi; işitme testi ve gerektiğinde tomografi.",
    "follow":"Yara bakımı, kulağa bası uygulanmasının önlenmesi ve aşamalar arası planlı kontroller.",
    "body":"Kulak"},
  "keyfacts":[("Sıklık","6–10 bin doğumda bir"),("Ameliyat yaşı","Genellikle 8–10 yaş"),
-             ("Yöntem","Otolog kaburga kıkırdağı"),("Aşama","2–3 aşamalı planlama")],
+             ("Yöntem","Otolog kaburga kıkırdağı"),("Aşama","2 aşama, arada 12 ay")],
  "sections":[
   {"id":"nedir","tag":"Temel Bilgi","h2":"Mikrotia nedir?","body":[
    "Mikrotia, kulak kepçesinin gebeliğin erken haftalarında tamamlanamayan gelişimi sonucu ortaya çıkar. Tek taraflı olması daha sıktır ve çoğunlukla sağ kulağı etkiler. Kulak kepçesinin yokluğuna sıklıkla dış kulak yolunun dar olması veya hiç bulunmaması (atrezi) eşlik eder.",
@@ -119,10 +119,9 @@ MICRO = [
           "Okul çağında görünümün önem kazandığı dönemin öncesine denk gelir"]),
    ("h3","Aşamalar"),
    ("steps",[
-    ("1. AŞAMA — İSKELET","Kaburga kıkırdağı alınır, kulak iskeleti oyularak şekillendirilir ve kulak bölgesinde hazırlanan cilt cebine yerleştirilir."),
-    ("2. AŞAMA — KULAK MEMESİ","Mevcut kulak memesi doğru konuma taşınır ve iskeletle bütünleştirilir. Bazı planlarda birinci aşamayla birleştirilir."),
-    ("3. AŞAMA — KULAĞIN AYRILMASI","Kulak baştan ayrılarak arkasına doku ve deri grefti yerleştirilir; kulağa doğal açısı ve derinliği kazandırılır.")]),
-   "Aşamalar arasında genellikle 4–6 ay bırakılır. Bu süre dokunun yerleşmesi ve kan dolaşımının olgunlaşması için gereklidir."]},
+    ("1. AŞAMA — İSKELET","Kaburga kıkırdağı alınır, kulak iskeleti oyularak şekillendirilir ve kulak bölgesinde hazırlanan cilt cebine yerleştirilir. Mevcut kulak memesi doğru konuma taşınır ve iskeletle bütünleşir."),
+    ("2. AŞAMA — KULAĞIN AYRILMASI","Kulak baştan ayrılarak arkasına doku ve deri grefti yerleştirilir; kulağa doğal açısı ve derinliği kazandırılır.")]),
+   "Onarım iki aşamada tamamlanır ve aşamalar arasında 12 ay bırakılır. Bu süre dokunun yerleşmesi ve kan dolaşımının olgunlaşması için gereklidir."]},
   {"id":"deneyim","tag":"Deneyim","h2":"Bu alandaki deneyim","body":[
    "Mikrotia onarımı, plastik cerrahinin en çok tekrar ve el becerisi gerektiren alanlarından biridir. Kıkırdak oymacılığı, sonucun doğal görünüp görünmeyeceğini doğrudan belirler.",
    "Doç. Dr. Acartürk, her yıl Vietnam'da gönüllü cerrahi misyonlara katılmakta; bu programlarda mikrotia onarımı, dudak–damak yarığı ve brakiyal pleksus cerrahisi uygulamaktadır. Helsinki Üniversitesi'ndeki fellowship döneminde de kulak onarımları çalışma alanlarından biri olmuştur.",
@@ -130,7 +129,7 @@ MICRO = [
  "faqs":[
   ("İzmir'de mikrotia (doğuştan küçük/yok kulak) ameliyatı için hangi uzmana gidilir?","Mikrotia onarımı Plastik, Rekonstrüktif ve Estetik Cerrahi uzmanlık alanına girer; işitme değerlendirmesi için Kulak Burun Boğaz (KBB) ile birlikte çalışılır. Doç. Dr. Tahsin Oğuz Acartürk, İzmir Bayraklı'da kaburga kıkırdağıyla kulak rekonstrüksiyonu konusunda deneyimlidir ve süreç boyunca hastayı aynı ekiple takip eder. İlk görüşmede kulağın derecesi (mikrotia evresi) ve karşı kulağın yapısı değerlendirilerek aşama planı çıkarılır."),
   ("Mikrotia ameliyatı için doğru yaş nedir?","Kaburga kıkırdağının yeterli kalınlığa ulaşması ve kulağın erişkin boyutuna yaklaşması nedeniyle genellikle 8–10 yaş önerilir. Çift taraflı olgularda ve göğüs kafesi gelişimine göre bu aralık değişebilir."),
-  ("Kaç ameliyat gerekir?","Genellikle 2–3 aşama planlanır ve aşamalar arasında 4–6 ay bırakılır. Aşama sayısı mikrotianın derecesine ve mevcut dokuya göre değişir."),
+  ("Kaç ameliyat gerekir?","Onarım iki aşamada yapılır ve aşamalar arasında 12 ay bırakılır. Birinci aşamada kaburga kıkırdağından hazırlanan kulak iskeleti yerleştirilir ve kulak memesi doğru konuma taşınır; ikinci aşamada kulak baştan ayrılarak doğal açısı verilir."),
   ("Kaburgadan kıkırdak almak çocuğa zarar verir mi?","Alınan kıkırdak bölgesi zamanla kendini onarır ve göğüs kafesi gelişimi normal seyreder. Ameliyat sonrası ilk günlerde göğüs bölgesinde ağrı olması beklenir ve kontrol altına alınır."),
   ("Ameliyat işitmeyi düzeltir mi?","Hayır. Kulak kepçesi onarımı görünümü yeniden inşa eder; işitme ayrı bir konudur ve odyoloji ile kulak burun boğaz ekibiyle birlikte değerlendirilir. Gerektiğinde kemik iletimli cihazlar veya ayrı bir işitme cerrahisi planlanır."),
   ("Protez kulak bir seçenek mi?","Yapıştırmalı veya implanta tutunan protezler bazı durumlarda seçenektir; özellikle kıkırdak yetersizse veya hasta cerrahi istemiyorsa. Ancak kendi dokusuyla yapılan onarım kalıcıdır ve günlük bakım gerektirmez."),

@@ -218,15 +218,17 @@ def faq_block(post):
             f'<h2 style="margin:0 0 26px">Sık sorulan sorular</h2>{items}</div></div></section>')
 
 def jsonld_post(post, url):
+    # Yazar, inceleyen ve yayinci anasayfadaki Physician varligiyla (#physician)
+    # ayni kisi; @id bunu arama motorlarina ve yapay zeka sistemlerine baglar.
+    # Hizmet sayfalari (_build.py) da ayni @id'yi kullanir.
+    dr = {"@type":"Physician","@id":BASE+"/#physician","name":"Doç. Dr. Tahsin Oğuz Acartürk",
+          "url":BASE+"/","medicalSpecialty":"PlasticSurgery"}
     g = [{"@context":"https://schema.org","@type":"MedicalWebPage",
           "@id":url+"#page","url":url,"name":post["ogtitle"],
           "description":post["desc"],"inLanguage":"tr-TR",
-          "datePublished":post["date"],"dateModified":post["date"],
-          "author":{"@type":"Physician","name":"Doç. Dr. Tahsin Oğuz Acartürk",
-                    "url":BASE+"/","medicalSpecialty":"PlasticSurgery"},
-          "reviewedBy":{"@type":"Physician","name":"Doç. Dr. Tahsin Oğuz Acartürk"},
-          "publisher":{"@type":"Organization","name":"Doç. Dr. Tahsin Oğuz Acartürk",
-                       "url":BASE+"/"},
+          # Yazi sonradan guncellenirse _blog*.py'ye "updated": "YYYY-MM-DD" ekleyin.
+          "datePublished":post["date"],"dateModified":post.get("updated", post["date"]),
+          "author":dr, "reviewedBy":dr, "publisher":dr,
           "breadcrumb":{"@type":"BreadcrumbList","itemListElement":[
               {"@type":"ListItem","position":1,"name":"Anasayfa","item":BASE+"/"},
               {"@type":"ListItem","position":2,"name":"Yazılar","item":BASE+"/blog/"},

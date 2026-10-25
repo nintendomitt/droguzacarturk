@@ -1792,9 +1792,15 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/kulak-sekil-bozukluklari.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/lenfodem-ilaclari.html</loc>

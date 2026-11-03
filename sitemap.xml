@@ -1792,9 +1792,15 @@
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.droguzacarturk.com/blog/meme-alti-ve-kalcada-ciban.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.droguzacarturk.com/blog/kolda-sislik-neden-olur.html</loc>
